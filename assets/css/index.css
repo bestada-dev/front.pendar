@@ -1,0 +1,195 @@
+@font-face {
+    font-family: Cooper-Blk-BT;
+    src: url(../fonts/Cooper/coopbln.ttf);
+}
+@font-face {
+    font-family: Cooper-LT-BT-Bold;
+    src: url(../fonts/Cooper/cooperb.ttf);
+}
+@font-face {
+    font-family: Cooper-MD-BT;
+    src: url(../fonts/Cooper/cooper_medium_bt.ttf);
+}
+@font-face {
+    font-family: Cooper-Lt-BT-Light;
+    src: url(../fonts/Cooper/cooperl.ttf);
+}
+/* Font */
+body{
+    color: #333333 ;
+}
+h1{
+    font-family: Cooper-LT-BT-Bold;
+    font-size: 40px
+}
+.h1-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 40px ;
+}
+h2{
+    font-family: Cooper-Blk-BT;
+    font-size: 32px
+}
+.h2-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 32px ;
+}
+.title {
+    font-family: Cooper-Blk-BT;
+    font-size: 56px ;
+}
+.title-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 56px ;
+}
+.subtitle {
+    font-family: Cooper-MD-BT;
+    font-size: 24px ; 
+    margin-bottom: 0px ;
+}
+.subtitle-bold {
+    font-family: Cooper-LT-BT-Bold;
+    font-size: 24px ; 
+}
+.subtitle-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 24px ; 
+}
+.body-large {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 20px ; 
+}
+.body-large-bold {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 20px ;
+    font-weight: bold; 
+}
+.body-regular {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 16px ; 
+}
+.body-small {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 14px ; 
+}
+
+/* Font */
+
+/* Marquee */
+.marquee {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    height: 50px;
+    overflow-x: hidden;
+}  
+.track {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee 32s linear infinite;
+}
+.track-reverse {
+    position: absolute;
+    white-space: nowrap;
+    will-change: transform;
+    animation: marquee-reverse 32s linear infinite;
+}
+@keyframes marquee {
+    from { transform: translateX(0); }
+    to { transform: translateX(-30%); }
+}
+@keyframes marquee-reverse {
+    from { transform: translateX(-30%); }
+    to { transform: translateX(0); }
+}
+/* Marquee */
+
+/* accordion */
+#accordionWhatInside .card-header{
+    background-color: transparent;
+    border:0px solid black
+}
+#accordionWhatInside .card{
+    border:0px solid black
+}
+#accordionFAQ .card-header{
+    background-color: transparent;
+    border:0px solid black
+}
+#accordionFAQ .card{
+    border:0px solid black
+}
+/* accordion */
+
+/* home */
+a{ 
+    color: #333333 ;
+    text-decoration: none;
+}
+a:hover{
+    color: #333333 ;
+    text-decoration: none; 
+}
+section{
+    padding-top: 20vh;
+}
+header{
+    padding-top: 5vh;
+}
+.before-footer{
+    margin-top : 20vh;
+    margin-bottom : 20vh;
+}
+#img-product-home{
+    width: 370px ;
+    height: 730px ;
+    position: absolute ;
+    z-index: 100;
+}
+.img-product-home-wrapper{
+    z-index: -1 ;
+    position: absolute ;
+}
+.img-product{
+    width: 370px ;
+    height: 730px ;
+}
+.btn-buynow{
+    top : 95% ;
+    left : 25% ;
+    position: absolute;
+    z-index: 10;
+}
+.sosial-media img{
+    width : 40px ;
+    height: 40px ;
+}
+.testi:nth-child(1){
+    transform: rotate(-4.97deg);
+    height: 35vh;
+}
+.testi:nth-child(2){
+    transform: rotate(11.77deg);
+}
+.testi:nth-child(3){
+    transform: rotate(3.81deg);
+}
+.testi:nth-child(4){
+    height: 30vh;
+    transform: rotate(-7.94deg);
+}
+.testi-warp {
+	display: -ms-flexbox;
+	-ms-flex-direction: column;
+	-ms-flex-wrap: wrap;
+	display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	font-size: 0; 
+}
+.w-40{
+    width: 100%;
+}
+/* home */
+
