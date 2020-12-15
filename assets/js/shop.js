@@ -4,78 +4,78 @@ $(function(){
             name : "product",
             idButton : "#btnAccordionProduct1",
             idContent : "#collapseProductOne",
-            firstImage : "assets/images/ArrowUp.svg",
-            secondImage : "assets/images/ArrowDown.svg" 
+            firstImage : "assets/images/navigation/ArrowUp.svg",
+            secondImage : "assets/images/navigation/ArrowDown.svg" 
         },
         {
             name : "product",
             idButton : "#btnAccordionProduct2",
             idContent : "#collapseProductTwo",
-            firstImage : "assets/images/ArrowUp.svg",
-            secondImage : "assets/images/ArrowDown.svg" 
+            firstImage : "assets/images/navigation/ArrowUp.svg",
+            secondImage : "assets/images/navigation/ArrowDown.svg" 
         },
         {
             name : "product",
             idButton : "#btnAccordionProduct3",
             idContent : "#collapseProductThree",
-            firstImage : "assets/images/ArrowUp.svg",
-            secondImage : "assets/images/ArrowDown.svg" 
+            firstImage : "assets/images/navigation/ArrowUp.svg",
+            secondImage : "assets/images/navigation/ArrowDown.svg" 
         },
         {
             name : "whatInside",
             idButton : "#btnAccordionWhatInside1",
             idContent : "#collapseWhatInsideOne",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },
         {
             name : "whatInside",
             idButton : "#btnAccordionWhatInside2",
             idContent : "#collapseWhatInsideTwo",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },  
         {
             name : "whatInside",
             idButton : "#btnAccordionWhatInside3",
             idContent : "#collapseWhatInsideThree",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },  
         {
             name : "whatInside",
             idButton : "#btnAccordionWhatInside4",
             idContent : "#collapseWhatInsideFour",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
         {
             name : "faq",
             idButton : "#btnAccordionFaq1",
             idContent : "#collapseFaqOne",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
         {
             name : "faq",
             idButton : "#btnAccordionFaq2",
             idContent : "#collapseFaqTwo",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },            
         {
             name : "faq",
             idButton : "#btnAccordionFaq3",
             idContent : "#collapseFaqThree",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
         {
             name : "faq",
             idButton : "#btnAccordionFaq4",
             idContent : "#collapseFaqFour",
-            firstImage : "assets/images/PlusIcon.svg",
-            secondImage : "assets/images/MinIcon.svg" 
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
     ];
     arrayAccordion.map(accordion => {
