@@ -1,0 +1,304 @@
+@font-face {
+    font-family: Cooper-Blk-BT;
+    src: url(../fonts/Cooper/coopbln.ttf);
+}
+@font-face {
+    font-family: Cooper-LT-BT-Bold;
+    src: url(../fonts/Cooper/cooperb.ttf);
+}
+@font-face {
+    font-family: Cooper-MD-BT;
+    src: url(../fonts/Cooper/cooper_medium_bt.ttf);
+}
+@font-face {
+    font-family: Cooper-Lt-BT-Light;
+    src: url(../fonts/Cooper/cooperl.ttf);
+}
+/* Font */
+body{
+    color: #333333 ;
+    overflow-x : hidden;
+    background: linear-gradient(116.82deg, rgba(198, 235, 202, 0.5) 0%, rgba(198, 235, 202, 0) 100%), #235E50;
+}
+h1{
+    font-family: Cooper-LT-BT-Bold;
+    font-size: 40px
+}
+.h1-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 40px ;
+}
+h2{
+    font-family: Cooper-Blk-BT;
+    font-size: 32px
+}
+.h2-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 32px ;
+}
+.title {
+    font-family: Cooper-Blk-BT;
+    font-size: 56px ;
+}
+.title-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 56px ;
+}
+.subtitle {
+    font-family: Cooper-MD-BT;
+    font-size: 24px ; 
+    margin-bottom: 0px ;
+}
+.subtitle-bold {
+    font-family: Cooper-LT-BT-Bold;
+    font-size: 24px ; 
+}
+.subtitle-light {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 24px ; 
+}
+.body-large {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 20px ; 
+}
+.body-large-bold {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 20px ;
+    font-weight: bold; 
+}
+.body-regular {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 16px ; 
+}
+.body-small {
+    font-family: Cooper-Lt-BT-Light;
+    font-size: 14px ; 
+}
+#i3 .title {
+    font-size : 106px
+}
+#i5 .title {
+    font-size : 90px
+}
+.before-footer .title{
+    font-size : 144px
+}
+#a1 .title {
+    font-size : 80px
+}
+/* Font */
+
+/* Large */
+@media screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
+    h1{
+        font-size: 40px
+    }
+    .h1-light {
+        font-size: 40px ;
+    }
+    h2{
+        font-size: 32px
+    }
+    .h2-light {
+        font-size: 32px ;
+    }
+    .title {
+        font-size: 56px ;
+    }
+    .title-light {
+        font-size: 56px ;
+    }
+    .subtitle {
+        font-size: 24px ; 
+    }
+    .subtitle-bold {
+        font-size: 24px ; 
+    }
+    .subtitle-light {
+        font-size: 24px ; 
+    }
+    .body-large {
+        font-size: 20px ; 
+    }
+    .body-large-bold {
+        font-size: 20px ;
+    }
+    .body-regular {
+        font-size: 16px ; 
+    }
+    .body-small {
+        font-size: 14px ; 
+    }
+    .before-footer .title{
+        font-size : 100px
+    }
+}
+
+/* Medium */
+@media screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+    h1{
+        font-size: 35px
+    }
+    .h1-light {
+        font-size: 35px ;
+    }
+    h2{
+        font-size: 27px
+    }
+    .h2-light {
+        font-size: 27px ;
+    }
+    .title {
+        font-size: 50px ;
+    }
+    .title-light {
+        font-size: 50px ;
+    }
+    .subtitle {
+        font-size: 20px ; 
+    }
+    .subtitle-bold {
+        font-size: 20px ; 
+    }
+    .subtitle-light {
+        font-size: 20px ; 
+    }
+    .body-large {
+        font-size: 15px ; 
+    }
+    .body-large-bold {
+        font-size: 15px ;
+    }
+    .body-regular {
+        font-size: 16px ; 
+    }
+    .body-small {
+        font-size: 14px ; 
+    }
+    .before-footer .title {
+        font-size: 120px ;
+    }
+    #i3 .title {
+        font-size : 70px
+    }
+    #i5 .title {
+        font-size : 60px
+    }
+    .before-footer .title{
+        font-size : 100px
+    }
+}
+
+/* Small */
+@media screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
+    h1{
+        font-size: 35px
+    }
+    .h1-light {
+        font-size: 35px ;
+    }
+    h2{
+        font-size: 27px
+    }
+    .h2-light {
+        font-size: 27px ;
+    }
+    .title {
+        font-size: 50px ;
+    }
+    .title-light {
+        font-size: 50px ;
+    }
+    .subtitle {
+        font-size: 16px ; 
+    }
+    .subtitle-bold {
+        font-size: 16px ; 
+    }
+    .subtitle-light {
+        font-size: 16px ; 
+    }
+    .body-large {
+        font-size: 20px ; 
+    }
+    .body-large-bold {
+        font-size: 20px ;
+    }
+    .body-regular {
+        font-size: 16px ; 
+    }
+    .body-small {
+        font-size: 14px ; 
+    }
+    .before-footer .title {
+        font-size: 120px ;
+    }
+    #i3 .title {
+        font-size : 70px
+    }
+    #i5 .title {
+        font-size : 60px
+    }
+    .before-footer .title{
+        font-size : 80px
+    }
+}
+
+/* Extra Small */
+@media screen and (max-width: $screenExtraSmall) {
+    h1{
+        font-size: 35px
+    }
+    .h1-light {
+        font-size: 30px ;
+    }
+    h2{
+        font-size: 27px
+    }
+    .h2-light {
+        font-size: 27px ;
+    }
+    .title {
+        font-size: 50px ;
+    }
+    .title-light {
+        font-size: 50px ;
+    }
+    .subtitle {
+        font-size: 16px ; 
+    }
+    .subtitle-bold {
+        font-size: 16px ; 
+    }
+    .subtitle-light {
+        font-size: 16px ; 
+    }
+    .body-large {
+        font-size: 20px ; 
+    }
+    .body-large-bold {
+        font-size: 20px ;
+    }
+    .body-regular {
+        font-size: 16px ; 
+    }
+    .body-small {
+        font-size: 14px ; 
+    }
+    .before-footer .title {
+        font-size: 120px ;
+    }
+    #i3 .title {
+        font-size : 70px
+    }
+    #i5 .title {
+        font-size : 60px
+    }
+    .before-footer .title{
+        font-size : 80px
+    }
+    .testi p{
+        font-size: 16px ;
+    }
+
+}

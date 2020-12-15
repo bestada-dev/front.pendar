@@ -1,0 +1,39 @@
+#a2 img{
+    @include size(730px,370px);
+}
+/* Extra Large */
+@media screen  and (max-width: $screenExtraLarge){
+    #a1 .title{
+        font-size: 70px ;
+    }
+    #a2 img{
+        width: 270px ;
+        height: 630px ;   
+    }
+}
+
+/* Large */
+@media screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
+    #a1 .title {
+        font-size : 70px
+    }
+}
+
+/* Medium */
+@media screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+
+}
+
+/* Small */
+@media screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
+    #a1 .title {
+        font-size : 50px
+    }
+}
+
+/* Extra Small */
+@media screen and (max-width: $screenExtraSmall) {
+    #a1 .title {
+        font-size : 40px
+    }
+}

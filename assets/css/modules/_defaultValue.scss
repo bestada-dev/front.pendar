@@ -1,0 +1,28 @@
+$textDark : #333333 ;
+$screenExtraLarge : 1200px ;
+$screenLarge : 1140px ;
+$screenMedium : 992px ;
+$screenSmall : 768px ;
+$screenExtraSmall : 576px ;
+
+@mixin size($height,$width) {
+    height: $height;
+    width: $width;
+}
+@mixin sizeSquare($value) {
+    height: $value;
+    width: $value;
+}
+@mixin positionButtonBuyNow($value) {
+    top: $value;
+    left: 0;
+    bottom:0;
+    right: 0;
+}
+
+section{
+    padding-top: 20vh;
+}
+header{
+    padding-top: 5vh;
+}
