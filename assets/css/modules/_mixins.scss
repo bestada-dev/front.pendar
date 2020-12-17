@@ -1,0 +1,38 @@
+@mixin size($height,$width) {
+    height: $height;
+    width: $width;
+}
+@mixin sizeSquare($value) {
+    height: $value;
+    width: $value;
+}
+@mixin positionButtonBuyNow($value) {
+    top: $value;
+    left: 80%;
+    bottom:0;
+    right: 0;
+}
+section{
+    padding-top: 20vh;
+}
+header{
+    padding-top: 5vh;
+}
+body{
+    color: $textWhite;
+    overflow-x : hidden;
+    background: $background-main ;
+    transition: 0.5s
+}
+a{ 
+    color: $textWhite ;
+    text-decoration: none;
+    &:hover{
+        color: $textWhite ;
+        text-decoration: none; 
+    }
+}
+.before-footer{
+    margin-top : 20vh;
+    margin-bottom : 20vh;
+}

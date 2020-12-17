@@ -1,11 +1,10 @@
 
 // Modules
-@import './modules/defaultValue' ;
+@import './modules/variables' ;
+@import './modules/mixins' ;
 @import './modules/font' ;
 @import './modules/marquee' ;
 @import './modules/accordion' ;
-
-
 
 // Pages
 @import './pages/home' ;

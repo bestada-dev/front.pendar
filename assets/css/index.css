@@ -6,6 +6,29 @@ header {
   padding-top: 5vh;
 }
 
+body {
+  color: #FFFFFF;
+  overflow-x: hidden;
+  background: linear-gradient(116.82deg, rgba(198, 235, 202, 0.5) 0%, rgba(198, 235, 202, 0) 100%), #235E50;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #FFFFFF;
+  text-decoration: none;
+}
+
+.before-footer {
+  margin-top: 20vh;
+  margin-bottom: 20vh;
+}
+
 @font-face {
   font-family: Cooper-Blk-BT;
   src: url(../fonts/Cooper/coopbln.ttf);
@@ -27,12 +50,6 @@ header {
 }
 
 /* Font */
-body {
-  color: #333333;
-  overflow-x: hidden;
-  background: linear-gradient(116.82deg, rgba(198, 235, 202, 0.5) 0%, rgba(198, 235, 202, 0) 100%), #235E50;
-}
-
 h1 {
   font-family: Cooper-LT-BT-Bold;
   font-size: 40px;
@@ -446,50 +463,109 @@ h2 {
   border: 0px solid black;
 }
 
-a {
-  color: #333333;
-  text-decoration: none;
+#i1 .title {
+  font-size: 140px;
+  line-height: 172px;
 }
 
-a:hover {
-  color: #333333;
-  text-decoration: none;
+#i2 button {
+  color: white;
 }
 
-.before-footer {
-  margin-top: 20vh;
-  margin-bottom: 20vh;
+#i2 button:hover {
+  background-color: white !important;
+  color: green;
 }
 
-#img-product-home {
-  height: 730px;
+#i2 h1 {
+  font-size: 80px;
+  line-height: 97px;
+  letter-spacing: 0.4em;
+}
+
+#i3 .title {
+  font-size: 190px;
+}
+
+#i4 {
+  padding-top: 40vh;
+  padding-bottom: 30vh;
+}
+
+#i4 .title {
+  font-size: 60px;
+}
+
+#i4 .mascot {
+  height: 150px;
+  width: 330px;
+}
+
+#i4 .row:nth-child(2) {
+  margin-top: 5vh;
+}
+
+#i4 .destination {
+  max-height: 334px;
+  width: 100%;
+}
+
+#i5 .title {
+  font-size: 130px;
+}
+
+#i5 .h2-light {
+  position: absolute;
+  font-size: 32px;
+  font-family: Cooper-Lt-BT-Light;
+  top: 80%;
+  left: 80%;
+  bottom: 0;
+  right: 0;
   width: 370px;
+}
+
+#i6 .title {
+  font-size: 80px;
+}
+
+.img-product #img-product-home {
   position: absolute;
   z-index: 100;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin-top: 10vh;
   -ms-flex-item-align: center;
       align-self: center;
 }
 
-.img-product {
-  height: 730px;
-  width: 370px;
+.img-product #img-product-home .img-product-home {
+  height: 570px;
+  width: auto;
 }
 
-.img-product-home {
-  height: 730px;
-  width: 370px;
-}
-
-.btn-buynow {
-  top: 95%;
-  left: 0;
+.img-product #img-product-home .btn-buynow {
+  top: 90%;
+  left: 80%;
   bottom: 0;
   right: 0;
   position: absolute;
   z-index: 10;
+}
+
+.img-product #img-product-home .btn-buynow button {
+  background-color: #FFFFFF;
+  color: #235E50;
+  font-weight: 900;
+  font-family: Cooper-Blk-BT;
+}
+
+.img-product #img-product-home .btn-buynow button:hover {
+  background-color: #235E50;
+  color: #FFFFFF;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
 }
 
 .sosial-media img {
@@ -498,6 +574,8 @@ a:hover {
 }
 
 .testi {
+  border-radius: 10px;
+  color: #333333;
   height: 110%;
 }
 
@@ -528,108 +606,157 @@ a:hover {
   width: 100%;
 }
 
+/* Super Extra Large */
+@media screen and (max-width: 1550px) {
+  #i3 .title {
+    font-size: 150px;
+  }
+  #i5 .title {
+    font-size: 100px;
+  }
+  #i5 .h2-light {
+    position: relative;
+    left: 0;
+    top: 0;
+  }
+}
+
 /* Extra Large */
 @media screen and (max-width: 1200px) {
-  #img-product-home {
-    height: 630px;
-    width: 270px;
+  .img-product #img-product-home {
+    margin-top: 5vh;
   }
-  .img-product-home {
-    height: 630px;
-    width: 270px;
-  }
-  .img-product-home-wrapper {
-    z-index: -1;
-    position: absolute;
-  }
-  .img-product {
-    height: 630px;
-    width: 270px;
-  }
-  .btn-buynow {
-    top: 90%;
-    left: 0;
+  .img-product #img-product-home .btn-buynow {
+    top: 95%;
+    left: 80%;
     bottom: 0;
     right: 0;
+  }
+  #i1 .title {
+    font-size: 100px;
+    line-height: 140px;
+  }
+  #i3 .title {
+    font-size: 120px;
+  }
+  #i5 .title {
+    font-size: 80px;
+  }
+  #i5 .h2-light {
+    position: relative;
+    left: 0;
+    top: 0;
+    font-size: 30px;
   }
 }
 
 /* Large */
 /* Medium */
 @media screen and (min-width: 768px) and (max-width: 992px) {
-  #img-product-home {
-    height: 550px;
-    width: 200px;
+  .img-product #img-product-home {
+    margin-top: 0vh;
   }
-  .img-product-home {
-    height: 550px;
-    width: 200px;
+  .img-product #img-product-home .img-product-home {
+    height: 430px;
+    width: auto;
   }
-  .img-product {
-    height: 550px;
-    width: 200px;
-  }
-  .btn-buynow {
-    top: 80%;
-    left: 0;
+  .img-product #img-product-home .btn-buynow {
+    top: 90%;
+    left: 80%;
     bottom: 0;
     right: 0;
+  }
+  #i1 .title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  #i4 .title {
+    margin-top: 5vh;
+    font-size: 40px;
+  }
+  #i4 .mascot {
+    height: auto;
+    width: 200px;
   }
 }
 
 /* Small */
 @media screen and (min-width: 576px) and (max-width: 768px) {
-  #img-product-home {
-    height: 330px;
-    width: 150px;
-  }
-  .img-product-home {
-    height: 330px;
-    width: 150px;
-  }
   .img-product {
     position: absolute;
     z-index: 100;
-    height: 330px;
-    width: 150px;
     margin-bottom: 5vh;
     top: auto;
-    left: auto;
+    left: 50%;
     bottom: 5%;
-    right: 5%;
+    right: auto;
+    height: 300px;
+    width: auto;
   }
-  .btn-buynow {
+  .img-product #img-product-home {
+    margin-top: 0vh;
+  }
+  .img-product #img-product-home .img-product-home {
+    height: 330px;
+    width: auto;
+  }
+  .img-product #img-product-home .btn-buynow {
     top: 90%;
-    left: 0;
+    left: 80%;
     bottom: 0;
     right: 0;
+  }
+  #i2 h1 {
+    font-size: 60px;
+    line-height: 68px;
+    margin-bottom: 5vh;
+  }
+  #i4 .mascot {
+    height: 100px;
+    width: 100px;
+  }
+  #i5 .title {
+    font-size: 60px;
+  }
+  #i5 .title span {
+    position: relative;
+    font-size: 32px;
+    font-family: Cooper-Lt-BT-Light;
+    top: 80%;
+    left: 80%;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    left: 0;
+    top: 10vh;
+    line-height: 10vh;
+    text-align: left;
   }
 }
 
 /* Extra Small */
 @media screen and (max-width: 576px) {
-  #img-product-home {
-    height: 300px;
-    width: 150px;
-  }
-  .img-product-home {
-    height: 300px;
-    width: 150px;
-  }
   .img-product {
     position: absolute;
     z-index: 100;
-    height: 300px;
-    width: 150px;
     margin-bottom: 5vh;
     top: auto;
     left: auto;
     bottom: 5%;
     right: 5%;
+    height: 300px;
+    width: 150px;
   }
-  .btn-buynow {
+  .img-product #img-product-home {
+    margin-top: 0vh;
+  }
+  .img-product #img-product-home .img-product-home {
+    height: 300px;
+    width: 150px;
+  }
+  .img-product #img-product-home .btn-buynow {
     top: 90%;
-    left: 0;
+    left: 80%;
     bottom: 0;
     right: 0;
   }
@@ -637,6 +764,14 @@ a:hover {
     padding-right: 2vh !important;
     padding-left: 2vh !important;
     font-size: 1rem;
+  }
+  #i1 .title {
+    font-size: 80px;
+    line-height: 100px;
+  }
+  #i4 .mascot {
+    height: 100px;
+    width: 250px;
   }
 }
 
