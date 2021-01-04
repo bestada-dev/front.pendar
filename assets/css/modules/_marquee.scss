@@ -26,14 +26,14 @@
 }
 
 /* Large */
-@media screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
+@media only screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
     .marquee {
         height: 50px;
     }    
 }
 
 /* Medium */
-@media screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+@media only screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
     /* Marquee */
     .marquee {
         height: 50px;
@@ -42,14 +42,14 @@
 }
 
 /* Small */
-@media screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
+@media only screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
     .marquee {
         height: 50px;
     }    
 }
 
 /* Extra Small */
-@media screen and (max-width: $screenExtraSmall) {
+@media only screen and (max-width: $screenExtraSmall) {
     .marquee {
         height: 50px;
     }    

@@ -1,4 +1,4 @@
-$background-main : linear-gradient(116.82deg, rgba(198, 235, 202, 0.5) 0%, rgba(198, 235, 202, 0) 100%), #235E50 ;
+$background-main : radial-gradient(76.65% 107.78% at 23.35% 50%, rgba(198, 235, 202, 0.3) 0%, rgba(198, 235, 202, 0) 100%), #235E50;
 $textDark : #333333 ;
 $textWhite : #FFFFFF ;
 $screenSuperExtraLarge : 1550px ;
@@ -7,3 +7,12 @@ $screenLarge : 1140px ;
 $screenMedium : 992px ;
 $screenSmall : 768px ;
 $screenExtraSmall : 576px ;
+
+$backgroundBasic : #235E50 ;
+$colorBasic : #FFFFFF ;
+$backgroundBandung : #1ECDEC ;
+$colorBandung : #095A67 ;
+$backgroundJogja : #FFDFB6 ;
+$colorJogja : #854A00 ;
+$backgroundBali : #A37100 ;
+$colorBali : #615428 ;

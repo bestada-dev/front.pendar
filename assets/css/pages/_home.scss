@@ -2,6 +2,8 @@
     .title{
         font-size: 140px ;
         line-height: 172px;
+        letter-spacing: 0.01em;
+        text-transform: uppercase;
     }
 }
 #i2{
@@ -12,27 +14,122 @@
             color: green ; 
         }
     }
-    h1{
-        font-size: 80px;
-        line-height: 97px;
-        letter-spacing: 0.4em;
+    .title-light{
+        font-size: 48px;
+        line-height: 90px;
+        letter-spacing: 0.1em;
+        .title{
+            font-size: 48px;
+        }
     }
 }
 #i3{
+    margin-bottom: 30vh;
    .title{
-       font-size: 190px;
+       letter-spacing: 0.04em;
+       &:nth-child(odd){
+        font-size: 100px;
+       }
+       &:nth-child(even){
+        font-size: 230px;
+       }
    } 
 }
 #i4{
-    padding-top:40vh;
-    // height: 100vh;
-    padding-bottom:30vh;
-    .title{
-        font-size: 60px ;
-    }
+    padding-top: 30vh;
+    height: 100vh;
+    position: relative;
     .mascot{
-        height: 150px;
-        width: 330px;
+        height: 200px;
+        width: 175px;
+        position: absolute ;
+        transition: 0.5s ;
+    }
+    .mascot1{
+        top : auto;
+        right: auto ;               
+        bottom : 80%;
+        left : 20% ;
+    }
+    #mascotBandung1{
+        opacity: 1 ;
+    }
+    #mascotJogja1{
+        opacity: 0 ;
+    }
+    #mascotBali1{
+        opacity: 0 ;
+    }
+    .mascot2{
+        top : auto;
+        right: auto ;               
+        bottom : auto;
+        left : 20% ;
+    }
+    #mascotBandung2{
+        opacity: 1 ;
+    }
+    #mascotJogja2{
+        opacity: 0 ;
+    }
+    #mascotBali2{
+        opacity: 0 ;
+    }    
+    .mascot3{
+        top : auto;
+        right: auto ;               
+        bottom : auto;
+        left : 60% ;
+    }
+    #mascotBandung3{
+        opacity: 1 ;
+    }
+    #mascotJogja3{
+        opacity: 0 ;
+    }
+    #mascotBali3{
+        opacity: 0 ;
+    }
+    .destination-wrapper {
+        margin-top:20% ;
+        display: flex ;
+        flex-direction: column;
+        justify-content: flex-end;
+        bottom : 9vh ;        
+        .destination{
+            position: absolute ;
+            width:100% ;
+            z-index : -1
+        }
+        #destinationBandung1{
+            width : 70vh ;
+            opacity: 1 ;
+        }
+        #destinationJogja1{
+            opacity: 0 ;
+        }
+        #destinationBali1{
+            opacity: 0 ;
+        }
+        #destinationBandung2{
+            margin-left: 45vh;
+            opacity: 1 ;
+        }
+        #destinationJogja2{
+            opacity: 0 ;
+        }
+        #destinationBali2{
+            opacity: 0 ;
+        }
+        #destinationBandung3{
+            opacity: 1 ;
+        }
+        #destinationJogja3{
+            opacity: 0 ;
+        }
+        #destinationBali3{
+            opacity: 0 ;
+        }
     }
     .row{
         &:nth-child(2){
@@ -43,17 +140,33 @@
         max-height: 334px ;
         width: 100% ;
     }
+    .textPlace{
+        height: 20vh ;
+        .textPlace-wrap{
+            margin-top: 20vh ;
+            bottom : 0.5vh ;
+            line-height: 7vh;
+            position: absolute ;
+            .subtitle-light{
+                line-height: 30px;
+            }
+        }
+        .wrap-text-bandung{
+            opacity: 1 ;
+        }
+        .wrap-text-jogja{
+            color : #095966;
+            opacity: 0 ;
+        }
+        .wrap-text-bali{
+            color : #615428 ;
+            opacity: 0 ;
+        }
+    }
 }
 #i5{
     .title{
-        font-size: 130px ;
-    }
-    .h2-light{
-        position: absolute ;
-        font-size: 32px;
-        font-family: Cooper-Lt-BT-Light ;
-        @include positionButtonBuyNow(80%) ;
-        width : 370px;
+        font-size: 100px ;
     }
 }
 #i6{
@@ -62,12 +175,12 @@
     }
 }
 .img-product{
+    display:flex;
+    justify-content:center;
+    align-items:center;
     #img-product-home{
         position: absolute ;
         z-index: 100;
-        display:flex;
-        margin-top: 10vh ;
-        align-self: center;    
         .img-product-home{
             @include size(570px,auto) ;
         }
@@ -76,21 +189,28 @@
             position: absolute;
             z-index: 10;
             button {
-                background-color: #FFFFFF ;
-                color : #235E50 ;
+                border: 2px solid $textDark;    
+                background-color: $textWhite ;
+                color : $textDark ;
                 font-weight: 900;
                 font-family: Cooper-Blk-BT ;
                 &:hover {
-                    background-color: #235E50 ;
-                    color : #FFFFFF ;
+                    background-color: $textDark ;
+                    color : $textWhite ;
                     transition : 0.5s
                 }
             } 
+            .pulseButtonBuy{
+                position: absolute;
+                z-index: -1;
+                transition : 0.5s ;
+                animation: pulse 2s infinite;
+            }
         }
     }
 }
 .sosial-media img{
-    @include sizeSquare(40px) ;
+    @include size(auto,100%) ;
 }
 .testi{
     border-radius: 10px;
@@ -101,6 +221,9 @@
     }
     &:nth-child(even){
         transform: rotate(11.77deg);
+    }
+    img{
+        @include sizeSquare(70px)
     }
 }
 
@@ -117,13 +240,77 @@
     width: 100%;
 }
 
-/* Super Extra Large */
-@media screen  and (max-width: $screenSuperExtraLarge){
-    #i3{
-        .title{
-            font-size: 150px;
-        } 
+@keyframes pulse {
+    0% {
+        width : 1vh ;
+        height: 1vh;
     }
+    50% {
+        width : 12vh ;
+        height: 12vh;
+        border: 0.1px solid $textDark;    
+    }
+    100% {
+        width : 1vh ;
+        height: 1vh;
+    }
+
+  }
+  
+/* Super Extra Large */
+@media only screen  and (max-width: $screenSuperExtraLarge){
+    #i1 {
+        .title{
+            font-size: 115px ;
+        }
+    }
+    #i2{
+        .title-light{
+            font-size: 38px;
+            line-height: 60px;
+            letter-spacing: 0.1em;
+            .title{
+                font-size: 38px;
+            }
+        }
+    }
+    #i3{
+       .title{
+           letter-spacing: 0.04em;
+           &:nth-child(odd){
+            font-size: 80px;
+           }
+           &:nth-child(even){
+            font-size: 200px;
+           }
+       } 
+    }
+    #i4 {
+        .titlePlace{
+            line-height: 62px;
+        }
+        .title {
+            font-size : 52px
+        }
+        .outline {
+            font-size: 52px;
+        }
+        .subtitle {
+            font-size: 20px ; 
+        }
+        .subtitle-light {
+            font-size: 20px ; 
+        }
+        .destination-wrapper {
+            margin-top:25% ;
+        }
+        .textPlace{
+            .textPlace-wrap{
+                margin-top: 10vh ;
+                bottom : 2vh ;
+            }
+        }
+    }    
     #i5{
         .title{
             font-size:100px ;
@@ -138,7 +325,7 @@
 
 
 /* Extra Large */
-@media screen  and (max-width: $screenExtraLarge){
+@media only screen  and (max-width: $screenExtraLarge){
     .img-product{
         #img-product-home{
             margin-top: 5vh ;
@@ -153,11 +340,13 @@
             line-height: 140px;
         }
     }
+    
     #i3{
         .title{
             font-size: 120px;
         } 
     }
+
     #i5{
         .title{
             font-size:80px ;
@@ -172,27 +361,7 @@
 }
 
 /* Large */
-@media screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
-    // #img-product-home{
-    //     @include size(630px,270px) ;
-    // }
-    // .img-product-home{
-    //     @include size(630px,270px) ;
-    // }
-    // .img-product-home-wrapper{
-    //     z-index: -1 ;
-    //     position: absolute ;
-    // }
-    // .img-product{
-    //     @include size(630px,270px) ;
-    // }
-    // .btn-buynow{
-    //     @include positionButtonBuyNow(90%) ;
-    // }
-}
-
-/* Medium */
-@media screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+@media only screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
     .img-product{
         #img-product-home{
             margin-top: 0vh ;
@@ -204,42 +373,218 @@
             }
         }
     }
-    #i1 {
-        .title{
-            font-size: 80px ;
-            line-height: 100px;
-        }
+    #i3{
+       .title{
+           letter-spacing: 0.04em;
+           &:nth-child(odd){
+            font-size: 60px;
+           }
+           &:nth-child(even){
+            font-size: 110px;
+           }
+       } 
     }
     #i4{
-        .title{
-            margin-top: 5vh;
-            font-size: 40px ;
-        }
+        position: relative;
         .mascot{
-            height: auto;
-            width: 200px;
+            height: 150px;
+            width: 125px;
+            position: absolute ;
+            transition: 0.5s ;
+        }
+        .destination-wrapper {
+            margin-top:35% ;
+            #destinationBandung1{
+                width : 30vh ;
+            }
+            #destinationBandung2{
+                margin-left: 25vh;
+                opacity: 1 ;
+            }
+        }
+        .row{
+            &:nth-child(2){
+                margin-top: 5vh
+            }
+        }
+        .destination{
+            max-height: 334px ;
+            width: 100% ;
+        }
+        .title {
+            font-size : 52px
+        }
+        .outline {
+            font-size: 52px;
+        }
+        .subtitle {
+            font-size: 20px ; 
+        }
+        .subtitle-light {
+            font-size: 20px ; 
+        }
+        .textPlace{
+            .textPlace-wrap{
+                margin-top: 15vh ;
+                bottom : 2vh ;
+            }
+        }
+        .mascot1{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 5% ;
+        }
+        .mascot2{
+            top : auto;
+            right: auto ;               
+            bottom : 95%;
+            left : 20% ;
+        }
+        .mascot3{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 25% ;
+        }
+    }
+    #i6{
+        .title{
+            font-size:60px
+        }
+    }
+}
+
+/* Medium */
+@media only screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+    #i1 {
+        .title{
+            font-size: 85px ;
+        }
+    }
+    #i2{
+        .title-light{
+            font-size: 28px;
+            line-height: 45px;
+            letter-spacing: 0.1em;
+            .title{
+                font-size: 28px;
+            }
+        }
+    }
+    .img-product{
+        #img-product-home{
+            margin-top: 0vh ;
+            .img-product-home{
+                @include size(380px,auto) ;
+            }
+            .btn-buynow{
+                @include positionButtonBuyNow(90%) ;
+            }
+        }
+    }
+    #i3{
+       .title{
+           letter-spacing: 0.04em;
+           &:nth-child(odd){
+            font-size: 60px;
+           }
+           &:nth-child(even){
+            font-size: 110px;
+           }
+       } 
+    }
+    #i4{
+        position: relative;
+        .mascot{
+            height: 150px;
+            width: 125px;
+            position: absolute ;
+            transition: 0.5s ;
+        }
+        .destination-wrapper {
+            margin-top:40% ;
+            #destinationBandung1{
+                width : 30vh ;
+            }
+            #destinationBandung2{
+                margin-left: 20vh;
+                opacity: 1 ;
+            }
+        }
+        .row{
+            &:nth-child(2){
+                margin-top: 5vh
+            }
+        }
+        .destination{
+            max-height: 334px ;
+            width: 100% ;
+        }
+        .title {
+            font-size : 52px
+        }
+        .outline {
+            font-size: 52px;
+        }
+        .subtitle {
+            font-size: 15px ; 
+        }
+        .subtitle-light {
+            font-size: 15px ; 
+        }
+        .textPlace{
+            .textPlace-wrap{
+                margin-top: 25vh ;
+                bottom : 0vh ;
+                line-height: 6vh;
+            }
+        }
+        .mascot1{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 5% ;
+            
+        }
+        .mascot2{
+            top : auto;
+            right: auto ;               
+            bottom : 95%;
+            left : 20% ;
+        }
+        .mascot3{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 25% ;
+        }
+    }
+    #i6{
+        .title{
+            font-size:60px
         }
     }
 }
 
 /* Small */
-@media screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
+@media only screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
     .img-product{
         position: absolute;
         z-index : 100;
         margin-bottom: 5vh;
         top: auto;
-        left: 50%;
+        left: 75%;
         bottom: 5%;
         right: auto;
-        @include size(300px,auto) ;        
+        @include size(200px,auto) ;        
         #img-product-home{
             margin-top: 0vh ;
             .img-product-home{
-                @include size(330px,auto) ;        
+                @include size(200px,auto) ;        
             }
             .btn-buynow{
-                @include positionButtonBuyNow(90%) ;
+                @include positionButtonBuyNow(80%) ;
             }
         }
     }
@@ -250,10 +595,38 @@
             margin-bottom: 5vh;
         }
     }
+    #i3{
+        .title{
+            letter-spacing: 0.04em;
+            &:nth-child(odd){
+             font-size: 40px;
+            }
+            &:nth-child(even){
+             font-size: 90px;
+            }
+        } 
+     }
     #i4{
         .mascot{
-            height: 100px;
-            width: 100px;
+            @include sizeSquare(150px)
+        }
+        .mascot1{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 20% ;
+        }
+        .mascot2{
+            top : auto;
+            right: auto ;               
+            bottom : 95%;
+            left : 40% ;
+        }
+        .mascot3{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 65% ;
         }
     }
     #i5{
@@ -275,23 +648,28 @@
 }
 
 /* Extra Small */
-@media screen and (max-width: $screenExtraSmall) {
+@media only screen and (max-width: $screenExtraSmall) {
     .img-product{
         position: absolute;
         z-index : 100;
         margin-bottom: 5vh;
         top: auto;
-        left: auto;
+        left: 60%;
         bottom: 5%;
-        right: 5%;
-        @include size(300px,150px) ;        
+        right: 0;
+        @include size(160px,auto) ;        
         #img-product-home{
             margin-top: 0vh ;
             .img-product-home{
-                @include size(300px,150px) ;        
+                @include size(160px,auto) ;        
             }
             .btn-buynow{
-                @include positionButtonBuyNow(90%) ;
+                @include positionButtonBuyNow(80%) ;
+                button{
+                    font-size: 8px ;
+                    padding-top : 3vh !important;
+                    padding-bottom :3vh !important;
+                }
             }
         }
     }
@@ -302,14 +680,38 @@
             font-size: 1rem;
         }
         .title{
+            margin-top: 10vh;
             font-size: 80px ;
             line-height: 100px;
         }        
     } 
+    #i2{
+        h1{
+            font-size: 45px;
+            line-height: 68px;
+            margin-bottom: 5vh;
+        }
+    }
     #i4{
         .mascot{
             height: 100px;
             width: 250px;
+        }
+    }
+    #i5{
+        .title{
+            font-size: 60px ;
+            span{
+                position: relative ;
+                font-size: 32px;
+                font-family: Cooper-Lt-BT-Light ;
+                @include positionButtonBuyNow(80%) ;
+                width : 370px;
+                left : 0 ;
+                top : 10vh ;
+                line-height:10vh ;
+                text-align: left
+            }
         }
     }
 }

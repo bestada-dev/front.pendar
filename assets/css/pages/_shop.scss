@@ -1,16 +1,74 @@
 #s1{
-    .card-body {
+    color : $colorBandung ;
+    .card-body-buttonIndicator {
+        padding: 1vh 1vh 0vh 1vh ;
         .img-shop-indicator{
             display: none;
         }
+        cursor: pointer ;
     } 
+    .img-product-shop{
+        height: 570px ;
+        width: auto;
+    }
+    .active-buttonIndicator{
+        border: 2px solid $colorBasic ;
+    }
+    .buttonIndicatorBandung{
+        background-color: $backgroundBandung ;
+        p {
+            color : $colorBandung ;
+        }        
+    }
+    .buttonIndicatorJogja{
+        background-color: $backgroundJogja ;
+        p {
+            color : $colorJogja ;
+        }
+    }
+    .buttonIndicatorBali{
+        background-color: $backgroundBali ;
+        p{
+            color : $colorBali ;
+        }
+    }
+    #descriptionShopBandung{
+        display: block;
+    }
+    #descriptionShopJogja{
+        display: none;
+    }
+    #descriptionShopBali{
+        display: none;
+    }
 } 
 #s3{
     img{
         width: 100% ;
         height: auto ;
     }
+    h1{
+        font-size: 140px ;
+    }
+    .subtitle-whatInside{
+        position: absolute ;
+        top : 15% ;
+        left : 70% ;
+    }
+    .testi-shop{
+        &:nth-child(odd){
+            transform: rotate(3.21deg);
+        }
+        &:nth-child(even){
+            transform: rotate(-3.75deg);
+        }    
+    }
 } 
+#s4{
+    .title{
+        font-size: 140px ;
+    }
+}
 .img-product-shop-accordion{
     @include sizeSquare(140px);
 }
@@ -29,17 +87,17 @@
     margin-bottom : 5vh
 }
 /* Extra Large */
-@media screen  and (max-width: $screenExtraLarge){
+@media only screen  and (max-width: $screenExtraLarge){
     .img-product-shop-accordion{
         @include sizeSquare(120px);
     }
 }
 /* Large */
-@media screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
+@media only screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
 
 }
 /* Medium */
-@media screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+@media only screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
     .img-product-shop-accordion{
         @include sizeSquare(80px);
     }
@@ -53,7 +111,7 @@
 }
 
 /* Small */
-@media screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
+@media only screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
     .img-product-shop-accordion{
         @include sizeSquare(80px);
     }
@@ -73,7 +131,7 @@
 }
 
 /* Extra Small */
-@media screen and (max-width: $screenExtraSmall) {
+@media only screen and (max-width: $screenExtraSmall) {
     .img-product-shop-accordion{
         @include sizeSquare(80px);
     }
