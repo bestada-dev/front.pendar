@@ -59,9 +59,9 @@ const colorBali = '#615428'
 function onReady(callback) {
     var intervalId = window.setInterval(function() {
         for(let i = 0 ; i < 120 ; i++) {
-            $('.preloadImageContainer').prepend(`<img id="preloadImage" src="/assets/images/product360/Bali/${i}.png)" />`)
-            $('.preloadImageContainer').prepend(`<img id="preloadImage" src="/assets/images/product360/Bandung/${i}.png)" />`)
-            $('.preloadImageContainer').prepend(`<img id="preloadImage" src="/assets/images/product360/Jogja/${i}.png)" />`)
+            $('.preloadImageContainer').prepend(`<img class="preloadImage" src="assets/images/product360/Bali/${i}.png" />`)
+            $('.preloadImageContainer').prepend(`<img class="preloadImage" src="assets/images/product360/Bandung/${i}.png" />`)
+            $('.preloadImageContainer').prepend(`<img class="preloadImage" src="assets/images/product360/Jogja/${i}.png" />`)
         }
         if (document.getElementsByTagName('body')[0] !== undefined) {
             window.clearInterval(intervalId);

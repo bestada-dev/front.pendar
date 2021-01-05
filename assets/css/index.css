@@ -11,11 +11,6 @@ header {
   width: 0;
 }
 
-.preloadImageContainer .preloadImage {
-  height: 0;
-  width: 0;
-}
-
 body {
   color: #FFFFFF;
   overflow-x: hidden;
