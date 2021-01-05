@@ -17,7 +17,35 @@
     height: 100vh ;
     justify-content: center;
     align-items: center;
-    letter-spacing: 0.2rem;
+    .loading-logo{
+        width: 15vh;
+        height: auto;
+    }
+    $offset : -30px;
+    $count : 40;
+    $duration : 0.3;
+    
+    @keyframes wave {
+      from { transform : translateY(0); color: white; }
+      to   { transform : translateY( $offset ); }
+    }
+    
+    .wavetext span {
+      display: inline-block;
+      animation-duration: #{$duration}s;
+      animation-name: wave;
+      letter-spacing: 0.3rem;
+      animation-iteration-count: infinite;
+      animation-direction: alternate;
+    }
+    
+    
+    @for $i from 0 to $count {
+      .wavetext :nth-child( #{$count}n + #{$i} ) {
+          animation-delay : 
+            -#{($count - $i) * 2 * $duration / $count }s;    
+      }
+    }
 }
 .content{
     display: none;

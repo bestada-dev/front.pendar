@@ -56,6 +56,16 @@ const colorJogja = '#854A00'
 const backgroundBali = '#A37100'
 const colorBali = '#615428'
 
+var text = "Loading...";
+
+for(var i in text) { 
+  if(text[i] === " ") {
+    $(".wavetext").append( $("<span>").html("&nbsp;") ); 
+  } else {  
+    $(".wavetext").append( $("<span>").text(text[i]) ); 
+  }
+}
+
 function onReady(callback) {
     var intervalId = window.setInterval(function() {
         for(let i = 0 ; i < 120 ; i++) { 
