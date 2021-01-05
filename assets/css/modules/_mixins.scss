@@ -18,9 +18,13 @@ section{
 header{
     padding-top: 5vh;
 }
-.preloadImage{
+.preloadImageContainer{
     height: 0;
-    width:0
+    width:0 ;
+    .preloadImage{
+        height: 0;
+        width:0 ;
+    }
 }
 body{
     color: $textWhite;
