@@ -513,7 +513,7 @@ h2 {
 
 #i2 button:hover {
   background-color: white !important;
-  color: green;
+  color: #095A67;
 }
 
 #i2 .title-light {
@@ -560,7 +560,7 @@ h2 {
   top: auto;
   right: auto;
   bottom: 80%;
-  left: 20%;
+  left: 30%;
 }
 
 #i4 #mascotBandung1 {
@@ -576,10 +576,10 @@ h2 {
 }
 
 #i4 .mascot2 {
-  top: auto;
+  top: 50%;
   right: auto;
   bottom: auto;
-  left: 20%;
+  left: 25%;
 }
 
 #i4 #mascotBandung2 {
@@ -597,8 +597,8 @@ h2 {
 #i4 .mascot3 {
   top: auto;
   right: auto;
-  bottom: auto;
-  left: 60%;
+  bottom: 90%;
+  left: 55%;
 }
 
 #i4 #mascotBandung3 {
@@ -636,7 +636,7 @@ h2 {
 
 #i4 .destination-wrapper #destinationBandung1 {
   width: 70vh;
-  opacity: 1;
+  opacity: 0.8;
 }
 
 #i4 .destination-wrapper #destinationJogja1 {
@@ -648,20 +648,24 @@ h2 {
 }
 
 #i4 .destination-wrapper #destinationBandung2 {
-  margin-left: 45vh;
-  opacity: 1;
+  padding-top: 10%;
+  margin-left: 50%;
+  opacity: 0.8;
 }
 
 #i4 .destination-wrapper #destinationJogja2 {
+  right: 20%;
   opacity: 0;
 }
 
 #i4 .destination-wrapper #destinationBali2 {
+  right: 20%;
   opacity: 0;
 }
 
 #i4 .destination-wrapper #destinationBandung3 {
-  opacity: 1;
+  margin-left: 25%;
+  opacity: 0.8;
 }
 
 #i4 .destination-wrapper #destinationJogja3 {
@@ -673,7 +677,7 @@ h2 {
 }
 
 #i4 .row:nth-child(2) {
-  margin-top: 5vh;
+  margin-top: 25vh;
 }
 
 #i4 .destination {
@@ -682,18 +686,26 @@ h2 {
 }
 
 #i4 .textPlace {
-  height: 20vh;
+  height: 50vh;
+  position: absolute;
+  width: 40vh;
 }
 
 #i4 .textPlace .textPlace-wrap {
-  margin-top: 20vh;
-  bottom: 0.5vh;
   line-height: 7vh;
   position: absolute;
 }
 
 #i4 .textPlace .textPlace-wrap .subtitle-light {
   line-height: 30px;
+}
+
+#i4 .textPlace .textPlace-wrap-benefit {
+  bottom: 40%;
+}
+
+#i4 .textPlace .textPlace-wrap-city {
+  bottom: 60%;
 }
 
 #i4 .textPlace .wrap-text-bandung {
@@ -750,16 +762,16 @@ h2 {
 }
 
 .img-product #img-product-home .btn-buynow button {
-  border: 2px solid #333333;
-  background-color: #FFFFFF;
-  color: #333333;
+  border: 2px solid #235E50;
+  background-color: #C6EBCA;
+  color: #235E50;
   font-weight: 900;
   font-family: Cooper-Blk-BT;
 }
 
 .img-product #img-product-home .btn-buynow button:hover {
-  background-color: #333333;
-  color: #FFFFFF;
+  background-color: #235E50;
+  color: #C6EBCA;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }

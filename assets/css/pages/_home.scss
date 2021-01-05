@@ -11,7 +11,7 @@
         color : white;
         &:hover{
             background-color: white !important;
-            color: green ; 
+            color: $colorBandung ; 
         }
     }
     .title-light{
@@ -49,7 +49,7 @@
         top : auto;
         right: auto ;               
         bottom : 80%;
-        left : 20% ;
+        left : 30% ;
     }
     #mascotBandung1{
         opacity: 1 ;
@@ -61,10 +61,10 @@
         opacity: 0 ;
     }
     .mascot2{
-        top : auto;
+        top : 50%;
         right: auto ;               
         bottom : auto;
-        left : 20% ;
+        left : 25% ;
     }
     #mascotBandung2{
         opacity: 1 ;
@@ -78,8 +78,8 @@
     .mascot3{
         top : auto;
         right: auto ;               
-        bottom : auto;
-        left : 60% ;
+        bottom : 90%;
+        left : 55% ;
     }
     #mascotBandung3{
         opacity: 1 ;
@@ -103,7 +103,7 @@
         }
         #destinationBandung1{
             width : 70vh ;
-            opacity: 1 ;
+            opacity: 0.8 ;
         }
         #destinationJogja1{
             opacity: 0 ;
@@ -112,17 +112,21 @@
             opacity: 0 ;
         }
         #destinationBandung2{
-            margin-left: 45vh;
-            opacity: 1 ;
+            padding-top : 10% ;
+            margin-left: 50%;
+            opacity: 0.8 ;
         }
         #destinationJogja2{
+            right: 20%;
             opacity: 0 ;
         }
         #destinationBali2{
+            right: 20%;
             opacity: 0 ;
         }
         #destinationBandung3{
-            opacity: 1 ;
+            margin-left: 25%;
+            opacity: 0.8 ;
         }
         #destinationJogja3{
             opacity: 0 ;
@@ -133,7 +137,7 @@
     }
     .row{
         &:nth-child(2){
-            margin-top: 5vh
+            margin-top: 25vh
         }
     }
     .destination{
@@ -141,15 +145,21 @@
         width: 100% ;
     }
     .textPlace{
-        height: 20vh ;
+        height: 50vh ;
+        position: absolute;
+        width: 40vh;
         .textPlace-wrap{
-            margin-top: 20vh ;
-            bottom : 0.5vh ;
             line-height: 7vh;
             position: absolute ;
             .subtitle-light{
                 line-height: 30px;
             }
+        }
+        .textPlace-wrap-benefit{
+            bottom: 40% ;
+        }
+        .textPlace-wrap-city{
+            bottom: 60% ;
         }
         .wrap-text-bandung{
             opacity: 1 ;
@@ -189,14 +199,14 @@
             position: absolute;
             z-index: 10;
             button {
-                border: 2px solid $textDark;    
-                background-color: $textWhite ;
-                color : $textDark ;
+                border: 2px solid $colorButtonBuy;    
+                background-color: $backgroundButtonBuy ;
+                color : $colorButtonBuy ;
                 font-weight: 900;
                 font-family: Cooper-Blk-BT ;
                 &:hover {
-                    background-color: $textDark ;
-                    color : $textWhite ;
+                    background-color: $colorButtonBuy ;
+                    color : $backgroundButtonBuy ;
                     transition : 0.5s
                 }
             } 

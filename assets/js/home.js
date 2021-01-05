@@ -10,7 +10,7 @@ const rotateAnimationHide = {
 const rotateAnimationShow = {
     css:{
         scale:1, 
-        opacity:1, 
+        opacity:0.8, 
         rotation: 0
     }, 
     ease:Quad.easeInOut
