@@ -10,3 +10,15 @@
 @import './pages/home' ;
 @import './pages/shop' ;
 @import './pages/about' ;
+
+
+.loading {
+    display: flex;
+    height: 100vh ;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 0.2rem;
+}
+.content{
+    display: none;
+}

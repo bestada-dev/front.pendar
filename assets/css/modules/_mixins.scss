@@ -18,6 +18,10 @@ section{
 header{
     padding-top: 5vh;
 }
+.preloadImage{
+    height: 0;
+    width:0
+}
 body{
     color: $textWhite;
     overflow-x : hidden;

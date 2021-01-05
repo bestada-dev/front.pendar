@@ -55,3 +55,25 @@ const backgroundJogja = '#FFDFB6'
 const colorJogja = '#854A00'
 const backgroundBali = '#A37100'
 const colorBali = '#615428'
+
+function onReady(callback) {
+    var intervalId = window.setInterval(function() {
+        for(let i = 0 ; i < 120 ; i++) {
+            $('.preloadImage').css("background-image", `url(/assets/images/product360/Bali/${i}.png)`);  
+            $('.preloadImage').css("background-image", `url(/assets/images/product360/Bandung/${i}.png)`);  
+            $('.preloadImage').css("background-image", `url(/assets/images/product360/Jogja/${i}.png)`);  
+        }
+        if (document.getElementsByTagName('body')[0] !== undefined) {
+            window.clearInterval(intervalId);
+            callback.call(this);
+        }
+    }, 3000);
+  }
+  function setVisible(selector, visible) {
+    document.querySelector(selector).style.display = visible ? 'block' : 'none';
+  }
+  
+  onReady(function() {
+    setVisible('.content', true);
+    setVisible('.loading', false);
+  });

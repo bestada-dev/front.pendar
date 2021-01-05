@@ -6,6 +6,11 @@ header {
   padding-top: 5vh;
 }
 
+.preloadImage {
+  height: 0;
+  width: 0;
+}
+
 body {
   color: #FFFFFF;
   overflow-x: hidden;
@@ -1598,5 +1603,23 @@ h2 {
   #a1 .title {
     font-size: 40px;
   }
+}
+
+.loading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 100vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  letter-spacing: 0.2rem;
+}
+
+.content {
+  display: none;
 }
 /*# sourceMappingURL=index.css.map */
