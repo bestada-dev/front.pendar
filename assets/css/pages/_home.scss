@@ -78,8 +78,8 @@
     .mascot3{
         top : auto;
         right: auto ;               
-        bottom : 90%;
-        left : 55% ;
+        bottom : 80% ;
+        left : 10% ;
     }
     #mascotBandung3{
         opacity: 1 ;
@@ -91,7 +91,7 @@
         opacity: 0 ;
     }
     .destination-wrapper {
-        margin-top:20% ;
+        margin-top:22% ;
         display: flex ;
         flex-direction: column;
         justify-content: flex-end;
@@ -112,12 +112,11 @@
             opacity: 0 ;
         }
         #destinationBandung2{
-            padding-top : 10% ;
             margin-left: 50%;
             opacity: 0.8 ;
         }
         #destinationJogja2{
-            right: 20%;
+            right: 30%;
             opacity: 0 ;
         }
         #destinationBali2{
@@ -219,9 +218,14 @@
         }
     }
 }
-.sosial-media img{
-    @include size(auto,100%) ;
-}
+.sosial-media {
+    #tokped-sosmed{
+        @include size(auto,100%);
+    }
+    img{
+        @include sizeSquare(5vh) ;
+    }
+} 
 .testi{
     border-radius: 10px;
     color: $textDark;
@@ -312,14 +316,33 @@
             font-size: 20px ; 
         }
         .destination-wrapper {
-            margin-top:25% ;
-        }
-        .textPlace{
-            .textPlace-wrap{
-                margin-top: 10vh ;
-                bottom : 2vh ;
+            margin-top:28% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
+            #destinationBandung2{
+                margin-left: 35vh;
+                opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 15%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 10%;
+                opacity: 0 ;
             }
         }
+        // .textPlace{
+        //     .textPlace-wrap{
+        //         margin-top: 10vh ;
+        //         bottom : 2vh ;
+        //     }
+        // }
     }    
     #i5{
         .title{
@@ -338,7 +361,7 @@
 @media only screen  and (max-width: $screenExtraLarge){
     .img-product{
         #img-product-home{
-            margin-top: 5vh ;
+            margin-top: 0vh ;
             .btn-buynow{
                 @include positionButtonBuyNow(95%) ;
             }
@@ -353,7 +376,13 @@
     
     #i3{
         .title{
-            font-size: 120px;
+            letter-spacing: 0.04em;
+            &:nth-child(odd){
+             font-size: 60px;
+            }
+            &:nth-child(even){
+             font-size: 110px;
+            }
         } 
     }
 
@@ -366,6 +395,14 @@
             left: 0 ;
             top : 0;
             font-size: 30px
+        }
+    }
+    #i6{
+        .title{
+            font-size:50px
+        }
+        .title-light{
+            font-size:35px
         }
     }
 }
@@ -403,23 +440,34 @@
             transition: 0.5s ;
         }
         .destination-wrapper {
-            margin-top:35% ;
+            margin-top:50% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
             #destinationBandung1{
-                width : 30vh ;
+                width : 40vh ;
             }
             #destinationBandung2{
                 margin-left: 25vh;
                 opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 15%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 10%;
+                opacity: 0 ;
             }
         }
         .row{
             &:nth-child(2){
                 margin-top: 5vh
             }
-        }
-        .destination{
-            max-height: 334px ;
-            width: 100% ;
         }
         .title {
             font-size : 52px
@@ -433,12 +481,12 @@
         .subtitle-light {
             font-size: 20px ; 
         }
-        .textPlace{
-            .textPlace-wrap{
-                margin-top: 15vh ;
-                bottom : 2vh ;
-            }
-        }
+        // .textPlace{
+        //     .textPlace-wrap{
+        //         margin-top: 15vh ;
+        //         bottom : 2vh ;
+        //     }
+        // }
         .mascot1{
             top : auto;
             right: auto ;               
@@ -513,23 +561,34 @@
             transition: 0.5s ;
         }
         .destination-wrapper {
-            margin-top:40% ;
+            margin-top:60% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
             #destinationBandung1{
-                width : 30vh ;
+                width : 40vh ;
             }
             #destinationBandung2{
-                margin-left: 20vh;
+                margin-left: 25vh;
                 opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 10%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 5%;
+                opacity: 0 ;
             }
         }
         .row{
             &:nth-child(2){
                 margin-top: 5vh
             }
-        }
-        .destination{
-            max-height: 334px ;
-            width: 100% ;
         }
         .title {
             font-size : 52px
@@ -544,11 +603,12 @@
             font-size: 15px ; 
         }
         .textPlace{
-            .textPlace-wrap{
-                margin-top: 25vh ;
-                bottom : 0vh ;
-                line-height: 6vh;
-            }
+            width: 30vh ;
+            // .textPlace-wrap{
+            //     margin-top: 25vh ;
+            //     bottom : 0vh ;
+            //     line-height: 6vh;
+            // }
         }
         .mascot1{
             top : auto;
@@ -617,14 +677,15 @@
         } 
      }
     #i4{
+        padding-top: 20vh ;
         .mascot{
             @include sizeSquare(150px)
         }
         .mascot1{
             top : auto;
             right: auto ;               
-            bottom : 80%;
-            left : 20% ;
+            bottom : 92%;
+            left : 10% ;
         }
         .mascot2{
             top : auto;
@@ -638,6 +699,58 @@
             bottom : 80%;
             left : 65% ;
         }
+        .title {
+            font-size : 38px
+        }
+        .outline {
+            font-size: 38px;
+        }
+        .subtitle {
+            font-size: 15px ; 
+        }
+        .subtitle-light {
+            font-size: 15px ; 
+        }
+        .textPlace{
+            height: 20vh;
+            .textPlace-wrap {
+                line-height: 3vh; 
+                position: absolute;
+                // p{
+                //     margin-bottom: 3rem ;
+                // }
+            }    
+            .textPlace-wrap-benefit{
+                top : 20% ;
+            }
+    
+        }
+        .destination-wrapper {
+            margin-top:63% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
+            #destinationBandung1{
+                width : 40vh ;
+            }
+            #destinationBandung2{
+                margin-left: 25vh;
+                opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 10%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 5%;
+                opacity: 0 ;
+            }
+        }
+
     }
     #i5{
         .title{
@@ -658,7 +771,7 @@
 }
 
 /* Extra Small */
-@media only screen and (max-width: $screenExtraSmall) {
+@media only screen and (min-width: $screenMaxSmall) and (max-width: $screenExtraSmall) {
     .img-product{
         position: absolute;
         z-index : 100;
@@ -676,7 +789,7 @@
             .btn-buynow{
                 @include positionButtonBuyNow(80%) ;
                 button{
-                    font-size: 8px ;
+                    font-size: 11px ;
                     padding-top : 3vh !important;
                     padding-bottom :3vh !important;
                 }
@@ -702,11 +815,92 @@
             margin-bottom: 5vh;
         }
     }
+    #i3{
+        .title{
+            letter-spacing: 0.04em;
+            &:nth-child(odd){
+             font-size: 40px;
+            }
+            &:nth-child(even){
+             font-size: 90px;
+            }
+        } 
+     }
     #i4{
+        padding-top: 20vh ;
         .mascot{
-            height: 100px;
-            width: 250px;
+            @include sizeSquare(150px)
         }
+        .mascot1{
+            top : auto;
+            right: auto ;               
+            bottom : 92%;
+            left : 10% ;
+        }
+        .mascot2{
+            top : auto;
+            right: auto ;               
+            bottom : 95%;
+            left : 40% ;
+        }
+        .mascot3{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 65% ;
+        }
+        .title {
+            font-size : 38px
+        }
+        .outline {
+            font-size: 38px;
+        }
+        .subtitle {
+            font-size: 15px ; 
+        }
+        .subtitle-light {
+            font-size: 15px ; 
+        }
+        .textPlace{
+            height: 20vh;
+            .textPlace-wrap {
+                line-height: 3vh; 
+                position: absolute;
+                // p{
+                //     margin-bottom: 3rem ;
+                // }
+            }    
+            .textPlace-wrap-benefit{
+                top : 20% ;
+            }
+    
+        }
+        .destination-wrapper {
+            margin-top:80% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
+            #destinationBandung1{
+                width : 20vh ;
+            }
+            #destinationBandung2{
+                margin-left: 15vh;
+                opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 10%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 5%;
+                opacity: 0 ;
+            }
+        }
+
     }
     #i5{
         .title{
@@ -722,6 +916,165 @@
                 line-height:10vh ;
                 text-align: left
             }
+        }
+    }
+    #i6{
+        .title{
+            font-size:40px
+        }
+    }
+}
+
+@media only screen and (max-width: $screenMaxSmall) {
+    .img-product{
+        position: absolute;
+        z-index : 100;
+        margin-bottom: 5vh;
+        top: auto;
+        left: 60%;
+        bottom: 5%;
+        right: 0;
+        @include size(160px,auto) ;        
+        #img-product-home{
+            margin-top: 0vh ;
+            .img-product-home{
+                @include size(160px,auto) ;        
+            }
+            .btn-buynow{
+                @include positionButtonBuyNow(80%) ;
+                button{
+                    font-size: 11px ;
+                    padding-top : 3vh !important;
+                    padding-bottom :3vh !important;
+                }
+            }
+        }
+    }
+    #i1{
+        button{
+            padding-right : 2vh !important;
+            padding-left : 2vh !important;
+            font-size: 1rem;
+        }
+        .title{
+            margin-top: 10vh;
+            font-size: 80px ;
+            line-height: 100px;
+        }        
+    } 
+    #i2{
+        h1{
+            font-size: 45px;
+            line-height: 68px;
+            margin-bottom: 5vh;
+        }
+    }
+    #i3{
+        .title{
+            letter-spacing: 0.04em;
+            &:nth-child(odd){
+             font-size: 25px;
+            }
+            &:nth-child(even){
+             font-size: 60px;
+            }
+        } 
+     }
+    #i4{
+        padding-top: 20vh ;
+        .mascot{
+            @include sizeSquare(150px)
+        }
+        .mascot1{
+            top : auto;
+            right: auto ;               
+            bottom : 92%;
+            left : 10% ;
+        }
+        .mascot2{
+            top : auto;
+            right: auto ;               
+            bottom : 95%;
+            left : 40% ;
+        }
+        .mascot3{
+            top : auto;
+            right: auto ;               
+            bottom : 80%;
+            left : 65% ;
+        }
+        .title {
+            font-size : 38px
+        }
+        .outline {
+            font-size: 38px;
+        }
+        .subtitle {
+            font-size: 15px ; 
+        }
+        .subtitle-light {
+            font-size: 15px ; 
+        }
+        .textPlace{
+            height: 20vh;
+            .textPlace-wrap {
+                line-height: 3vh; 
+                position: absolute;
+                // p{
+                //     margin-bottom: 3rem ;
+                // }
+            }    
+            .textPlace-wrap-benefit{
+                top : 20% ;
+            }
+    
+        }
+        .destination-wrapper {
+            margin-top:80% ;
+            .destination{
+                max-height: 334px ;
+                width: 100% ;
+            }
+            #destinationBandung1{
+                width : 20vh ;
+            }
+            #destinationBandung2{
+                margin-left: 15vh;
+                opacity: 1 ;
+            }
+            #destinationBandung3{
+                width : 30vh ;
+            }
+            #destinationJogja2{
+                right: 10%;
+                opacity: 0 ;
+            }
+            #destinationBali2{
+                right: 5%;
+                opacity: 0 ;
+            }
+        }
+
+    }
+    #i5{
+        .title{
+            font-size: 60px ;
+            span{
+                position: relative ;
+                font-size: 32px;
+                font-family: Cooper-Lt-BT-Light ;
+                @include positionButtonBuyNow(80%) ;
+                width : 370px;
+                left : 0 ;
+                top : 10vh ;
+                line-height:10vh ;
+                text-align: left
+            }
+        }
+    }
+    #i6{
+        .title{
+            font-size:40px
         }
     }
 }

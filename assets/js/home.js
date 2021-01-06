@@ -149,31 +149,49 @@ $window.scroll(function() {
           }else{
             $product.css({top: scrollTopExtraLarge});    
           }
-    }else if($(window).width() >= medium && $(window).width() <= extraLarge){
+    }else if($(window).width() >= large && $(window).width() <= extraLarge){
         if (scrollTop >= 0 && scrollTop <= scrollTopSmall-20) {
                 $product.css({top: 0 + scrollTop});    
                 $product.css({left: 0 + scrollTop});    
           }else if(scrollTop >= scrollTopSmall-20 && scrollTop <= scrollTopMedium){
                 $product.css({left: leftMedium});    
                 $product.css({top: scrollTop});    
-          }else if(scrollTop >= scrollTopMedium && scrollTop <= scrollTopLarge){
+          }else if(scrollTop >= scrollTopMedium && scrollTop <= scrollTopLarge-150){
                 $product.css({left: leftMedium+scrollTop-scrollTopMedium});    
                 $product.css({top: scrollTop}); 
-                console.log(leftMedium+scrollTop-scrollTopMedium,'total')   
           }
-          else if(scrollTop >= scrollTopLarge && scrollTop <= scrollTopExtraLarge){
-                $product.css({left: leftLarge}); 
+          else if(scrollTop >= scrollTopLarge-150 && scrollTop <= scrollTopExtraLarge){
+                $product.css({left: leftLarge-150}); 
                 $product.css({top: scrollTop});    
           }else{
-                $product.css({top: scrollTopExtraLarge});    
+                $product.css({top: scrollTopExtraLarge-50});    
           }
-    }else if($(window).width() <= medium && $(window).width() >= 758){
+    }else if($(window).width() >= medium && $(window).width() <= large){
+        if (scrollTop >= 0 && scrollTop <= scrollTopSmall-170) {
+                $product.css({top: 0 + scrollTop});    
+                $product.css({left: 0 + scrollTop});    
+          }else if(scrollTop >= scrollTopSmall-170 && scrollTop <= scrollTopMedium-500){
+                $product.css({left: leftMedium-150});    
+                $product.css({top: scrollTop});    
+          }else if(scrollTop >= scrollTopMedium-500 && scrollTop <= scrollTopLarge-800){
+              console.log(leftMedium+scrollTop-scrollTopMedium+450,'halo')
+                $product.css({left: leftMedium+scrollTop-scrollTopMedium+450});    
+                $product.css({top: scrollTop}); 
+          }
+          else if(scrollTop >= scrollTopLarge-800 && scrollTop <= scrollTopExtraLarge-200){
+                $product.css({left: leftLarge-350}); 
+                $product.css({top: scrollTop});    
+          }else{
+                $product.css({top: scrollTopExtraLarge-200});    
+          }
+    }
+    else if($(window).width() <= medium && $(window).width() >= 758){
         if (scrollTop >= 0 && scrollTop <= scrollTopExtraSmall) {
             $product.css({top: 0 + scrollTop});    
             $product.css({left: 0 + scrollTop});    
           }
           else if(scrollTop >= scrollTopExtraSmall && scrollTop <= scrollTopMedium-300){
-              $product.css({left: scrollTopExtraSmall+30});    
+              $product.css({left: leftMedium-200});    
               $product.css({top: scrollTop});    
           }
           else{
@@ -181,10 +199,10 @@ $window.scroll(function() {
               $product.css({top: scrollTopMedium-300});    
           }
     }else{
-        if(scrollTop <= scrollTopExtraLarge+300){
+        if(scrollTop <= scrollTopExtraLarge){
             $productMobile.css({top: scrollTopMobile });    
         }else{
-            $productMobile.css({top: scrollTopExtraLarge+300});    
+            $productMobile.css({top: scrollTopExtraLarge});    
         }
     }
 

@@ -162,6 +162,13 @@ h2 {
 }
 
 /* Font */
+/* Super Extra Large */
+@media only screen and (max-width: 1550px) {
+  .before-footer .title {
+    font-size: 125px;
+  }
+}
+
 /* Large */
 @media only screen and (min-width: 992px) and (max-width: 1140px) {
   h1 {
@@ -597,8 +604,8 @@ h2 {
 #i4 .mascot3 {
   top: auto;
   right: auto;
-  bottom: 90%;
-  left: 55%;
+  bottom: 80%;
+  left: 10%;
 }
 
 #i4 #mascotBandung3 {
@@ -614,7 +621,7 @@ h2 {
 }
 
 #i4 .destination-wrapper {
-  margin-top: 20%;
+  margin-top: 22%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -648,13 +655,12 @@ h2 {
 }
 
 #i4 .destination-wrapper #destinationBandung2 {
-  padding-top: 10%;
   margin-left: 50%;
   opacity: 0.8;
 }
 
 #i4 .destination-wrapper #destinationJogja2 {
-  right: 20%;
+  right: 30%;
   opacity: 0;
 }
 
@@ -785,9 +791,14 @@ h2 {
           animation: pulse 2s infinite;
 }
 
-.sosial-media img {
+.sosial-media #tokped-sosmed {
   height: auto;
   width: 100%;
+}
+
+.sosial-media img {
+  height: 5vh;
+  width: 5vh;
 }
 
 .testi {
@@ -898,11 +909,26 @@ h2 {
     font-size: 20px;
   }
   #i4 .destination-wrapper {
-    margin-top: 25%;
+    margin-top: 28%;
   }
-  #i4 .textPlace .textPlace-wrap {
-    margin-top: 10vh;
-    bottom: 2vh;
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
+  }
+  #i4 .destination-wrapper #destinationBandung2 {
+    margin-left: 35vh;
+    opacity: 1;
+  }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 15%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 10%;
+    opacity: 0;
   }
   #i5 .title {
     font-size: 100px;
@@ -917,7 +943,7 @@ h2 {
 /* Extra Large */
 @media only screen and (max-width: 1200px) {
   .img-product #img-product-home {
-    margin-top: 5vh;
+    margin-top: 0vh;
   }
   .img-product #img-product-home .btn-buynow {
     top: 95%;
@@ -930,7 +956,13 @@ h2 {
     line-height: 140px;
   }
   #i3 .title {
-    font-size: 120px;
+    letter-spacing: 0.04em;
+  }
+  #i3 .title:nth-child(odd) {
+    font-size: 60px;
+  }
+  #i3 .title:nth-child(even) {
+    font-size: 110px;
   }
   #i5 .title {
     font-size: 80px;
@@ -940,6 +972,12 @@ h2 {
     left: 0;
     top: 0;
     font-size: 30px;
+  }
+  #i6 .title {
+    font-size: 50px;
+  }
+  #i6 .title-light {
+    font-size: 35px;
   }
 }
 
@@ -978,21 +1016,32 @@ h2 {
     transition: 0.5s;
   }
   #i4 .destination-wrapper {
-    margin-top: 35%;
+    margin-top: 50%;
+  }
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
   }
   #i4 .destination-wrapper #destinationBandung1 {
-    width: 30vh;
+    width: 40vh;
   }
   #i4 .destination-wrapper #destinationBandung2 {
     margin-left: 25vh;
     opacity: 1;
   }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 15%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 10%;
+    opacity: 0;
+  }
   #i4 .row:nth-child(2) {
     margin-top: 5vh;
-  }
-  #i4 .destination {
-    max-height: 334px;
-    width: 100%;
   }
   #i4 .title {
     font-size: 52px;
@@ -1005,10 +1054,6 @@ h2 {
   }
   #i4 .subtitle-light {
     font-size: 20px;
-  }
-  #i4 .textPlace .textPlace-wrap {
-    margin-top: 15vh;
-    bottom: 2vh;
   }
   #i4 .mascot1 {
     top: auto;
@@ -1079,21 +1124,32 @@ h2 {
     transition: 0.5s;
   }
   #i4 .destination-wrapper {
-    margin-top: 40%;
+    margin-top: 60%;
+  }
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
   }
   #i4 .destination-wrapper #destinationBandung1 {
-    width: 30vh;
+    width: 40vh;
   }
   #i4 .destination-wrapper #destinationBandung2 {
-    margin-left: 20vh;
+    margin-left: 25vh;
     opacity: 1;
+  }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 10%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 5%;
+    opacity: 0;
   }
   #i4 .row:nth-child(2) {
     margin-top: 5vh;
-  }
-  #i4 .destination {
-    max-height: 334px;
-    width: 100%;
   }
   #i4 .title {
     font-size: 52px;
@@ -1107,10 +1163,8 @@ h2 {
   #i4 .subtitle-light {
     font-size: 15px;
   }
-  #i4 .textPlace .textPlace-wrap {
-    margin-top: 25vh;
-    bottom: 0vh;
-    line-height: 6vh;
+  #i4 .textPlace {
+    width: 30vh;
   }
   #i4 .mascot1 {
     top: auto;
@@ -1175,6 +1229,9 @@ h2 {
   #i3 .title:nth-child(even) {
     font-size: 90px;
   }
+  #i4 {
+    padding-top: 20vh;
+  }
   #i4 .mascot {
     height: 150px;
     width: 150px;
@@ -1182,8 +1239,8 @@ h2 {
   #i4 .mascot1 {
     top: auto;
     right: auto;
-    bottom: 80%;
-    left: 20%;
+    bottom: 92%;
+    left: 10%;
   }
   #i4 .mascot2 {
     top: auto;
@@ -1196,6 +1253,53 @@ h2 {
     right: auto;
     bottom: 80%;
     left: 65%;
+  }
+  #i4 .title {
+    font-size: 38px;
+  }
+  #i4 .outline {
+    font-size: 38px;
+  }
+  #i4 .subtitle {
+    font-size: 15px;
+  }
+  #i4 .subtitle-light {
+    font-size: 15px;
+  }
+  #i4 .textPlace {
+    height: 20vh;
+  }
+  #i4 .textPlace .textPlace-wrap {
+    line-height: 3vh;
+    position: absolute;
+  }
+  #i4 .textPlace .textPlace-wrap-benefit {
+    top: 20%;
+  }
+  #i4 .destination-wrapper {
+    margin-top: 63%;
+  }
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
+  }
+  #i4 .destination-wrapper #destinationBandung1 {
+    width: 40vh;
+  }
+  #i4 .destination-wrapper #destinationBandung2 {
+    margin-left: 25vh;
+    opacity: 1;
+  }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 10%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 5%;
+    opacity: 0;
   }
   #i5 .title {
     font-size: 60px;
@@ -1217,7 +1321,7 @@ h2 {
 }
 
 /* Extra Small */
-@media only screen and (max-width: 576px) {
+@media only screen and (min-width: 500px) and (max-width: 576px) {
   .img-product {
     position: absolute;
     z-index: 100;
@@ -1243,7 +1347,7 @@ h2 {
     right: 0;
   }
   .img-product #img-product-home .btn-buynow button {
-    font-size: 8px;
+    font-size: 11px;
     padding-top: 3vh !important;
     padding-bottom: 3vh !important;
   }
@@ -1262,9 +1366,86 @@ h2 {
     line-height: 68px;
     margin-bottom: 5vh;
   }
+  #i3 .title {
+    letter-spacing: 0.04em;
+  }
+  #i3 .title:nth-child(odd) {
+    font-size: 40px;
+  }
+  #i3 .title:nth-child(even) {
+    font-size: 90px;
+  }
+  #i4 {
+    padding-top: 20vh;
+  }
   #i4 .mascot {
-    height: 100px;
-    width: 250px;
+    height: 150px;
+    width: 150px;
+  }
+  #i4 .mascot1 {
+    top: auto;
+    right: auto;
+    bottom: 92%;
+    left: 10%;
+  }
+  #i4 .mascot2 {
+    top: auto;
+    right: auto;
+    bottom: 95%;
+    left: 40%;
+  }
+  #i4 .mascot3 {
+    top: auto;
+    right: auto;
+    bottom: 80%;
+    left: 65%;
+  }
+  #i4 .title {
+    font-size: 38px;
+  }
+  #i4 .outline {
+    font-size: 38px;
+  }
+  #i4 .subtitle {
+    font-size: 15px;
+  }
+  #i4 .subtitle-light {
+    font-size: 15px;
+  }
+  #i4 .textPlace {
+    height: 20vh;
+  }
+  #i4 .textPlace .textPlace-wrap {
+    line-height: 3vh;
+    position: absolute;
+  }
+  #i4 .textPlace .textPlace-wrap-benefit {
+    top: 20%;
+  }
+  #i4 .destination-wrapper {
+    margin-top: 80%;
+  }
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
+  }
+  #i4 .destination-wrapper #destinationBandung1 {
+    width: 20vh;
+  }
+  #i4 .destination-wrapper #destinationBandung2 {
+    margin-left: 15vh;
+    opacity: 1;
+  }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 10%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 5%;
+    opacity: 0;
   }
   #i5 .title {
     font-size: 60px;
@@ -1282,6 +1463,157 @@ h2 {
     top: 10vh;
     line-height: 10vh;
     text-align: left;
+  }
+  #i6 .title {
+    font-size: 40px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .img-product {
+    position: absolute;
+    z-index: 100;
+    margin-bottom: 5vh;
+    top: auto;
+    left: 60%;
+    bottom: 5%;
+    right: 0;
+    height: 160px;
+    width: auto;
+  }
+  .img-product #img-product-home {
+    margin-top: 0vh;
+  }
+  .img-product #img-product-home .img-product-home {
+    height: 160px;
+    width: auto;
+  }
+  .img-product #img-product-home .btn-buynow {
+    top: 80%;
+    left: 80%;
+    bottom: 0;
+    right: 0;
+  }
+  .img-product #img-product-home .btn-buynow button {
+    font-size: 11px;
+    padding-top: 3vh !important;
+    padding-bottom: 3vh !important;
+  }
+  #i1 button {
+    padding-right: 2vh !important;
+    padding-left: 2vh !important;
+    font-size: 1rem;
+  }
+  #i1 .title {
+    margin-top: 10vh;
+    font-size: 80px;
+    line-height: 100px;
+  }
+  #i2 h1 {
+    font-size: 45px;
+    line-height: 68px;
+    margin-bottom: 5vh;
+  }
+  #i3 .title {
+    letter-spacing: 0.04em;
+  }
+  #i3 .title:nth-child(odd) {
+    font-size: 25px;
+  }
+  #i3 .title:nth-child(even) {
+    font-size: 60px;
+  }
+  #i4 {
+    padding-top: 20vh;
+  }
+  #i4 .mascot {
+    height: 150px;
+    width: 150px;
+  }
+  #i4 .mascot1 {
+    top: auto;
+    right: auto;
+    bottom: 92%;
+    left: 10%;
+  }
+  #i4 .mascot2 {
+    top: auto;
+    right: auto;
+    bottom: 95%;
+    left: 40%;
+  }
+  #i4 .mascot3 {
+    top: auto;
+    right: auto;
+    bottom: 80%;
+    left: 65%;
+  }
+  #i4 .title {
+    font-size: 38px;
+  }
+  #i4 .outline {
+    font-size: 38px;
+  }
+  #i4 .subtitle {
+    font-size: 15px;
+  }
+  #i4 .subtitle-light {
+    font-size: 15px;
+  }
+  #i4 .textPlace {
+    height: 20vh;
+  }
+  #i4 .textPlace .textPlace-wrap {
+    line-height: 3vh;
+    position: absolute;
+  }
+  #i4 .textPlace .textPlace-wrap-benefit {
+    top: 20%;
+  }
+  #i4 .destination-wrapper {
+    margin-top: 80%;
+  }
+  #i4 .destination-wrapper .destination {
+    max-height: 334px;
+    width: 100%;
+  }
+  #i4 .destination-wrapper #destinationBandung1 {
+    width: 20vh;
+  }
+  #i4 .destination-wrapper #destinationBandung2 {
+    margin-left: 15vh;
+    opacity: 1;
+  }
+  #i4 .destination-wrapper #destinationBandung3 {
+    width: 30vh;
+  }
+  #i4 .destination-wrapper #destinationJogja2 {
+    right: 10%;
+    opacity: 0;
+  }
+  #i4 .destination-wrapper #destinationBali2 {
+    right: 5%;
+    opacity: 0;
+  }
+  #i5 .title {
+    font-size: 60px;
+  }
+  #i5 .title span {
+    position: relative;
+    font-size: 32px;
+    font-family: Cooper-Lt-BT-Light;
+    top: 80%;
+    left: 80%;
+    bottom: 0;
+    right: 0;
+    width: 370px;
+    left: 0;
+    top: 10vh;
+    line-height: 10vh;
+    text-align: left;
+  }
+  #i6 .title {
+    font-size: 40px;
   }
 }
 

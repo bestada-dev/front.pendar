@@ -38,7 +38,7 @@
                                 <div class="text-right btn-buynow d-flex justify-content-center align-items-center">
                                     <div class="pulseButtonBuy rounded-circle">
                                     </div>
-                                    <button type="button" class="btn btn-lg pl-3 pr-3 pt-4 pb-4 rounded-circle shadow">BELI</button>    
+                                    <button type="button" class="btn btn-lg pl-3 pr-3 pt-4 pb-4 rounded-circle shadow" data-toggle="modal" data-target="#modalSelectOrder">BELI</button>    
                                 </div>
                             </div>
                         </div>
@@ -59,7 +59,7 @@
                             <h2>...Sambil jelajahi pesona kota Indonesia Kini dan nanti!</h2>
                             <p class="body-regular">Pernah terbayang mandi di Pantai Kuta tanpa harus ke bali? Sejuknya Lembang tanpa harus ke bandung? Atau romantisnya Malioboro tanpa harus ke Jogja? Sabun dan Shampo pendar hadir untuk menemani mandi mu agar lebih meaningfull dengan 45 kata mutiara dan sensasi kota setiap mandinya! Dijamin semakin mandi semakin MOOD lagi </p>
                             <div class="text-left">
-                                <button type="button" class="btn bg-transparent border border-white btn-lg">Pilih Kota Sekarang!</button>    
+                                <button type="button" class="btn bg-transparent border border-white btn-lg" data-toggle="modal" data-target="#modalSelectOrder">Pilih Kota Sekarang!</button>    
                             </div>
                         </div>
                     </div>
@@ -130,20 +130,20 @@
                         <img src="assets/images/characteristic/Bali/mascot2.svg" alt="Pendar" class="mascot mascot2" id="mascotBali2">
                     </div>
                 <div class="row d-flex">
-                    <div class="col-lg-1 col-md-1 destination-wrapper">
-                        <img src="assets/images/characteristic/Bandung/destination1.svg" alt="Pendar" class="destination" id="destinationBandung1">
+                    <div class="col-lg-1 col-md-1 col-sm-1 col-1 destination-wrapper">
+                        <img src="assets/images/characteristic/Bandung/destination1.png" alt="Pendar" class="destination" id="destinationBandung1">
                         <img src="assets/images/characteristic/Jogja/destination1.svg" alt="Pendar" class="destination" id="destinationJogja1">
                         <img src="assets/images/characteristic/Bali/destination1.svg" alt="Pendar" class="destination" id="destinationBali1">
                     </div>
-                    <div class="col-lg-5 col-md-5 destination-wrapper">
-                        <img src="assets/images/characteristic/Bandung/destination2.svg" alt="Pendar" class="destination" id="destinationBandung2">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-5 destination-wrapper">
+                        <img src="assets/images/characteristic/Bandung/destination2.png" alt="Pendar" class="destination" id="destinationBandung2">
                         <img src="assets/images/characteristic/Jogja/destination2.svg" alt="Pendar" class="destination" id="destinationJogja2">
                         <img src="assets/images/characteristic/Bali/destination2.svg" alt="Pendar" class="destination" id="destinationBali2">
                     </div>
-                    <div class="col-lg-4 col-md-4 destination-wrapper ml-auto">
+                    <div class="col-lg-4 col-md-4 col-sm-4 col-4 destination-wrapper ml-auto">
                         <img src="assets/images/characteristic/Bandung/destination3.svg" alt="Pendar" class="destination" id="destinationBandung3">
-                        <img src="assets/images/characteristic/Jogja/destination3.svg" alt="Pendar" class="destination" id="destinationJogja3">
-                        <img src="assets/images/characteristic/Bali/destination3.svg" alt="Pendar" class="destination" id="destinationBali3">
+                        <img src="assets/images/characteristic/Jogja/destination3.png" alt="Pendar" class="destination" id="destinationJogja3">
+                        <img src="assets/images/characteristic/Bali/destination3.png" alt="Pendar" class="destination" id="destinationBali3">
                     </div>
                 </div>   
             </section>
@@ -284,7 +284,7 @@
                             </div>
                             <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 m-2">
                                 <a href="#">
-                                    <img src="assets/images/icon/Tokped.svg" alt="Pendar">
+                                    <img src="assets/images/icon/Tokped.svg" alt="Pendar" id="tokped-sosmed">
                                 </a>
                             </div>
                         </div>
@@ -302,6 +302,42 @@
                 </div>
             </div>
         </footer>
+    </div>
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalSelectOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width : 100vh ; max-width : 100vh">
+        <div class="modal-content">
+            <div class="modal-header" style="border-bottom: 0px solid black ;">
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+            </button>
+            </div>
+            <div class="modal-body text-dark">
+                <h1 class="text-center">Pilih Kota</h1>
+                <div class="row mt-5 text-center">
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="container">
+                            <img src="assets/images/characteristic/Bandung/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <p class="subtitle"><strong>Bandung</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="container">
+                            <img src="assets/images/characteristic/Jogja/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <p class="subtitle"><strong>Jogja</strong></p>
+                        </div>
+                    </div>
+                    <div class="col-xl-4 col-lg-4 col-md-4">
+                        <div class="container">
+                            <img src="assets/images/characteristic/Bali/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <p class="subtitle"><strong>Bali</strong></p>
+                        </div>
+                    </div>                                        
+                </div>
+            </div>
+        </div>
+        </div>
     </div>
 </body>
 <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>

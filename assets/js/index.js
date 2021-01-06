@@ -31,6 +31,7 @@ const $accordionAbout4 = $("#accordionAbout4");
 
 // value widht screen
 const extraLarge = 1600
+const large = 1200
 const medium = 970
 const small = 250
 
@@ -56,6 +57,8 @@ const colorJogja = '#854A00'
 const backgroundBali = '#A37100'
 const colorBali = '#615428'
 
+
+// loading
 var text = "Loading...";
 
 for(var i in text) { 
@@ -68,6 +71,7 @@ for(var i in text) {
 
 function onReady(callback) {
     var intervalId = window.setInterval(function() {
+        // load all image 
         for(let i = 0 ; i < 120 ; i++) { 
             $('.preloadImageContainer').prepend(`<img class="preloadImage" src="assets/images/product360/Bali/${i}.png" />`)
             $('.preloadImageContainer').prepend(`<img class="preloadImage" src="assets/images/product360/Bandung/${i}.png" />`)
@@ -86,4 +90,18 @@ function onReady(callback) {
   onReady(function() {
     setVisible('.content', true);
     setVisible('.loading', false);
+  });
+
+
+  // reload when resize
+  jQuery(function($){
+    var windowWidth = $(window).width();
+    var windowHeight = $(window).height();
+  
+    $(window).resize(function() {
+      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+        location.reload();
+        return;
+      }
+    });
   });
