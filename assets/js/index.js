@@ -6,6 +6,10 @@ const $body = $("body");
 const $buttonBuy = $(".btn-buynow button");
 const $product360 = $('.img-product-home')
 
+const $titleBandung = $('#titleBandung')
+const $titleJogja = $('#titleJogja')
+const $titleBali = $('#titleBali')
+
 // shop
 const $buttonIndicatorBandungBottom = $("#buttonIndicatorBandungBottom");
 const $buttonIndicatorJogjaBottom = $("#buttonIndicatorJogjaBottom");

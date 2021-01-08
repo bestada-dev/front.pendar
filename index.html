@@ -3,6 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/LogoP.png" sizes="any" type="image/png">
     <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/index.css">
@@ -11,11 +12,12 @@
 <body>
     <div class="preloadImageContainer"></div>
     <div class="loading">
-        <div class="d-flex flex-column jus">
+        <div class="d-flex flex-column ">
             <!-- <img src="assets/images/LogoPendar.svg" class="img-fluid m-3 loading-logo" alt="Responsive image"> -->
-            <h1 class="text-center">
+            <h1 class="text-center title">
                 <strong>
-                    <div class="wavetext"></div>
+                    <div class="wavetext">
+                    </div>
                 </strong>
             </h1>    
         </div>
@@ -86,9 +88,9 @@
                         <div class="col-xl-4 col-lg-4 col-md-4 col-sm-12 col-12">
                             <div class="textPlace">
                                 <div class="textPlace-wrap textPlace-wrap-city">
-                                    <p class="title" id="titleBandung">Bandung</p>
-                                    <p class="outline" id="titleJogja">Jogja</p>
-                                    <p class="outline" id="titleBali">Bali</p>        
+                                    <p class="title titleText" id="titleBandung">Bandung</p>
+                                    <p class="outline titleText" id="titleJogja">Jogja</p>
+                                    <p class="outline titleText" id="titleBali">Bali</p>        
                                 </div>
                             </div>
                         </div>
@@ -260,7 +262,7 @@
                         <p class="subtitle">Links</p>
                         <div class="mt-3">
                             <p class="body-regular"><a href="index.html">Home</a></p>
-                            <p class="body-regular"><a href="shop.html">Product</a></p>
+                            <p class="body-regular"><a href="shop-bandung.html">Product</a></p>
                             <p class="body-regular"><a href="about.html">About Us</a></p>
                         </div>
                     </div>
@@ -306,31 +308,37 @@
 
     <!-- Modal -->
     <div class="modal fade" id="modalSelectOrder" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document" style="width : 100vh ; max-width : 100vh">
+        <div class="modal-dialog modal-dialog-centered" role="document" style="width : 90% ; max-width : 90vh">
         <div class="modal-content">
             <div class="modal-header" style="border-bottom: 0px solid black ;">
             <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                 <span aria-hidden="true">&times;</span>
             </button>
             </div>
-            <div class="modal-body text-dark">
+            <div class="modal-body text-dark pb-5 rounded">
                 <h1 class="text-center">Pilih Kota</h1>
-                <div class="row mt-5 text-center">
-                    <div class="col-xl-4 col-lg-4 col-md-4">
+                <div class="row mt-5 text-center justify-content-center">
+                    <div class="col-xl-4 col-lg-4 col-md-11">
                         <div class="container">
-                            <img src="assets/images/characteristic/Bandung/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <a href="shop-bandung.html">
+                                <img src="assets/images/characteristic/Bandung/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            </a>
                             <p class="subtitle"><strong>Bandung</strong></p>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="col-xl-4 col-lg-4 col-md-11">
                         <div class="container">
-                            <img src="assets/images/characteristic/Jogja/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <a href="shop-jogja.html">
+                                <img src="assets/images/characteristic/Jogja/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            </a>
                             <p class="subtitle"><strong>Jogja</strong></p>
                         </div>
                     </div>
-                    <div class="col-xl-4 col-lg-4 col-md-4">
+                    <div class="col-xl-4 col-lg-4 col-md-11">
                         <div class="container">
-                            <img src="assets/images/characteristic/Bali/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            <a href="shop-bali.html">
+                                <img src="assets/images/characteristic/Bali/MenuOrder.svg" alt="Pendar" class="img-modal-product">
+                            </a>
                             <p class="subtitle"><strong>Bali</strong></p>
                         </div>
                     </div>                                        

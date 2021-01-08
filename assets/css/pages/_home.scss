@@ -40,10 +40,15 @@
     height: 100vh;
     position: relative;
     .mascot{
+        z-index: -1;
         height: 200px;
         width: 175px;
         position: absolute ;
         transition: 0.5s ;
+    }
+    .titleText{
+        z-index: 1000 ;
+        cursor: pointer;
     }
     .mascot1{
         top : auto;
@@ -188,7 +193,7 @@
     justify-content:center;
     align-items:center;
     #img-product-home{
-        position: absolute ;
+        position: fixed ;
         z-index: 100;
         .img-product-home{
             @include size(570px,auto) ;
@@ -240,7 +245,12 @@
         @include sizeSquare(70px)
     }
 }
-
+.img-modal-product{
+    transition : 0.5s ;
+    &:hover{
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    }
+}
 .testi-warp {
 	display: -ms-flexbox;
 	-ms-flex-direction: column;
@@ -640,12 +650,11 @@
 /* Small */
 @media only screen and (min-width: $screenExtraSmall) and (max-width: $screenSmall) {
     .img-product{
-        position: absolute;
+        position: fixed;
         z-index : 100;
-        margin-bottom: 5vh;
-        top: auto;
+        top: 70%;
         left: 75%;
-        bottom: 5%;
+        bottom: auto;
         right: auto;
         @include size(200px,auto) ;        
         #img-product-home{
@@ -773,13 +782,12 @@
 /* Extra Small */
 @media only screen and (min-width: $screenMaxSmall) and (max-width: $screenExtraSmall) {
     .img-product{
-        position: absolute;
+        position: fixed;
         z-index : 100;
-        margin-bottom: 5vh;
-        top: auto;
-        left: 60%;
-        bottom: 5%;
-        right: 0;
+        top: 75%;
+        left: 75%;
+        bottom: auto;
+        right: auto;
         @include size(160px,auto) ;        
         #img-product-home{
             margin-top: 0vh ;
@@ -926,14 +934,17 @@
 }
 
 @media only screen and (max-width: $screenMaxSmall) {
+    // .content{
+    //     overflow-x : hidden;
+    // }
     .img-product{
-        position: absolute;
+        position: fixed;
+        // height: 100% ;
         z-index : 100;
-        margin-bottom: 5vh;
         top: auto;
-        left: 60%;
-        bottom: 5%;
-        right: 0;
+        left: auto;
+        bottom: 10%;
+        right: 20%;
         @include size(160px,auto) ;        
         #img-product-home{
             margin-top: 0vh ;
@@ -1020,9 +1031,9 @@
             .textPlace-wrap {
                 line-height: 3vh; 
                 position: absolute;
-                // p{
-                //     margin-bottom: 3rem ;
-                // }
+                .subtitle-light{
+                    line-height: 2vh;
+                }
             }    
             .textPlace-wrap-benefit{
                 top : 20% ;
@@ -1030,7 +1041,7 @@
     
         }
         .destination-wrapper {
-            margin-top:80% ;
+            margin-top:93% ;
             .destination{
                 max-height: 334px ;
                 width: 100% ;
@@ -1075,6 +1086,11 @@
     #i6{
         .title{
             font-size:40px
+        }
+    }
+    .before-footer{
+        .title{
+            font-size: 40px;
         }
     }
 }

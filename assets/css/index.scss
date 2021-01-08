@@ -49,4 +49,11 @@
 }
 .content{
     display: none;
+    overflow-x : hidden;
+}
+.img-modal-product{
+  @include sizeSquare(20vh) ;
+  &:hover{
+    background-color: white !important;
+  }
 }

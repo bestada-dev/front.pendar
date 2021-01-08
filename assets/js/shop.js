@@ -1,8 +1,4 @@
 
-
-$body.css({backgroundColor: backgroundBandung });    
-$buttonIndicatorBandungBottom.addClass('active-buttonIndicator')
-
 // button indicator
 const buttonIndicatorArray = [
     {

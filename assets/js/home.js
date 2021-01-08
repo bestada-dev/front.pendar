@@ -55,6 +55,14 @@ const changeTextOutline = color => {
 }
 const animationTimeLineScroll = animationScrollHome => {
     animationScrollHome
+    .to('body',1,changeBackground(backgroundBasic) )
+    .to('#titleBandung',0.2,changeText(colorBasic) )
+    .to('#titleJogja',0.2,changeTextOutline(colorBasic) )
+    .to('#titleBali',0.2,changeTextOutline(colorBasic) )
+    .to('body',1,changeBackground(backgroundBasic) )
+    .to('#titleBandung',0.2,changeText(colorBasic) )
+    .to('#titleJogja',0.2,changeTextOutline(colorBasic) )
+    .to('#titleBali',0.2,changeTextOutline(colorBasic) )
     .to('#mascotBandung1',2,rotateAnimationHide )
     .to('#mascotBandung2',2,rotateAnimationHide )
     .to('#mascotBandung3',2,rotateAnimationHide )
@@ -129,81 +137,129 @@ var scene1 = new ScrollMagic.Scene({
 $window.scroll(function() {
     let scrollTop = $window.scrollTop() > 50 ? $window.scrollTop()-50 : 0 ;
     let scrollTopMobile = $window.scrollTop() ;
-    console.log(scrollTop,'scroll')
-    console.log($(window).width(),'widht')
+    // console.log(scrollTop,'scroll')
+    // console.log($(window).width(),'widht')
+    console.log(scrollTopMobile,'scrollTopMobile')
 
     if($(window).width() >= extraLarge){
           if (scrollTop >= 0 && scrollTop <= scrollTopSmall) {
-            $product.css({top: 0 + scrollTop});    
-            $product.css({left: 0 + scrollTop});    
+            $productMobile.css({position: 'fixed'});    
+            $product.css({
+                left: 0 + scrollTop,
+                top : 0
+            });    
           }else if(scrollTop >= scrollTopSmall && scrollTop <= scrollTopMedium){
-            $product.css({left: leftMedium});    
-            $product.css({top: scrollTop}); 
+            $product.css({
+                left: leftMedium,
+                top : 0
+            });    
+            $productMobile.css({position: 'fixed'});    
           }else if(scrollTop >= scrollTopMedium && scrollTop <= scrollTopLarge){
-            $product.css({left: leftMedium+scrollTop-scrollTopMedium});    
-            $product.css({top: scrollTop});    
+            $product.css({
+                left: leftMedium+scrollTop-scrollTopMedium,
+                top : 0
+            });    
+            $productMobile.css({position: 'fixed'});    
           }
           else if(scrollTop >= scrollTopLarge && scrollTop <= scrollTopExtraLarge){
-            $product.css({left: leftLarge}); 
-            $product.css({top: scrollTop});    
+            $product.css({
+                left: leftLarge,
+                top : 0
+            }); 
+            $productMobile.css({position: 'fixed'});    
           }else{
+            $productMobile.css({position: 'absolute'});    
             $product.css({top: scrollTopExtraLarge});    
           }
     }else if($(window).width() >= large && $(window).width() <= extraLarge){
         if (scrollTop >= 0 && scrollTop <= scrollTopSmall-20) {
-                $product.css({top: 0 + scrollTop});    
-                $product.css({left: 0 + scrollTop});    
+                $product.css({
+                    left: 0 + scrollTop,
+                    top : 0
+                });    
+                $productMobile.css({position: 'fixed'});    
           }else if(scrollTop >= scrollTopSmall-20 && scrollTop <= scrollTopMedium){
-                $product.css({left: leftMedium});    
-                $product.css({top: scrollTop});    
+                $product.css({
+                    left: leftMedium,
+                    top : 0
+                });    
+                $productMobile.css({position: 'fixed'});    
           }else if(scrollTop >= scrollTopMedium && scrollTop <= scrollTopLarge-150){
-                $product.css({left: leftMedium+scrollTop-scrollTopMedium});    
-                $product.css({top: scrollTop}); 
+                $product.css({
+                    left: leftMedium+scrollTop-scrollTopMedium,
+                    top : 0
+                });
+                $productMobile.css({position: 'fixed'});        
           }
-          else if(scrollTop >= scrollTopLarge-150 && scrollTop <= scrollTopExtraLarge){
-                $product.css({left: leftLarge-150}); 
-                $product.css({top: scrollTop});    
+          else if(scrollTop >= scrollTopLarge-150 && scrollTop <= scrollTopExtraLarge-100){
+                $product.css({
+                    left: leftLarge-150,
+                    top : 0
+                }); 
+                $productMobile.css({position: 'fixed'});    
           }else{
-                $product.css({top: scrollTopExtraLarge-50});    
+                $productMobile.css({position: 'absolute'});                  
+                $product.css({top: scrollTopExtraLarge-100});    
           }
     }else if($(window).width() >= medium && $(window).width() <= large){
         if (scrollTop >= 0 && scrollTop <= scrollTopSmall-170) {
-                $product.css({top: 0 + scrollTop});    
-                $product.css({left: 0 + scrollTop});    
-          }else if(scrollTop >= scrollTopSmall-170 && scrollTop <= scrollTopMedium-500){
-                $product.css({left: leftMedium-150});    
-                $product.css({top: scrollTop});    
-          }else if(scrollTop >= scrollTopMedium-500 && scrollTop <= scrollTopLarge-800){
-              console.log(leftMedium+scrollTop-scrollTopMedium+450,'halo')
-                $product.css({left: leftMedium+scrollTop-scrollTopMedium+450});    
-                $product.css({top: scrollTop}); 
+            $product.css({
+                left: 0 + scrollTop,
+                top : 0
+            });      
+            $productMobile.css({position: 'fixed'});          
+        }else if(scrollTop >= scrollTopSmall-170 && scrollTop <= scrollTopMedium-500){
+                $product.css({
+                    left: leftMedium-150,
+                    top : 0
+                });    
+                $productMobile.css({position: 'fixed'});          
+        }else if(scrollTop >= scrollTopMedium-500 && scrollTop <= scrollTopLarge-800){
+                $product.css({
+                    left: leftMedium+scrollTop-scrollTopMedium+450,
+                    top : 0
+                });    
+                $productMobile.css({position: 'fixed'});          
           }
           else if(scrollTop >= scrollTopLarge-800 && scrollTop <= scrollTopExtraLarge-200){
-                $product.css({left: leftLarge-350}); 
-                $product.css({top: scrollTop});    
+                $product.css({
+                    left: leftLarge-350,
+                    top : 0
+                }); 
+                $productMobile.css({position: 'fixed'});          
           }else{
-                $product.css({top: scrollTopExtraLarge-200});    
+                $product.css({top: scrollTopExtraLarge-200}); 
+                $productMobile.css({position: 'absolute'});          
+   
           }
     }
     else if($(window).width() <= medium && $(window).width() >= 758){
         if (scrollTop >= 0 && scrollTop <= scrollTopExtraSmall) {
-            $product.css({top: 0 + scrollTop});    
-            $product.css({left: 0 + scrollTop});    
-          }
-          else if(scrollTop >= scrollTopExtraSmall && scrollTop <= scrollTopMedium-300){
-              $product.css({left: leftMedium-200});    
-              $product.css({top: scrollTop});    
-          }
-          else{
-            // $product.css({left: 2500});    
-              $product.css({top: scrollTopMedium-300});    
-          }
-    }else{
-        if(scrollTop <= scrollTopExtraLarge){
-            $productMobile.css({top: scrollTopMobile });    
-        }else{
-            $productMobile.css({top: scrollTopExtraLarge});    
+            $product.css({
+                left: 0 + scrollTop,
+                top : 0
+            });
+            $productMobile.css({position: 'fixed'});               
         }
+        else if(scrollTop >= scrollTopExtraSmall && scrollTop <= scrollTopMedium-300){
+            $product.css({
+                left: leftMedium-200,
+                top : 0
+            });    
+            $productMobile.css({position: 'fixed'});               
+        }
+        else{
+            $productMobile.css({position: 'absolute'});               
+            $product.css({top: scrollTopMedium-300});    
+        }
+    }else{
+        // if(scrollTop <= scrollTopExtraLarge){
+            // $productMobile.css({top: 0 });  
+            $productMobile.css({position: 'fixed'});                 
+        // }else{
+        //     $productMobile.css({position: 'absolute'});               
+        //     $productMobile.css({top: scrollTopExtraLarge});    
+        // }
     }
 
     
@@ -244,4 +300,31 @@ $window.scroll(function() {
     $product360.attr('src',  `assets/images/product360/${nameProduct(scrollTopMobile)}/${product360(scrollTop)}.png`);                                        
 
 });
+
+// title button
+$titleBandung.click(function() {
+    $window.scrollTop(2900) ;
+    // $body.css({
+    //     backgroundColor: backgroundBasic,
+    //     color : colorBasic 
+    // });    
+
+});
+$titleJogja.click(function() {
+    $window.scrollTop(11900) ;
+    // $body.css({
+    //     backgroundColor: backgroundBandung,
+    //     color : colorBandung 
+    // });    
+});
+$titleBali.click(function() {
+    $window.scrollTop(20000) ;
+    // $body.css({
+    //     backgroundColor: backgroundJogja,
+    //     color : colorJogja 
+    // });    
+
+});
+
+
 

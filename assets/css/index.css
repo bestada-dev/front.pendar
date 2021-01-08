@@ -556,11 +556,17 @@ h2 {
 }
 
 #i4 .mascot {
+  z-index: -1;
   height: 200px;
   width: 175px;
   position: absolute;
   -webkit-transition: 0.5s;
   transition: 0.5s;
+}
+
+#i4 .titleText {
+  z-index: 1000;
+  cursor: pointer;
 }
 
 #i4 .mascot1 {
@@ -749,7 +755,7 @@ h2 {
 }
 
 .img-product #img-product-home {
-  position: absolute;
+  position: fixed;
   z-index: 100;
 }
 
@@ -820,6 +826,16 @@ h2 {
 .testi img {
   height: 70px;
   width: 70px;
+}
+
+.img-modal-product {
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+.img-modal-product:hover {
+  -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+          box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .testi-warp {
@@ -1192,12 +1208,11 @@ h2 {
 /* Small */
 @media only screen and (min-width: 576px) and (max-width: 768px) {
   .img-product {
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    margin-bottom: 5vh;
-    top: auto;
+    top: 70%;
     left: 75%;
-    bottom: 5%;
+    bottom: auto;
     right: auto;
     height: 200px;
     width: auto;
@@ -1321,15 +1336,14 @@ h2 {
 }
 
 /* Extra Small */
-@media only screen and (min-width: 500px) and (max-width: 576px) {
+@media only screen and (min-width: 480px) and (max-width: 576px) {
   .img-product {
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    margin-bottom: 5vh;
-    top: auto;
-    left: 60%;
-    bottom: 5%;
-    right: 0;
+    top: 75%;
+    left: 75%;
+    bottom: auto;
+    right: auto;
     height: 160px;
     width: auto;
   }
@@ -1469,15 +1483,14 @@ h2 {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 480px) {
   .img-product {
-    position: absolute;
+    position: fixed;
     z-index: 100;
-    margin-bottom: 5vh;
     top: auto;
-    left: 60%;
-    bottom: 5%;
-    right: 0;
+    left: auto;
+    bottom: 10%;
+    right: 20%;
     height: 160px;
     width: auto;
   }
@@ -1567,11 +1580,14 @@ h2 {
     line-height: 3vh;
     position: absolute;
   }
+  #i4 .textPlace .textPlace-wrap .subtitle-light {
+    line-height: 2vh;
+  }
   #i4 .textPlace .textPlace-wrap-benefit {
     top: 20%;
   }
   #i4 .destination-wrapper {
-    margin-top: 80%;
+    margin-top: 93%;
   }
   #i4 .destination-wrapper .destination {
     max-height: 334px;
@@ -1613,6 +1629,9 @@ h2 {
     text-align: left;
   }
   #i6 .title {
+    font-size: 40px;
+  }
+  .before-footer .title {
     font-size: 40px;
   }
 }
@@ -2211,5 +2230,15 @@ h2 {
 
 .content {
   display: none;
+  overflow-x: hidden;
+}
+
+.img-modal-product {
+  height: 20vh;
+  width: 20vh;
+}
+
+.img-modal-product:hover {
+  background-color: white !important;
 }
 /*# sourceMappingURL=index.css.map */
