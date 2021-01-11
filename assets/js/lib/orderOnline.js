@@ -32,6 +32,13 @@ try {
     ooe('init', 'pendar', 'Bali-paket-1-kotak', null, 'oo-embed-form-Bali-paket-1-kotak-3321', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
     ooe('init', 'pendar', 'Bali-paket-2-kotak', null, 'oo-embed-form-Bali-paket-2-kotak-8242', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
     ooe('init', 'pendar', 'Bali-paket-4-kotak', null, 'oo-embed-form-Bali-paket-4-kotak-6112', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});        
+    ooe('init', 'pendar', 'bandung-paket-1-kotak', null, 'oo-embed-form-bandung-paket-1-kotak-3623', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+    ooe('init', 'pendar', 'bandung-paket-2-kotak', null, 'oo-embed-form-bandung-paket-2-kotak-1459', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+    ooe('init', 'pendar', 'bandung-paket-4-kotak', null, 'oo-embed-form-bandung-paket-4-kotak-2417', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+    ooe('init', 'pendar', 'Jogja-paket-1-kotak', null, 'oo-embed-form-Jogja-paket-1-kotak-250', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+    ooe('init', 'pendar', 'Jogja-paket-2-kotak', null, 'oo-embed-form-Jogja-paket-2-kotak-4235', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+    ooe('init', 'pendar', 'Jogja-paket-4-kotak', null, 'oo-embed-form-Jogja-paket-4-kotak-7006', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
+
     if (!window.jQuery) {
         !function(w, d, e, v, id, t, s) {
         if (d.getElementById(id)) return;

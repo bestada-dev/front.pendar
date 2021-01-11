@@ -166,6 +166,20 @@ const arrayAccordion = [
             secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
         {
+            name : "whatInside",
+            idButton : "#btnAccordionWhatInside5",
+            idContent : "#collapseWhatInsideFive",
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
+        },    
+        {
+            name : "whatInside",
+            idButton : "#btnAccordionWhatInside6",
+            idContent : "#collapseWhatInsideSix",
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
+        },    
+        {
             name : "faq",
             idButton : "#btnAccordionFaq1",
             idContent : "#collapseFaqOne",
@@ -193,6 +207,21 @@ const arrayAccordion = [
             firstImage : "assets/images/navigation/PlusIcon.svg",
             secondImage : "assets/images/navigation/MinIcon.svg" 
         },    
+        {
+            name : "faq",
+            idButton : "#btnAccordionFaq5",
+            idContent : "#collapseFaqFive",
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
+        },    
+        {
+            name : "faq",
+            idButton : "#btnAccordionFaq6",
+            idContent : "#collapseFaqSix",
+            firstImage : "assets/images/navigation/PlusIcon.svg",
+            secondImage : "assets/images/navigation/MinIcon.svg" 
+        },    
+
 ];
 arrayAccordion.map(accordion => {
     $(accordion.idButton).on('click', function(){

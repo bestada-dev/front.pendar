@@ -1,5 +1,9 @@
 #s1{
     color : $colorBandung ;
+    padding-top : 0vh ;
+    h1{
+        font-size:32px ;
+    }
     .card-body-buttonIndicator {
         padding: 1vh 1vh 0vh 1vh ;
         .img-shop-indicator{
@@ -48,12 +52,12 @@
         height: auto ;
     }
     h1{
-        font-size: 140px ;
+        font-size: 100px ;
     }
     .subtitle-whatInside{
         position: absolute ;
-        top : 15% ;
-        left : 70% ;
+        top : 5% ;
+        left : 80% ;
     }
     .testi-shop{
         &:nth-child(odd){

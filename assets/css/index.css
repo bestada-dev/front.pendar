@@ -82,7 +82,7 @@ h2 {
 
 .h2-light {
   font-family: Cooper-Lt-BT-Light;
-  font-size: 32px;
+  font-size: 25px;
 }
 
 .title {
@@ -1638,6 +1638,11 @@ h2 {
 
 #s1 {
   color: #095A67;
+  padding-top: 0vh;
+}
+
+#s1 h1 {
+  font-size: 32px;
 }
 
 #s1 .card-body-buttonIndicator {
@@ -1700,13 +1705,13 @@ h2 {
 }
 
 #s3 h1 {
-  font-size: 140px;
+  font-size: 100px;
 }
 
 #s3 .subtitle-whatInside {
   position: absolute;
-  top: 15%;
-  left: 70%;
+  top: 5%;
+  left: 80%;
 }
 
 #s3 .testi-shop:nth-child(odd) {
@@ -1826,7 +1831,7 @@ h2 {
 }
 
 #a1 .title {
-  font-size: 138px;
+  font-size: 110px;
 }
 
 #a2 {
@@ -1834,7 +1839,7 @@ h2 {
 }
 
 #a2 .title {
-  font-size: 78px;
+  font-size: 68px;
 }
 
 #a2 img {
@@ -1899,8 +1904,8 @@ h2 {
 #a3 .subtitle {
   position: absolute;
   width: 40vh;
-  right: 40%;
-  top: 325%;
+  right: 20%;
+  top: 300%;
 }
 
 #a4 .accordion-about-wrapper {
