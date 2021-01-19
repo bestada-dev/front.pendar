@@ -55,14 +55,8 @@ const changeTextOutline = color => {
 }
 const animationTimeLineScroll = animationScrollHome => {
     animationScrollHome
+    .to('body',1,changeText(colorBasic) )
     .to('body',1,changeBackground(backgroundBasic) )
-    .to('#titleBandung',0.2,changeText(colorBasic) )
-    .to('#titleJogja',0.2,changeTextOutline(colorBasic) )
-    .to('#titleBali',0.2,changeTextOutline(colorBasic) )
-    .to('body',1,changeBackground(backgroundBasic) )
-    .to('#titleBandung',0.2,changeText(colorBasic) )
-    .to('#titleJogja',0.2,changeTextOutline(colorBasic) )
-    .to('#titleBali',0.2,changeTextOutline(colorBasic) )
     .to('#titleBandung',0.2,changeText(colorBasic) )
     .to('#titleJogja',0.2,changeTextOutline(colorBasic) )
     .to('#titleBali',0.2,changeTextOutline(colorBasic) )
@@ -73,18 +67,9 @@ const animationTimeLineScroll = animationScrollHome => {
     .to('#destinationBandung2',2,rotateAnimationHide )
     .to('#destinationBandung3',2,rotateAnimationHide )
     .to('.wrap-text-bandung',1,hideText )
+    // .to('body',1,changeBackground(backgroundBasic) )
+    // // .to('body',1,changeText(colorBasic) )
     .to('body',1,changeBackground(backgroundBandung) )
-    .to('#titleBandung',0.2,changeTextOutline(colorBandung) )
-    .to('#titleJogja',0.2,changeText(colorBandung) )
-    .to('#titleBali',0.2,changeTextOutline(colorBandung) )
-    .to('body',1,changeBackground(backgroundBandung) )
-    .to('#titleBandung',0.2,changeTextOutline(colorBandung) )
-    .to('#titleJogja',0.2,changeText(colorBandung) )
-    .to('#titleBali',0.2,changeTextOutline(colorBandung) )
-    .to('body',1,changeBackground(backgroundBandung) )
-    .to('#titleBandung',0.2,changeTextOutline(colorBandung) )
-    .to('#titleJogja',0.2,changeText(colorBandung) )
-    .to('#titleBali',0.2,changeTextOutline(colorBandung) )
     .to('#titleBandung',0.2,changeTextOutline(colorBandung) )
     .to('#titleJogja',0.2,changeText(colorBandung) )
     .to('#titleBali',0.2,changeTextOutline(colorBandung) )
@@ -108,10 +93,11 @@ const animationTimeLineScroll = animationScrollHome => {
     .to('#destinationJogja2',2,rotateAnimationHide )
     .to('#destinationJogja3',2,rotateAnimationHide )
     .to('.wrap-text-jogja',1,hideText )
-    .to('body',1,changeBackground(backgroundJogja))
+    // .to('body',1,changeBackground(backgroundJogja))
     .to('#titleBandung',0.2,changeTextOutline(colorJogja) )
     .to('#titleJogja',0.2,changeTextOutline(colorJogja) )
     .to('#titleBali',0.2,changeText(colorJogja) )
+    // .to('body',1,changeBackground(backgroundJogja))
     .to('.wrap-text-bali',1,showText)
     .to('#mascotBali1',1,rotateAnimationHide )
     .to('#mascotBali1',2,rotateAnimationShow )
@@ -131,13 +117,14 @@ const animationTimeLineScroll = animationScrollHome => {
     .to('#destinationBali1',2,rotateAnimationHide )
     .to('#destinationBali2',2,rotateAnimationHide )
     .to('#destinationBali3',2,rotateAnimationHide )
+    .to('body',0.2,changeText(colorBasic) )
     
 }
 const animationScrollHome = new TimelineMax() ;
 animationTimeLineScroll(animationScrollHome)
 
 const controller = new ScrollMagic.Controller();
-var scene1 = new ScrollMagic.Scene({
+var scene = new ScrollMagic.Scene({
     triggerElement : '#i4',
     triggerHook :0.1,
     duration : 20000
@@ -152,7 +139,7 @@ $window.scroll(function() {
     let scrollTop = $window.scrollTop() > 50 ? $window.scrollTop()-50 : 0 ;
     let scrollTopMobile = $window.scrollTop() ;
     // console.log(scrollTop,'scroll')
-    // console.log($(window).width(),'widht')
+    console.log($(window).width(),'widht')
     console.log(scrollTopMobile,'scrollTopMobile')
 
     if($(window).width() >= extraLarge){
@@ -281,18 +268,30 @@ $window.scroll(function() {
     const nameProduct = scrollTopMobile => {
         console.log(scrollTopMobile,'scrollTopMobile')
         if(scrollTopMobile >= 5800 && scrollTopMobile <= 14250){
-            $body.css({backgroundColor: backgroundBandung });    
+            $body.css({
+                backgroundColor: backgroundBandung,
+                color: colorBandung
+            });    
             return 'Jogja'
         }else if(scrollTopMobile >= 14250 && scrollTopMobile <= 23850){
-            $body.css({backgroundColor: backgroundJogja });    
+            $body.css({
+                backgroundColor: backgroundJogja,
+                color: colorJogja 
+            });    
             return 'Bali'
             
         }else if(scrollTopMobile >= 23850){
-            $body.css({backgroundColor: backgroundBasic });    
+            $body.css({
+                backgroundColor: backgroundBasic,
+                color : colorBasic 
+            });    
             return 'Jogja'
         }
         else{
-            $body.css({backgroundColor: backgroundBasic });    
+            $body.css({
+                backgroundColor: backgroundBasic,
+                color : colorBasic 
+            });    
             return 'Bandung'
         }
     }
@@ -315,28 +314,29 @@ $window.scroll(function() {
 
 });
 
+
 // title button
 $titleBandung.click(function() {
     $window.scrollTop(2900) ;
-    // $body.css({
-    //     backgroundColor: backgroundBasic,
-    //     color : colorBasic 
-    // });    
+    $body.css({
+        backgroundColor: backgroundBasic,
+        color : colorBasic 
+    });    
 
 });
 $titleJogja.click(function() {
-    $window.scrollTop(11900) ;
-    // $body.css({
-    //     backgroundColor: backgroundBandung,
-    //     color : colorBandung 
-    // });    
+    $window.scrollTop(11700) ;
+    $body.css({
+        backgroundColor: backgroundBasic,
+        color : colorBasic 
+    });    
 });
 $titleBali.click(function() {
     $window.scrollTop(20000) ;
-    // $body.css({
-    //     backgroundColor: backgroundJogja,
-    //     color : colorJogja 
-    // });    
+    $body.css({
+        backgroundColor: backgroundJogja,
+        color : colorJogja 
+    });    
 
 });
 

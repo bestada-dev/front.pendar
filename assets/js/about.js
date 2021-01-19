@@ -211,3 +211,33 @@ buttonAccordionArray.map(button => {
         loadAccordion(arrayAccordion)
     })    
 })
+
+// gsap
+const moveObject = rotateValue => {
+    return{ 
+        css:{
+            rotation: rotateValue
+        }, 
+        ease:Quad.easeInOut    
+    }
+}
+const animationTimeLineScroll = animationScrollAbout => {
+    animationScrollAbout
+    .to('#mascotAbout1',0.2,moveObject(-30) )
+    .to('#mascotAbout3',0.2,moveObject(60) )
+    .to('#mascotAbout2',0.2,moveObject(-30) )
+
+}
+
+const animationScrollAbout = new TimelineMax() ;
+animationTimeLineScroll(animationScrollAbout)
+
+const controller = new ScrollMagic.Controller();
+var scene1 = new ScrollMagic.Scene({
+    triggerElement : '#a2',
+    triggerHook :0.5,
+    duration : 1000
+})
+// .addIndicators()
+.setTween(animationScrollAbout)
+.addTo(controller);

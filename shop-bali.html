@@ -3,79 +3,73 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="assets/images/LogoP.png" sizes="any" type="image/png">
+    <link rel="stylesheet" href="assets/css/jquery.mCustomScrollbar.css" />
     <link rel="stylesheet" href="assets/css/bootstrap.css">
     <link rel="stylesheet" href="assets/css/index.css">
     <title>Pendar</title>
 </head>
 <body>
     <div class="loading">
-        <div class="d-flex flex-column jus">
+        <div class="d-flex flex-column ">
             <!-- <img src="assets/images/LogoPendar.svg" class="img-fluid m-3 loading-logo" alt="Responsive image"> -->
-            <h1 class="text-center">
+            <h1 class="text-center title">
                 <strong>
-                    <div class="wavetext"></div>
+                    <div class="wavetext">
+                    </div>
                 </strong>
             </h1>    
         </div>
     </div>
     <div class="content">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-shop">
+        <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container">
                 <img src="assets/images/LogoPendar.svg" class="img-fluid m-3" alt="Responsive image">
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
             </div>
-        </nav>    
+        </nav>   
         <main>
             <header id="s1">
                 <div class="container">
                     <div class="row justify-content-between">
-                        <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-end align-items-center">
+                        <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-center align-items-center">
                             <img src="assets/images/product/Bandung/Product.png" alt="Pendar" class="img-product-shop">
                         </div>
                         <div class="row justify-content-center mt-3 mb-5" id="shop-top-accordion">
-                            <div class="card m-3 rounded buttonIndicatorBandung active-buttonIndicator">
-                                <div id="buttonIndicatorBandTopung">
-                                    <div class="card-body-buttonIndicator">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                                <img src="assets/images/product/Bandung/iconButton.svg" alt="Pendar">
-                                            </div>
-                                            <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
-                                                <p class="body-large mb-0"><Strong>Bandung</Strong></p>
-                                            </div>
+                            <div id="buttonIndicatorBandungTop" class="card m-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 rounded buttonIndicatorBandung active-buttonIndicator">
+                                <div class="card-body-buttonIndicator pb-2">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-center">
+                                            <img src="assets/images/product/Bandung/iconButton.svg" alt="Pendar">
                                         </div>
-                                    </div>    
-                                </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
+                                            <p class="body-large mb-0"><Strong>Bandung</Strong></p>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>
-                            <div class="card m-3 rounded buttonIndicatorJogja">
-                                <div id="buttonIndicatorJogjTopa">
-                                    <div class="card-body-buttonIndicator">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                                <img src="assets/images/product/Jogja/iconButton.svg" alt="Pendar">
-                                            </div>
-                                            <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
-                                                <p class="body-large mb-0"><strong>Jogja</strong></p>
-                                            </div>
+                            <div id="buttonIndicatorJogjaTop" class="card m-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 rounded buttonIndicatorJogja">
+                                <div class="card-body-buttonIndicator pb-2">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-center">
+                                            <img src="assets/images/product/Jogja/iconButton.svg" alt="Pendar">
                                         </div>
-                                    </div>    
-                                </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
+                                            <p class="body-large mb-0"><strong>Jogja</strong></p>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div> 
-                            <div class="card m-3 rounded buttonIndicatorBali">
-                                <div id="buttonIndicatorBaliTop">
-                                    <div class="card-body-buttonIndicator">
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4 col-md-4">
-                                                <img src="assets/images/product/Bali/iconButton.svg" alt="Pendar">
-                                            </div>
-                                            <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
-                                                <p class="body-large mb-0"><strong>Bali</strong></p>
-                                            </div>
+                            <div id="buttonIndicatorBaliTop" class="card m-2 col-xl-3 col-lg-3 col-md-3 col-sm-3 col-3 rounded buttonIndicatorBali">
+                                <div class="card-body-buttonIndicator pb-2">
+                                    <div class="row">
+                                        <div class="col-xl-4 col-lg-4 col-md-4 d-flex justify-content-center">
+                                            <img src="assets/images/product/Bali/iconButton.svg" alt="Pendar">
                                         </div>
-                                    </div>    
-                                </div>
+                                        <div class="col-xl-8 col-lg-8 col-md-8 d-flex justify-content-center align-items-center">
+                                            <p class="body-large mb-0"><strong>Bali</strong></p>
+                                        </div>
+                                    </div>
+                                </div>    
                             </div>                   
                             </div>                    
                         <div class="col-xl-6 col-lg-6 col-md-6">
@@ -87,7 +81,7 @@
                                       <div class="card-header" id="headingOne">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 1 KOTAK (45 Sachet) Disc IDR 13.000
+                                                PAKET 1 KOTAK (Disc IDR 13.000)
                                             </p>
                                             <a class="btn" id="btnAccordionProductBandung1" data-toggle="collapse" data-target="#collapseProductBandungOne" aria-expanded="true" aria-controls="collapseProductBandungOne">
                                                 <img src="assets/images/navigation/ArrowDown.svg" alt="pendar">
@@ -97,9 +91,7 @@
                                       <div id="collapseProductBandungOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionProductBandung">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
-                                                    <del class="body-small">IDR 100.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Dapatkan 30 sachet sabun dan 15 sachet shampo</li>
                                                         <li class="body-small">1 mood kalender lucu untuk menjaga mood mu (ukur mood 1 bulan kamu!)</li>
@@ -109,8 +101,17 @@
                                                         <li class="body-small">1 sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 ">
-                                                    <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">45 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
+                                                            <del class="body-small">IDR 100.000</del>                                                    
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -125,7 +126,7 @@
                                       <div class="card-header" id="headingTwo">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 2 KOTAK (90 Sachet) Disc 53.000
+                                                PAKET 2 KOTAK (Disc 53.000)
                                             </p>
                                             <a class="btn" id="btnAccordionProductBandung2" data-toggle="collapse" data-target="#collapseProductBandungTwo" aria-expanded="true" aria-controls="collapseProductBandungTwo">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -135,9 +136,7 @@
                                       <div id="collapseProductBandungTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionProductBandung">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
-                                                    <del class="body-small">IDR 200.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 1 box!! (Ongkir tetap 1kg)</li>
                                                         <li class="body-small">Dapatkan 60 sabun dan 30 shampo yang bikin mandi kamu moody lagi!</li>
@@ -148,8 +147,17 @@
                                                         <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">90 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
+                                                            <del class="body-small">IDR 200.000</del>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -164,7 +172,7 @@
                                       <div class="card-header" id="headingThree">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 4 KOTAK (180 Sachet) Disc IDR 128.000
+                                                PAKET 4 KOTAK (Disc IDR 128.000)
                                             </p>
                                             <a class="btn" id="btnAccordionProductBandung3" data-toggle="collapse" data-target="#collapseProductBandungThree" aria-expanded="true" aria-controls="collapseProductBandungThree">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -174,9 +182,7 @@
                                       <div id="collapseProductBandungThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProductBandung">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
-                                                    <del class="body-small">IDR 400.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
                                                         <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
@@ -187,8 +193,17 @@
                                                         <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>                                                
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -199,6 +214,52 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="card mt-3">
+                                        <div class="card-header" id="headingFour">
+                                          <div class="mb-0 d-flex justify-content-between">
+                                              <p class="body-large-bold mt-2 mb-0">
+                                                PAKET MIX
+                                              </p>
+                                              <a class="btn" id="btnAccordionProductBandung4" data-toggle="collapse" data-target="#collapseProductBandungFour" aria-expanded="true" aria-controls="collapseProductBandungFour">
+                                                  <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
+                                              </a>
+                                          </div>
+                                        </div>
+                                        <div id="collapseProductBandungFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionProductBandung">
+                                          <div class="card-body">
+                                              <div class="row">
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
+                                                    <ul class="mt-3">
+                                                        <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
+                                                        <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
+                                                        <li class="body-small">4 mood kalender lucu untuk menjaga mood mu (ukur mood 4 bulan kamu!)</li>
+                                                        <li class="body-small">4 Lembar stiker ragam budaya yang menggambarkan kultur Nusantara</li>
+                                                        <li class="body-small">4 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
+                                                        <li class="body-small">id card ekslusif untuk kamu yang aktif</li>
+                                                        <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
+                                                  </ul>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>                                                
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-xl-12">
+                                                      <button type="button" class="btn btn-lg btn-danger w-100" data-toggle="modal" data-target="#modalOrderBandung4"><strong class="body-large">Beli Sekarang</strong></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>                                    
                                 </div>                            
                             </div>
                             <div id="descriptionShopJogja">
@@ -209,7 +270,7 @@
                                       <div class="card-header" id="headingOne">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 1 KOTAK (45 Sachet) Disc IDR 13.000
+                                                PAKET 1 KOTAK (Disc IDR 13.000)
                                             </p>
                                             <a class="btn" id="btnAccordionProductJogja1" data-toggle="collapse" data-target="#collapseProductJogjaOne" aria-expanded="true" aria-controls="collapseProductJogjaOne">
                                                 <img src="assets/images/navigation/ArrowDown.svg" alt="pendar">
@@ -219,9 +280,7 @@
                                       <div id="collapseProductJogjaOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionProductJogja">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
-                                                    <del class="body-small">IDR 100.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Dapatkan 30 sachet sabun dan 15 sachet shampo</li>
                                                         <li class="body-small">1 mood kalender lucu untuk menjaga mood mu (ukur mood 1 bulan kamu!)</li>
@@ -229,10 +288,19 @@
                                                         <li class="body-small">1 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
                                                         <li class="body-small">1 id card ekslusif untuk kamu yang aktif</li>
                                                         <li class="body-small">1 sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
-                                                    </ul>
+                                                  </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 ">
-                                                    <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">45 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
+                                                            <del class="body-small">IDR 100.000</del>                                                
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -247,7 +315,7 @@
                                       <div class="card-header" id="headingTwo">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 2 KOTAK (90 Sachet) Disc 53.000
+                                                PAKET 2 KOTAK (Disc 53.000) 
                                             </p>
                                             <a class="btn" id="btnAccordionProductJogja2" data-toggle="collapse" data-target="#collapseProductJogjaTwo" aria-expanded="true" aria-controls="collapseProductJogjaTwo">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -257,9 +325,7 @@
                                       <div id="collapseProductJogjaTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionProductJogja">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
-                                                    <del class="body-small">IDR 200.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 1 box!! (Ongkir tetap 1kg)</li>
                                                         <li class="body-small">Dapatkan 60 sabun dan 30 shampo yang bikin mandi kamu moody lagi!</li>
@@ -268,11 +334,21 @@
                                                         <li class="body-small">2 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
                                                         <li class="body-small">id card ekslusif untuk kamu yang aktif</li>
                                                         <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
-                                                    </ul>
+                                                  </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">90 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
+                                                            <del class="body-small">IDR 200.000</del>
+                                                        </div>
+                                                    </div>
                                                 </div>
+
                                             </div>
                                             <div class="row">
                                                 <div class="col-xl-12">
@@ -286,7 +362,7 @@
                                       <div class="card-header" id="headingThree">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 4 KOTAK (180 Sachet) Disc IDR 128.000
+                                                PAKET 4 KOTAK (Disc IDR 128.000) 
                                             </p>
                                             <a class="btn" id="btnAccordionProductJogja3" data-toggle="collapse" data-target="#collapseProductJogjaThree" aria-expanded="true" aria-controls="collapseProductJogjaThree">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -296,9 +372,7 @@
                                       <div id="collapseProductJogjaThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProductJogja">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000/p>
-                                                    <del class="body-small">IDR 400.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
                                                         <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
@@ -306,11 +380,20 @@
                                                         <li class="body-small">4 Lembar stiker ragam budaya yang menggambarkan kultur Nusantara</li>
                                                         <li class="body-small">4 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
                                                         <li class="body-small">id card ekslusif untuk kamu yang aktif</li>
-                                                        <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
+                                                        <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>                                                  
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>
+                                                        </div>
+                                                    </div>
                                                 </div>
                                             </div>
                                             <div class="row">
@@ -321,6 +404,52 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="card mt-3">
+                                        <div class="card-header" id="headingFour">
+                                          <div class="mb-0 d-flex justify-content-between">
+                                              <p class="body-large-bold mt-2 mb-0">
+                                                PAKET MIX 
+                                              </p>
+                                              <a class="btn" id="btnAccordionProductJogja4" data-toggle="collapse" data-target="#collapseProductJogjaFour" aria-expanded="true" aria-controls="collapseProductJogjaFour">
+                                                  <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
+                                              </a>
+                                          </div>
+                                        </div>
+                                        <div id="collapseProductJogjaFour" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProductJogja">
+                                          <div class="card-body">
+                                              <div class="row">
+                                                  <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
+                                                    <ul class="mt-3">
+                                                        <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
+                                                        <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
+                                                        <li class="body-small">4 mood kalender lucu untuk menjaga mood mu (ukur mood 4 bulan kamu!)</li>
+                                                        <li class="body-small">4 Lembar stiker ragam budaya yang menggambarkan kultur Nusantara</li>
+                                                        <li class="body-small">4 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
+                                                        <li class="body-small">id card ekslusif untuk kamu yang aktif</li>
+                                                        <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                  
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-xl-12">
+                                                      <button type="button" class="btn btn-lg btn-danger w-100" data-toggle="modal" data-target="#modalOrderJogja4"><strong class="body-large">Beli Sekarang</strong></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>                                    
                                 </div>                            
                             </div>
                             <div id="descriptionShopBali">
@@ -331,7 +460,7 @@
                                       <div class="card-header" id="headingOne">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 1 KOTAK (45 Sachet) Disc IDR 13.000
+                                                PAKET 1 KOTAK (Disc IDR 13.000) 
                                             </p>
                                             <a class="btn" id="btnAccordionProductBali1" data-toggle="collapse" data-target="#collapseProductBaliOne" aria-expanded="true" aria-controls="collapseProductBaliOne">
                                                 <img src="assets/images/navigation/ArrowDown.svg" alt="pendar">
@@ -341,9 +470,7 @@
                                       <div id="collapseProductBaliOne" class="collapse" aria-labelledby="headingOne" data-parent="#accordionProductBali">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
-                                                    <del class="body-small">IDR 100.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Dapatkan 30 sachet sabun dan 15 sachet shampo</li>
                                                         <li class="body-small">1 mood kalender lucu untuk menjaga mood mu (ukur mood 1 bulan kamu!)</li>
@@ -353,9 +480,19 @@
                                                         <li class="body-small">1 sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4 ">
-                                                    <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
-                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion1.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">45 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 87.000</p>
+                                                            <del class="body-small">IDR 100.000</del>                                                
+                                                        </div>
+                                                    </div>
+                                                </div>                                                  
+
                                             </div>
                                             <div class="row">
                                                 <div class="col-xl-12">
@@ -369,7 +506,7 @@
                                       <div class="card-header" id="headingTwo">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 2 KOTAK (90 Sachet) Disc 53.000
+                                                PAKET 2 KOTAK (Disc 53.000) 
                                             </p>
                                             <a class="btn" id="btnAccordionProductBali2" data-toggle="collapse" data-target="#collapseProductBaliTwo" aria-expanded="true" aria-controls="collapseProductBaliTwo">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -379,9 +516,7 @@
                                       <div id="collapseProductBaliTwo" class="collapse show" aria-labelledby="headingTwo" data-parent="#accordionProductBali">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
-                                                    <del class="body-small">IDR 200.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 1 box!! (Ongkir tetap 1kg)</li>
                                                         <li class="body-small">Dapatkan 60 sabun dan 30 shampo yang bikin mandi kamu moody lagi!</li>
@@ -392,9 +527,18 @@
                                                         <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
-                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion2.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">90 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 147.000</p>
+                                                            <del class="body-small">IDR 200.000</del>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                  
                                             </div>
                                             <div class="row">
                                                 <div class="col-xl-12">
@@ -408,7 +552,7 @@
                                       <div class="card-header" id="headingThree">
                                         <div class="mb-0 d-flex justify-content-between">
                                             <p class="body-large-bold mt-2 mb-0">
-                                                PAKET 4 KOTAK (180 Sachet) Disc IDR 128.000
+                                                PAKET 4 KOTAK (Disc IDR 128.000) 
                                             </p>
                                             <a class="btn" id="btnAccordionProductBali3" data-toggle="collapse" data-target="#collapseProductBaliThree" aria-expanded="true" aria-controls="collapseProductBaliThree">
                                                 <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
@@ -418,9 +562,7 @@
                                       <div id="collapseProductBaliThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordionProductBali">
                                         <div class="card-body">
                                             <div class="row">
-                                                <div class="col-xl-8 col-lg-8 col-md-8 col-sm-8 col-8">
-                                                    <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
-                                                    <del class="body-small">IDR 400.000</del>
+                                                <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
                                                     <ul class="mt-3">
                                                         <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
                                                         <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
@@ -431,9 +573,18 @@
                                                         <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
                                                     </ul>
                                                 </div>
-                                                <div class="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-4">
-                                                    <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
-                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                  
                                             </div>
                                             <div class="row">
                                                 <div class="col-xl-12">
@@ -443,6 +594,52 @@
                                         </div>
                                       </div>
                                     </div>
+                                    <div class="card mt-3">
+                                        <div class="card-header" id="headingFour">
+                                          <div class="mb-0 d-flex justify-content-between">
+                                              <p class="body-large-bold mt-2 mb-0">
+                                                PAKET MIX 
+                                              </p>
+                                              <a class="btn" id="btnAccordionProductBali4" data-toggle="collapse" data-target="#collapseProductBaliFour" aria-expanded="true" aria-controls="collapseProductBaliFour">
+                                                <img src="assets/images/navigation/ArrowUp.svg" alt="pendar">
+                                              </a>
+                                          </div>
+                                        </div>
+                                        <div id="collapseProductBaliFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordionProductBali">
+                                          <div class="card-body">
+                                              <div class="row">
+                                                  <div class="col-xl-8 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2">
+                                                    <ul class="mt-3">
+                                                        <li class="body-small">Cukup bayar ongkir 2 box! (Ongkir tetap 2kg)</li>
+                                                        <li class="body-small">Dapatkan 120 sabun dan 60 shampo yang bikin mandi kamu moody lagi!</li>
+                                                        <li class="body-small">4 mood kalender lucu untuk menjaga mood mu (ukur mood 4 bulan kamu!)</li>
+                                                        <li class="body-small">4 Lembar stiker ragam budaya yang menggambarkan kultur Nusantara</li>
+                                                        <li class="body-small">4 gantungan kunci istimewa agar bisa kamu gantungkan pada barang berharga</li>
+                                                        <li class="body-small">id card ekslusif untuk kamu yang aktif</li>
+                                                        <li class="body-small">sponge mandi bertuliskan Pendar agar mandi lebih segar</li>
+                                                    </ul>
+                                                </div>
+                                                <div class="col-xl-4 col-lg-12 col-md-12 col-sm-12 col-12 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                    <div class="row d-flex justify-content-between align-items-center">
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-1 order-lg-2 order-md-2 order-sm-2 order-2 d-flex justify-content-end">
+                                                            <img src="assets/images/product/Bandung/productAccordion3.png" alt="pendar" class="img-product-shop-accordion" >
+                                                        </div>
+                                                        <div class="col-xl-12 col-lg-6 col-md-6 col-sm-6 col-6 order-xl-2 order-lg-1 order-md-1 order-sm-1 order-1">
+                                                            <p class="body-large-bold" style="margin-bottom : 0px">100 Sachet</p>
+                                                            <p class="subtitle-bold" style="margin-bottom : 0px">IDR 272.000</p>
+                                                            <del class="body-small">IDR 400.000</del>
+                                                        </div>
+                                                    </div>
+                                                </div>                                                  
+                                              </div>
+                                              <div class="row">
+                                                  <div class="col-xl-12">
+                                                      <button type="button" class="btn btn-lg btn-danger w-100" data-toggle="modal" data-target="#modalOrderBali4"><strong class="body-large">Beli Sekarang</strong></button>
+                                                  </div>
+                                              </div>
+                                          </div>
+                                        </div>
+                                      </div>                                    
                                 </div>                            
                             </div>
                         </div>
@@ -495,10 +692,10 @@
             </header>
             <section id="s2">
                 <div class="container text-center">
-                    <p class="subtitle-light">Berjelajah makin seru dengan hadiah istimewa dari Pendar buat kamu..</p>
-                    <p class="title mb-0">Yuk intip dulu..</p>
+                    <p class="title mb-0">Berjelajah makin seru.</p>
+                    <p class="subtitle-light">Dengan hadiah istimewa dari Pendar buat kamu.. Yuk intip dulu..</p>
                     <div id="accordionWhatInside" class="mt-5">
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                           <div class="card-header" id="headingOne">
                             <div class="mb-0 d-flex justify-content-between">
                                 <h1>Dalam sekotak Sabun & Shampo Pendar</h1>
@@ -514,39 +711,19 @@
                                         <img src="assets/images/whatInside/ImageWhatInside1.png" alt="pendar" class="img-shop-what-inside">
                                     </div>
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
-                                        <p class="body-regular">1.	Dapatkan 45 sachet setiap kotaknya (30 sabun 15 shampo)</p>
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">2.	Dengan pilihan variant kota yang bikin kamu semakin cinta!</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">3.	Dengan aroma khusus serasanya seperti berada di kota pilihan!</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">4.	Dengan kotak sistem “tarik-turun” mempermudah dan memperindah pengalaman mandi mu!</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">5.	Sabun dan Shampo berbahan premium dengan harga yang sangat terjangkau!</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">6.	Lulus Uji Sertifikasi BPOM</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">7.	Sabun Variant kota pertama yang mendapat Sertifikasi halal langsung dari MUI</p>
-                                            </div>
-                                        </div>
+                                        <p class="body-large">1.    Dapatkan 45 sachet setiap kotaknya (30 sabun 15 shampo)</p>
+                                        <p class="body-large">2.    Dengan pilihan variant kota yang bikin kamu semakin cinta!</p>
+                                        <p class="body-large">3.    Dengan aroma khusus serasanya seperti berada di kota pilihan!</p>
+                                        <p class="body-large">4.    Dengan kotak sistem “tarik-turun” mempermudah dan memperindah pengalaman mandi mu!</p>
+                                        <p class="body-large">5.    Sabun dan Shampo berbahan premium dengan harga yang sangat terjangkau!</p>
+                                        <p class="body-large">6.    Lulus Uji Sertifikasi BPOM</p>
+                                        <p class="body-large">7.    Sabun Variant kota pertama yang mendapat Sertifikasi halal langsung dari MUI</p>
                                     </div>
                                 </div>
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                           <div class="card-header" id="headingTwo">
                             <div class="mb-0 d-flex justify-content-between">
                                 <h1>ID CARD</h1>
@@ -563,26 +740,15 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
                                         <p class="body-large">1.	Wow.. kini kamu telah membuktikan asyiknya mandi sambil menjelajahi Negeri.</p>
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">2.	Mau order lagi? Tinggal checkout dan transaksi, karena data kamu sudah tercatat dengan rapi.</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">3.	Ada barcode dan link dibalik kartu agar kamu bisa melihat update produk-produk terbaru.</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">4.	Kamu bisa mendapatkan berbagai promo, diskon dan penawaran menarik dari Pendar.</p>
-                                            </div>
-                                        </div>
+                                        <p class="body-large">2.	Mau order lagi? Tinggal checkout dan transaksi, karena data kamu sudah tercatat dengan rapi.</p>
+                                        <p class="body-large">3.	Ada barcode dan link dibalik kartu agar kamu bisa melihat update produk-produk terbaru.</p>
+                                        <p class="body-large">4.	Kamu bisa mendapatkan berbagai promo, diskon dan penawaran menarik dari Pendar.</p>
                                     </div>
                                 </div>
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                           <div class="card-header" id="headingThree">
                             <div class="mb-0 d-flex justify-content-between">
                                 <h1>SPONGE MANDI SPESIAL</h1>
@@ -599,30 +765,16 @@
                                     </div>
                                     <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
                                         <p class="body-large">1.	Mandi lebih bersih dan segar dengan sponge mandi spesial dari Pendar.</p>
-                                        <div class="row">
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">2.	Sponge menghasilkan busa melimpah dan memberimu pengalaman mandi yang mewah.</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">3.	Mandi lebih nyaman karena tidak ada lagi tumpahan dan efektif mengangkat kuman.</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">4.	Sponge Pendar menjadi hadiah favorit karena bahannya yang lembut di kulit.</p>
-                                            </div>
-                                            <div class="col-xl-4 col-lg-4">
-                                                <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                <p class="body-regular">5.	Praktis buat dibawa kemana aja, terutama buat kamu yang hobi travelling.</p>
-                                            </div>
-                                        </div>
+                                        <p class="body-large">2.	Sponge menghasilkan busa melimpah dan memberimu pengalaman mandi yang mewah.</p>
+                                        <p class="body-large">3.	Mandi lebih nyaman karena tidak ada lagi tumpahan dan efektif mengangkat kuman.</p>
+                                        <p class="body-large">4.	Sponge Pendar menjadi hadiah favorit karena bahannya yang lembut di kulit.</p>
+                                        <p class="body-large">5.	Praktis buat dibawa kemana aja, terutama buat kamu yang hobi travelling.</p>
                                     </div>
                                 </div>
                             </div>
                           </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                             <div class="card-header" id="headingThree">
                               <div class="mb-0 d-flex justify-content-between">
                                 <h1>STIKER BUDAYA INDONESIA</h1>
@@ -638,27 +790,16 @@
                                             <img src="assets/images/whatInside/ImageWhatInside4.png" alt="pendar" class="img-shop-what-inside">
                                         </div>
                                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
-                                            <p class="body-regular">1.	Terima kasih, kamu telah menjadi bagian yang menjaga keragaman budaya Indonesia.</p>
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">2.	Stiker Pendar mencerminkan keragaman budaya di Indonesia dan semangat Bhinneka Tunggal Ika.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">3.	Stiker ini juga sebagai pengingat agar selalu mencintai Indonesia dan keragaman budayanya.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">4.	Dengan menempelkannya kamu telah membantu Pendar mensosialisasikan keragaman budaya Indonesia kepada siapa saja.</p>
-                                                </div>
-                                            </div>
+                                            <p class="body-large">1.	Terima kasih, kamu telah menjadi bagian yang menjaga keragaman budaya Indonesia.</p>
+                                            <p class="body-large">2.	Stiker Pendar mencerminkan keragaman budaya di Indonesia dan semangat Bhinneka Tunggal Ika.</p>
+                                            <p class="body-large">3.	Stiker ini juga sebagai pengingat agar selalu mencintai Indonesia dan keragaman budayanya.</p>
+                                            <p class="body-large">4.	Dengan menempelkannya kamu telah membantu Pendar mensosialisasikan keragaman budaya Indonesia kepada siapa saja.</p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                             <div class="card-header" id="headingThree">
                               <div class="mb-0 d-flex justify-content-between">
                                 <h1>Gantungan Kunci Humi, Aira dan Lova</h1>
@@ -674,31 +815,17 @@
                                             <img src="assets/images/whatInside/ImageWhatInside5.png" alt="pendar" class="img-shop-what-inside">
                                         </div>
                                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
-                                            <p class="body-regular">1.	Hadiah spesial yang hanya akan kamu dapatkan dari Pendar.</p>
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">2.	Kamu telah menjadi teman setia dan mandi berjelajah bersama Pendar. </p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">3.	Kamu bisa lebih mudah mengingat dimana barang istimewamu berada. Gantungkan di tas atau boneka favoritmu.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">4.	Kuncimu akan kelihatan cute dan berbeda dari teman-temanmu.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">5.	Kamu telah membantu Pendar menginformasikan pengalaman mandi bikin happy. </p>
-                                                </div>
-                                            </div>
+                                            <p class="body-large">1.	Hadiah spesial yang hanya akan kamu dapatkan dari Pendar.</p>
+                                            <p class="body-large">2.	Kamu telah menjadi teman setia dan mandi berjelajah bersama Pendar. </p>
+                                            <p class="body-large">3.	Kamu bisa lebih mudah mengingat dimana barang istimewamu berada. Gantungkan di tas atau boneka favoritmu.</p>
+                                            <p class="body-large">4.	Kuncimu akan kelihatan cute dan berbeda dari teman-temanmu.</p>
+                                            <p class="body-large">5.	Kamu telah membantu Pendar menginformasikan pengalaman mandi bikin happy. </p>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                        <div class="card bg-transparent">
+                        <div class="card bg-transparent border-bottom">
                             <div class="card-header" id="headingThree">
                               <div class="mb-0 d-flex justify-content-between">
                                 <h1>MOOD TRACKER</h1>
@@ -715,32 +842,9 @@
                                         </div>
                                         <div class="col-xl-8 col-lg-8 col-md-12 col-sm-12 col-12 text-left">
                                             <p class="body-large">1.	Yuk mulai perjalanan 30 hari moody mu, kamu bisa menuliskan suasana hatimu tanpa ragu-ragu.</p>
-                                            <div class="row">
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">2.	Dengan menuliskannya pada kalender, semoga harimu lebih menyenangkan bersama Pendar.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">3.	Temukan pola suasana hatimu sesuai dengan aktivitasmu. Saat hati sendu, mandi dengan Pendar bisa menjadi pilihanmu.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">consectetur adipiscing elit. Et dui volutpat orci laoreet non sed eget porttitor. Amet vulputate aliquam maecenas lorem ullamcorper quis facilisis. Ullamcorper et et quis mauris tellus commodo fermentum.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <!-- <p class="subtitle">Lorem ipsum dolor sit amet,</p> -->
-                                                    <p class="body-regular">4.	Selama 30 hari bagaimana suasana hatimu? Lebih banyak sedih atau senang? Kamu bisa menghindari sesuatu yang merusak mood kamu.</p>
-                                                </div>
-                                                <!-- <div class="col-xl-4 col-lg-4">
-                                                    <p class="subtitle">Lorem ipsum dolor sit amet,</p>
-                                                    <p class="body-regular">consectetur adipiscing elit. Sit netus placerat tempor sed felis proin.</p>
-                                                </div>
-                                                <div class="col-xl-4 col-lg-4">
-                                                    <p class="subtitle">Lorem ipsum dolor sit amet,</p>
-                                                    <p class="body-regular">consectetur adipiscing elit. Et dui volutpat orci laoreet non sed eget porttitor. Amet vulputate aliquam maecenas lorem ullamcorper quis facilisis. Ullamcorper et et quis mauris tellus commodo fermentum.</p>
-                                                </div> -->
-                                            </div>
+                                            <p class="body-large">2.	Dengan menuliskannya pada kalender, semoga harimu lebih menyenangkan bersama Pendar.</p>
+                                            <p class="body-large">3.	Temukan pola suasana hatimu sesuai dengan aktivitasmu. Saat hati sendu, mandi dengan Pendar bisa menjadi pilihanmu.</p>
+                                            <p class="body-large">4.	Selama 30 hari bagaimana suasana hatimu? Lebih banyak sedih atau senang? Kamu bisa menghindari sesuatu yang merusak mood kamu.</p>
                                         </div>
                                     </div>
                                 </div>
@@ -752,123 +856,110 @@
             <section id="s3">
                 <div class="container">
                     <div class="row">
-                        <div class="col-xl-6">
-                            <h1>CURAHAN HATI SETELAH MANDI</h1>
+                        <div class="col-xl-12">
+                            <h1>CURAHAN HATI </h1>
+                            <h1>SETELAH</h1>
+                            <h1>MANDI</h1>
                             <p class="subtitle-light subtitle-whatInside">Yang dirasa pengguna pendar setelah mandi</p>
                         </div>
                     </div>  
                     <div class="row justify-content-center mt-5 text-dark">
-                        <div class="card col-lg-10 m-3 testi-shop">
+                        <div class="card col-lg-10 col-md-10 col-sm-8 col-8 m-3 testi-shop">
                             <div class="card-body">
                                 <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <img src="assets/images/testimoni/Testimoni1.jpg" alt="Pendar">
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-beetwen flex-column">
                                         <p class="subtitle-light">“Aku pertama kali beli Pendar yang kemasan 1 kotak isi 45 sachet. Belinya online di website resmi Pendar. Lama pemakaian sekitar 1 bulan untuk 1 kotak jika rajin pakai. Aku kebetulan rutin makai, jadi pas banget habisnya 1 bulan. Sekarang kurang lebih udah 3 bulan pakai Pendar. Dari hasilnya, bau badan yang biasanya masih nempel sekarang udah wangi.
                                             Terus terasa lebih segar bahkan sejak pemakaian pertama. Untuk efek ke kulit juga kotoran lebih keangkat jadi kulit lebih keset. Sewaktu pulang kampung kemarin, nyokap bilang bau kecut di badan gue udah nggak ada lagi.
                                             Mama juga bilang bau badan gue pas bangun tidur juga nggak udah hilang. Pas udah balik ke kost mama sempat nanyain aku pakai sabun apa. Sejauh ini gue cukup puas pakai Pendar, ya kita tunggu pemakaian yang agak lama nanti aku update lagi. 
                                             ”</p>
                                         <div class="mt-auto">
-                                            <h2>Rio</h2>
-                                            <p class="body-large">Surabaya</p>    
+                                            <h2>Rio<span class="h2-light">, Surabaya</span></h2>
+                                            <!-- <p class="body-large">Surabaya</p>         -->
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>                                      
-                        <div class="card col-lg-10 m-3 testi-shop">
+                        <div class="card col-lg-10 col-md-10 col-sm-8 col-8 m-3 testi-shop">
                             <div class="card-body">
                                 <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <img src="assets/images/testimoni/Testimoni2.jpg" alt="Pendar">
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-beetwen flex-column">
                                         <p class="subtitle-light">“Waktu itu tau Pendar karena di saranin temen yang kulitnya sensitif terus cocok pake Pendar, padahal belum tentu juga cocok di aku. Tapi ternyata di aku cocok, dan senengnya komedo badan lumayan berkurang.
                                             Suka banget sih, karena kulit aku itu sensitive dry dan susah banget nyari sabun yang cocok, tapi pake Pendar asli paket lengkap banget. Komedo-komedo di badan akibat sensitive skin ku bener-bener lenyap, aromanya khas banget banget bangettt. Setelah sabunan sama sekali nggak kering di kulit, terharu 😭 mana bisa dipakein ke wajah juga cobaaa 🥺 tiap mandi aku sekarang nggak pake apa-apa selain Pendar sangking udah ngerasa oke banget sama kulit aku setelah sabunan pake ini. 
                                             Pendar ini bentuknya cair terus sachetan jadi lumayan praktis nyimpennya. Dan menurutku jadi lebih higienis jugaa, harganya affordable si. Tapi aku masih rutin pakai lulur meskipun nggak sering-sering banget tapi emang bener deh sabun ini topppp bangetttt!!!❤️
                                              ”</p>
                                         <div class="mt-auto">
-                                            <h2>Amanda</h2>
-                                            <p class="body-large">Bandung</p>    
+                                            <!-- <h2>Amanda</h2>
+                                            <p class="body-large">Bandung</p>     -->
+                                            <h2>Amanda<span class="h2-light">, Bandung</span></h2>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>                                      
-                        <div class="card col-lg-10 m-3 testi-shop">
+                        <div class="card col-lg-10 col-md-10 col-sm-8 col-8 m-3 testi-shop">
                             <div class="card-body">
                                 <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <img src="assets/images/testimoni/Testimoni3.jpg" alt="Pendar">
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-beetwen flex-column">
                                         <p class="subtitle-light">“Iniii sabunnn yang bikin kulit aku nggak berminyak setiap kali habis mandi pake sabun Pendar bawaanya jadi pengen kacaan terus karena kulit jadi lembab. Awal beli langsung 3 kotak karena iseng aja pengen nyobain sensasi 3 varian sekaligus 😂😂😂 Awalnya nggak ngarep efek apa apa sih. Eh keterusan make wkwk karena suka sama wanginya jadi kaya bukan sabun biasa aja.
                                             Tapi tiba tiba temen temen pada nanya "kok badanmu aromanya enak ya". Ternyata ada aromanya juga setelah selesai mandi. Aku udh rebuy beberapa kali Pendari ini. Karena di aku ini cukup ngaruh. Aku pake terus waktu mandi. Dengan harga yang murah dan efek yang pas buat kulit ini wajib sih ada di body routine apalagi yang punya masalah kulit kusam dan belang ya gils 👍🏻
                                             ”</p>
                                         <div class="mt-auto">
-                                            <h2>Lucy</h2>
-                                            <p class="body-large">Medan</p>    
+                                            <!-- <h2>Lucy</h2>
+                                            <p class="body-large">Medan</p>    -->
+                                            <h2>Lucy<span class="h2-light">, Medan</span></h2> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>           
-                        <div class="card col-lg-10 m-3 testi-shop">
+                        <div class="card col-lg-10 col-md-10 col-sm-8 col-8 m-3 testi-shop">
                             <div class="card-body">
                                 <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <img src="assets/images/testimoni/Testimoni4.jpg" alt="Pendar">
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-beetwen flex-column">
                                         <p class="subtitle-light">“Iniii sabunnn yang bikin kulit aku nggak berminyak setiap kali habis mandi pake sabun Pendar bawaanya jadi pengen kacaan terus karena kulit jadi lembab. Awal beli langsung 3 kotak karena iseng aja pengen nyobain sensasi 3 varian sekaligus 😂😂😂 Awalnya nggak ngarep efek apa apa sih. Eh keterusan make wkwk karena suka sama wanginya jadi kaya bukan sabun biasa aja.
                                             Tapi tiba tiba temen temen pada nanya "kok badanmu aromanya enak ya". Ternyata ada aromanya juga setelah selesai mandi. Aku udh rebuy beberapa kali Pendari ini. Karena di aku ini cukup ngaruh. Aku pake terus waktu mandi. Dengan harga yang murah dan efek yang pas buat kulit ini wajib sih ada di body routine apalagi yang punya masalah kulit kusam dan belang ya gils 👍🏻
                                             ”</p>
                                         <div class="mt-auto">
-                                            <h2>Lucy</h2>
-                                            <p class="body-large">Medan</p>    
+                                            <!-- <h2>Jessica</h2>
+                                            <p class="body-large">Jakarta</p>     -->
+                                            <h2>Jessica<span class="h2-light">, Jakarta</span></h2> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>           
-                        <div class="card col-lg-10 m-3 testi-shop">
+                        <div class="card col-lg-10 col-md-10 col-sm-8 col-8 m-3 testi-shop">
                             <div class="card-body">
                                 <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
+                                    <div class="col-xl-5 col-lg-12 col-md-12 col-sm-12 col-12">
                                         <img src="assets/images/testimoni/Testimoni5.jpg" alt="Pendar">
                                     </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
+                                    <div class="col-xl-6 col-lg-12 col-md-12 col-sm-12 col-12 d-flex align-items-beetwen flex-column">
                                         <p class="subtitle-light">“Pertama kali beli sabun Pendar dapat info dari sosmed. Sabun ini buatan asli Indonesia yang udah banyak penggunanya. Produk ini beda sama sabun-sabun yang lain karena nggak over klaim apapun kayak mencerahkan kulit atau bikin kulit jadi halus. Tapi dari situ aku malah penasaran. Pendar ini terbuat dari bahan-bahan yang aman dikulit. Tekstur sabun ini cair terus dalam kemasan sachetan jadi nggak akan meleleh kalau udah kena air. 
                                             Aku pakai Pendar ini untuk badan dan nggak berani untuk aku gunain di wajah. Cara pakainya aku pakai per kemasan sachet biar lebih awet dan gampang naruhnya. Busanya juga banyak banget. Aromanya sendiri buatku cukup menenangkan karena smooth banget wanginya, awal pakai ini kayak relaxing karena aromanya yang bikin aku rileks. Setelah beberapa kali nyobain aku makin jatuh hati aja sama aromanya. Setelah pakai Pendar ini, kulit jadi lebih lembab tapi tetap disarankan pakai body lotion secara rutin buat kulit. Untuk Pendar ini bisa kamu temuin di tempat  website remsi Pendar ya guys untuk produk yang original 👌
                                             ”</p>
                                         <div class="mt-auto">
-                                            <h2>Tyo</h2>
-                                            <p class="body-large">Pekanbaru</p>    
+                                            <!-- <h2>Tyo</h2>
+                                            <p class="body-large">Pekanbaru</p>     -->
+                                            <h2>Tyo<span class="h2-light">, Pekanbaru</span></h2> 
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>    
-                        <div class="card col-lg-10 m-3 testi-shop">
-                            <div class="card-body">
-                                <div class="row justify-content-between">
-                                    <div class="col-xl-5 col-lg-5 col-md-5 col-sm-5 col-5">
-                                        <img src="assets/images/testimoni/Testimoni6.jpg" alt="Pendar">
-                                    </div>
-                                    <div class="col-xl-6 col-lg-6 col-md-6 col-sm-6 col-6 d-flex align-items-beetwen flex-column">
-                                        <p class="subtitle-light">“Pendar pas banget buat gue yang dulunya malas banget buat mandi. Selain cuaca dingin, seharian dirumah aja jadi bikin gue makin males buat mandi. Waktu pertama kali pakai Pendar eh kok sensasinya beda nih sama sabun-sabun lain yang pernah gue pakai. Kebetulan gue pakai Pendar Jogja, mulai dari harumnya, teksturnya sampai aromanya khas banget. Contohnya Pendar Jogja yang gue pakai tekstur sabunnya lebih halus terus bisa melembabkan dan menghaluskan kulit.
-                                            Dari segi pengemasan produknya, gue cukup amazed ya. Praktis banget buat 1 bulan  udah pasti habis, terus mulai komposisi dan tanggal expirednya juga semua udah dicantumkan. Pendar ini mengusung konsep keragaman budaya jadi gue juga dapat bonus yang lucu-lucu berhubungan sama budaya Indonesia.
-                                            Hadiah yang paling jadi favorit gue sih mood trackernya, karena gue bisa nulisin suasana hati setiap hari. Mood trackernya gue tempel dibuku jadi tiap mau buka langsung bisa gue isi. Aku pribadi suka sabun Pendar ini karena teksturnya cair jadi nggak ribet.
-                                            ”</p>
-                                        <div class="mt-auto">
-                                            <h2>Jessica</h2>
-                                            <p class="body-large">Jakarta</p>    
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>  
                     </div>
                 </div>
             </section>
@@ -892,7 +983,7 @@
                                   </div>
                                   <div id="collapseFaqOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                     <div class="card-body pt-0">
-                                        <p class="body-small">Sabun Pendar adalah brand dari Indonesia yang sudah teruji secara klinis aman untuk semua jenis kulit. Sabun Pendar memiliki aroma istimewa yang mampu membuat kamu merasakan mandi sambil menjelajahi Negeri.</p>
+                                        <p class="body-large">Sabun Pendar adalah brand dari Indonesia yang sudah teruji secara klinis aman untuk semua jenis kulit. Sabun Pendar memiliki aroma istimewa yang mampu membuat kamu merasakan mandi sambil menjelajahi Negeri.</p>
                                     </div>
                                   </div>
                                 </div>
@@ -907,7 +998,7 @@
                                     </div>
                                     <div id="collapseFaqTwo" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                       <div class="card-body pt-0">
-                                        <p class="body-small">Saat ini, Sabun Pendar terdiri dari 3 varian yaitu sabun Pendar Jogja, sabun Pendar Bandung dan sabun Pendar Bali.</p>
+                                        <p class="body-large">Saat ini, Sabun Pendar terdiri dari 3 varian yaitu sabun Pendar Jogja, sabun Pendar Bandung dan sabun Pendar Bali.</p>
                                     </div>
                                 </div>
                                 <div class="card bg-transparent">
@@ -921,7 +1012,7 @@
                                     </div>
                                     <div id="collapseFaqThree" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                       <div class="card-body pt-0">
-                                        <p class="body-small">Ketiga sabun Pendar ini memiliki warna, aroma dan sensasi yang berbeda.</p>
+                                        <p class="body-large">Ketiga sabun Pendar ini memiliki warna, aroma dan sensasi yang berbeda.</p>
                                     </div>
                                 </div>
                                 <div class="card bg-transparent">
@@ -935,7 +1026,7 @@
                                     </div>
                                     <div id="collapseFaqFour" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                         <div class="card-body pt-0">
-                                            <p class="body-small">Ya, Sabun Pendar aman untuk semua jenis kulit dan tidak memiliki efek samping apapun.</p>
+                                            <p class="body-large">Ya, Sabun Pendar aman untuk semua jenis kulit dan tidak memiliki efek samping apapun.</p>
                                         </div>
                                     </div>
                                 </div>                        
@@ -950,7 +1041,7 @@
                                     </div>
                                     <div id="collapseFaqFive" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                         <div class="card-body pt-0">
-                                            <p class="body-small">Sabun Pendar original dan resmi bisa kamu beli melalui website resmi Pendar di www.sabunpendar.co.id, Shopee Official Pendar dan Tokopedia Official Pendar.</p>
+                                            <p class="body-large">Sabun Pendar original dan resmi bisa kamu beli melalui website resmi Pendar di www.sabunpendar.co.id, Shopee Official Pendar dan Tokopedia Official Pendar.</p>
                                         </div>
                                     </div>
                                 </div>                        
@@ -965,7 +1056,7 @@
                                     </div>
                                     <div id="collapseFaqSix" class="collapse" aria-labelledby="headingOne" data-parent="#accordionFAQ">
                                         <div class="card-body pt-0">
-                                            <p class="body-small">Sabun Pendar sudah tersertifikasi resmi oleh BPOM dan Halal oleh MUI.</p>
+                                            <p class="body-large">Sabun Pendar sudah tersertifikasi resmi oleh BPOM dan Halal oleh MUI.</p>
                                         </div>
                                     </div>
                                 </div>                        
@@ -977,14 +1068,14 @@
                 <div class="marquee">
                     <div class="track">
                         <div >  
-                            <h2>MANDI SAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI G </h2>
+                            <h2>MANDI SAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI</h2>
                         </div>
                     </div>
                 </div>
                 <div class="marquee">
                     <div class="track-reverse">
                         <div >  
-                            <h2>MANDI SAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI G </h2>
+                            <h2>MANDI SAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI • MANDI GSAMBIL JELAJAH NEGRI • SEMAKIN MANDI SEMAKIN MOOD LAGI </h2>
                         </div>
                     </div>
                 </div>
@@ -1011,7 +1102,7 @@
                     </div>
                     <div class="col-xl-4 col-lg-4 col-md-4 col-sm-5 col-5 sosial-media">
                         <p class="subtitle">Follow Us</p>
-                        <div class="mt-3 row d-flex justify-content-center align-items-center">
+                        <div class="mt-3 row d-flex align-items-center">
                             <div class="col-xl-2 col-lg-2 col-md-2 col-sm-2 col-2 m-2">
                                 <a href="#">
                                     <img src="assets/images/icon/Instagram.svg" alt="Pendar">
@@ -1049,62 +1140,231 @@
         </footer>
     </div>
 
-    <!-- Modal -->
-    <div class="modal fade" id="modalOrderBali1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header" style="border-bottom: 0px solid black ;">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body text-dark pb-5 rounded">
-                <div class="ooef">
-                    <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-1-kotak" id="oo-embed-form-Bali-paket-1-kotak-3321">
-                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalOrderBali2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header" style="border-bottom: 0px solid black ;">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body text-dark pb-5 rounded">
-                <div class="ooef">
-                    <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-2-kotak" id="oo-embed-form-Bali-paket-2-kotak-8242">
-                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
-    <div class="modal fade" id="modalOrderBali3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog" role="document">
-            <div class="modal-content">
-            <div class="modal-header" style="border-bottom: 0px solid black ;">
-            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                <span aria-hidden="true">&times;</span>
-            </button>
-            </div>
-            <div class="modal-body text-dark pb-5 rounded">
-                <div class="ooef">
-                    <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-4-kotak" id="oo-embed-form-Bali-paket-4-kotak-6112">
-                        <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
-                    </form>
-                </div>
-            </div>
-        </div>
-        </div>
-    </div>
+        <!-- Modal -->
 
+        <!-- Bali -->
+        <div class="modal fade" id="modalOrderBali1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0px solid black ;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-dark pb-5 rounded">
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-1-kotak" id="oo-embed-form-Bali-paket-1-kotak-3321">
+                            <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBali2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0px solid black ;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-dark pb-5 rounded">
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-2-kotak" id="oo-embed-form-Bali-paket-2-kotak-8242">
+                            <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBali3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0px solid black ;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-dark pb-5 rounded">
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-4-kotak" id="oo-embed-form-Bali-paket-4-kotak-6112">
+                            <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBali4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                <div class="modal-header" style="border-bottom: 0px solid black ;">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+                </div>
+                <div class="modal-body text-dark pb-5 rounded">
+                    <div class="ooef">
+                        <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Bali-paket-1-kotak-2" id="oo-embed-form-Bali-paket-1-kotak-2-2328">
+                            <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                        </form>                    
+                    </div>
+                </div>
+            </div>
+            </div>
+        </div>
+
+
+        <!-- Bandung -->
+        <div class="modal fade" id="modalOrderBandung1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="bandung-paket-1-kotak" id="oo-embed-form-bandung-paket-1-kotak-3623">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBandung2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="bandung-paket-2-kotak" id="oo-embed-form-bandung-paket-2-kotak-1459">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBandung3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="bandung-paket-4-kotak" id="oo-embed-form-bandung-paket-4-kotak-2417">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderBandung4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="bandung-paket-1-kotak-2" id="oo-embed-form-bandung-paket-1-kotak-2-8215">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- Jogja -->
+        <div class="modal fade" id="modalOrderJogja1" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Jogja-paket-1-kotak" id="oo-embed-form-Jogja-paket-1-kotak-250">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderJogja2" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Jogja-paket-2-kotak" id="oo-embed-form-Jogja-paket-2-kotak-4235">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderJogja3" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Jogja-paket-4-kotak" id="oo-embed-form-Jogja-paket-4-kotak-7006">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modalOrderJogja4" tabindex="-1" role="dialog" aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header" style="border-bottom: 0px solid black ;">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body text-dark pb-5 rounded">
+                        <div class="ooef">
+                            <form class="orderonline-embed-form" data-username="pendar" data-product-slug="Jogja-paket-1-kotak-2" id="oo-embed-form-Jogja-paket-1-kotak-2-4335">
+                                <div class="ooef-loader"><style>.ooef-loader{visibility: hidden;opacity: 0;position: absolute;left: 0;right: 0;top: 0;bottom: 0;display: flex;justify-content: center;align-items: center;flex-direction: column;animation: ooLoadingIn 10s ease;-webkit-animation: ooLoadingIn 10s ease;animation-fill-mode: forwards;overflow: hidden}@keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}@-webkit-keyframes ooLoadingIn{0%{visibility: hidden;opacity: 0}20%{visibility: visible;opacity: 0}100%{visibility: visible;opacity: 1}}.ooef-loader>div,.ooef-loader>div:after{border-radius: 50%;width: 2.5rem;height: 2.5rem}.ooef-loader>div{font-size: 10px;position: relative;text-indent: -9999em;border: .25rem solid #f5f5f5;border-left: .25rem solid #55c4cf;-webkit-transform: translateZ(0);-ms-transform: translateZ(0);transform: translateZ(0);-webkit-animation: ooLoading 1.1s infinite linear;animation: ooLoading 1.1s infinite linear}.ooef-loader.error>div{border-left: .25rem solid #ff4500;animation-duration: 5s}@-webkit-keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}@keyframes ooLoading{0%{-webkit-transform: rotate(0);transform: rotate(0)}100%{-webkit-transform: rotate(360deg);transform: rotate(360deg)}}</style><div aria-live="polite" role="status"><div>Loading...</div></div></div>
+                            </form>                        
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>        
 </body>
 <script type="text/javascript" src="assets/js/jquery-3.5.1.min.js"></script>
 <script type="text/javascript" src="assets/js/bootstrap.min.js"></script>

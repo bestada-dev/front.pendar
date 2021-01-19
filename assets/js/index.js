@@ -19,6 +19,7 @@ const $buttonIndicatorJogjaTop = $("#buttonIndicatorJogjaTop");
 const $buttonIndicatorBaliTop = $("#buttonIndicatorBaliTop");
 const $productShop = $('.img-product-shop')
 const $s1 = $("#s1");
+const $s2 = $("#s2");
 const $descriptionShopBandung = $("#descriptionShopBandung");
 const $descriptionShopJogja = $("#descriptionShopJogja");
 const $descriptionShopBali = $("#descriptionShopBali");
@@ -103,9 +104,11 @@ function onReady(callback) {
     var windowHeight = $(window).height();
   
     $(window).resize(function() {
-      if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
-        location.reload();
-        return;
+      if($(window).width() < 740){
+        if(windowWidth != $(window).width() || windowHeight != $(window).height()) {
+          location.reload();
+          return;
+        }  
       }
     });
   });

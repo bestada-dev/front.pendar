@@ -1,13 +1,12 @@
 #a1{
     .title{
-        font-size: 110px
+        font-size: 130px ;
+        line-height: 150px;
     }
 }
 #a2{
+    padding-top: 30vh ;
     padding-bottom: 30vh ;
-    .title{
-        font-size: 68px
-    }
     img{
         position : absolute ;
     }
@@ -15,7 +14,7 @@
         @include sizeSquare(150px)
     }
     #mascotAbout1{
-        top : 130%;
+        top : 110%;
         left: 40% ;
     }
     #mascotAbout2{
@@ -43,10 +42,18 @@
         @include size(400px,auto);
         top : 200% ;
         left: 15% ;
-        transform: rotate(9deg);
+        z-index: 99 ;
     }
+    #productAbout4{
+        @include size(400px,auto);
+        top : 200% ;
+        left: 25% ;
+        transform: rotate(5deg);
+    }
+
 } 
 #a3{
+    padding-top: 50vh ;
     .title{
         letter-spacing: 0.07em;
         line-height: 132px;
@@ -56,7 +63,7 @@
         position : absolute ;
         width :40vh ;
         right: 20% ;
-        top : 300% ;
+        top : 320% ;
     }
 }
 #a4{
@@ -69,13 +76,13 @@
             margin : 1vh 0vh 1vh 0vh ;
             transition : 0.5s ;
             &:hover{
-                background-color: $colorBasic !important;
+                background-color: $backgroundButtonBuy !important;
                 color : $backgroundBasic !important;
             }
         }
     }
     .active-button-faq-about{
-        background-color: $colorBasic ;
+        background-color: $backgroundButtonBuy ;
         color : $backgroundBasic ;
     }
     #accordionAbout1{
@@ -91,27 +98,160 @@
         display: none
     }
 }
+/* Super Extra Large Max */
+@media only screen  and (max-width: $screenSuperExtraLargeMax){
+    #a3{
+        .subtitle{
+            right: 10% ;
+            top : 320% ;
+        }
+    }
+}
+
+/* Super Extra Large  */
+@media only screen  and (max-width: $screenSuperExtraLarge){
+    #a3{
+        .title {
+            font-size :80px
+        }    
+        .subtitle{
+            font-size :25px
+            // right: 5% ;
+            // top : 320% ;
+        }
+    }
+}
+
+/* Super Extra Large Min */
+@media only screen  and (max-width: $screenSuperExtraLarge){
+    #a3{
+        .subtitle{
+            right: 5% ;
+            top : 330% ;
+        }
+    }
+}
+
+
 /* Extra Large */
 @media only screen  and (max-width: $screenExtraLarge){
-    #a1 .title{
-        font-size: 70px ;
+    #a1{
+        .title{
+            font-size: 70px ;
+            line-height: 90px;  
+        }
+    } 
+    #a2{
+        img{
+            @include size(630px,270px)
+        }
+        #mascotAbout2{
+            top : 170%;
+            right: 10% ;
+        }    
+    } 
+    #a3{
+        .title{
+            line-height: 90px
+        }
+        .subtitle{
+            left: 2vh ;
+            // top : 330% ;
+            position: relative;
+        }
     }
-    #a2 img{
-        width: 270px ;
-        height: 630px ;   
+    #a4{
+        .btn-navigation-faq-about{
+            margin-bottom: 5vh ;
+        }
     }
 }
 
 /* Large */
 @media only screen  and (min-width: $screenMedium) and (max-width: $screenLarge){
-    #a1 .title {
-        font-size : 70px
+    #a1{
+        .title {
+            font-size : 70px ;
+        }
+    } 
+    #a2{
+        padding-top : 0px ;
+        #productAbout1{
+            @include size(520px,auto);
+            position: relative;
+            left: -20%;
+            bottom: 0;
+            margin-bottom : 10vh ;
+        }
+        .mascot-about{
+            @include sizeSquare(100px)
+        }
+        #mascotAbout1{
+            top : 110%;
+            left: 80% ;
+        }
+        #mascotAbout2{
+            top : 90%;
+            left: 25% ;
+            @include size(auto,150px)
+        }
+        #mascotAbout3{
+            top : 70%;
+            left: 30% ;
+        }
+        #productAbout4{
+            left: 30% ;
+        }
     }
+    #a4{
+        .title{
+            text-align: center;
+        }
+    }  
 }
 
 /* Medium */
 @media only screen and (min-width: $screenSmall) and (max-width: $screenMedium) {
+    #a2{
+        padding-top : 0px ;
+        #productAbout1{
+            @include size(520px,auto);
+            position: relative;
+            left: -20%;
+            bottom: 0;
+            margin-bottom : 10vh ;
+        }
+        .mascot-about{
+            @include sizeSquare(100px)
+        }
+        #mascotAbout1{
+            top : 110%;
+            left: 80% ;
+        }
+        #mascotAbout2{
+            top : 90%;
+            left: 15% ;
+            @include size(auto,150px)
+        }
+        #mascotAbout3{
+            top : 70%;
+            left: 30% ;
+        }
+        #productAbout4{
+            left: 35% ;
+        }
 
+    }
+    #a4{
+        .title{
+            text-align: center;
+        }
+    }
+    .before-footer{
+        .title{
+            font-size: 80px
+        }
+    }   
 }
 
 /* Small */
@@ -121,11 +261,128 @@
             font-size : 50px
         }
     } 
+    #a2{
+        padding-top : 20vh ;
+        #productAbout1{
+            @include size(420px,auto);
+            position: relative;
+            left: -20%;
+            bottom: 0;
+            margin-bottom : 10vh ;
+        }
+        .mascot-about{
+            @include sizeSquare(100px)
+        }
+        #mascotAbout1{
+            top : 130%;
+            left: 80% ;
+        }
+        #mascotAbout2{
+            top : 115%;
+            left: 10% ;
+            @include size(auto,150px)
+        }
+        #mascotAbout3{
+            top : 90%;
+            left: 20% ;
+        }
+        #productAbout2{
+            top : 230% ;
+            left: 5% ;
+        }
+        #productAbout3{
+            top : 230% ;
+            left: 15% ;
+        }
+        #productAbout4{
+            top : 230% ;
+            left: 35% ;
+        }
+    }    
+    #a3{
+        .title{
+            font-size :40px ;
+            line-height: 38px;
+        }
+        .subtitle{
+            font-size :20px ;
+            left: 1vh ;
+            margin-top:1vh ;
+        }
+    }
+    #a4{
+        .subtitle-bold{
+            font-size :25px ;
+        }
+    }
 }
 
 /* Extra Small */
 @media only screen and (max-width: $screenExtraSmall) {
-    #a1 .title {
-        font-size : 40px
+    #a1 {
+        .title {
+            font-size : 40px ;
+            line-height: 46px;
+        }
+        .h1-light{
+            font-size: 25px;
+        }
+    } 
+    #a2{
+        padding-top : 20vh ;
+        #productAbout1{
+            @include size(420px,auto);
+            position: relative;
+            left: -20%;
+            bottom: 0;
+            margin-bottom : 10vh ;
+        }
+        .mascot-about{
+            @include sizeSquare(100px)
+        }
+        #mascotAbout1{
+            top : 100%;
+            left: 80% ;
+        }
+        #mascotAbout2{
+            top : 100%;
+            left: 5% ;
+            @include size(auto,100px)
+        }
+        #mascotAbout3{
+            top : 70%;
+            left: 10% ;
+        }
+        #container-child-product{
+            position: relative;
+            #productAbout2{
+                top : 270% ;
+                left: 5% ;
+            }
+            #productAbout3{
+                top : 270% ;
+                left: 15% ;
+            }
+            #productAbout4{
+                top : 270% ;
+                left: 35% ;
+            }
+        }
+    }    
+    #a3{
+        .title{
+            font-size :40px ;
+            line-height: 38px;
+        }
+        .subtitle{
+            font-size :20px ;
+            left: 1vh ;
+            margin-top:1vh ;
+        }
+    }
+    #a4{
+        .subtitle-bold{
+            font-size :25px ;
+        }
     }
 }

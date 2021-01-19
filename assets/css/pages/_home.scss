@@ -777,6 +777,11 @@
             }
         }
     }
+    #modalSelectOrder{
+        img{
+            @include sizeSquare(15vh)
+        }
+    }
 }
 
 /* Extra Small */
@@ -929,6 +934,11 @@
     #i6{
         .title{
             font-size:40px
+        }
+    }
+    #modalSelectOrder{
+        img{
+            @include sizeSquare(12vh)
         }
     }
 }
@@ -1091,6 +1101,14 @@
     .before-footer{
         .title{
             font-size: 40px;
+        }
+    }
+    #modalSelectOrder{
+        h1{
+            font-size: 30px
+        }
+        img{
+            @include sizeSquare(10vh)
         }
     }
 

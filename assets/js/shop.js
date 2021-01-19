@@ -37,6 +37,43 @@ const buttonIndicatorArray = [
         removeClass1 : $buttonIndicatorBandungBottom,
         removeClass2 : $buttonIndicatorJogjaBottom
     },    
+    {
+        buttonIndicator : $buttonIndicatorBandungTop ,
+        name : 'Bandung',
+        background : backgroundBandung,
+        color : colorBandung,
+        display1 : $descriptionShopBandung,
+        display2 : $descriptionShopJogja,
+        display3 : $descriptionShopBali,
+        addClass : $buttonIndicatorBandungTop,
+        removeClass1 : $buttonIndicatorJogjaTop,
+        removeClass2 : $buttonIndicatorBaliTop
+    },
+    {
+        buttonIndicator : $buttonIndicatorJogjaTop ,
+        name : 'Jogja',
+        background : backgroundJogja,
+        color : colorJogja,
+        display1 : $descriptionShopJogja,
+        display2 : $descriptionShopBandung,
+        display3 : $descriptionShopBali,
+        addClass : $buttonIndicatorJogjaTop,
+        removeClass1 : $buttonIndicatorBandungTop,
+        removeClass2 : $buttonIndicatorBaliTop
+    },    
+    {
+        buttonIndicator : $buttonIndicatorBaliTop ,
+        name : 'Bali',
+        background : backgroundBali,
+        color : colorBali,
+        display1 : $descriptionShopBali,
+        display2 : $descriptionShopBandung,
+        display3 : $descriptionShopJogja,
+        addClass : $buttonIndicatorBaliTop,
+        removeClass1 : $buttonIndicatorBandungTop,
+        removeClass2 : $buttonIndicatorJogjaTop
+    },    
+
 ]
 buttonIndicatorArray.map( indicator => {
     indicator.buttonIndicator.click(function() {
@@ -59,15 +96,18 @@ $window.scroll(function() {
     if(scrollTop >= 1000){
         $body.css({backgroundColor: backgroundBasic });  
         $productShop.attr('src',  `assets/images/product/Bandung/Product.png`);                                          
-        $s1.css({color: colorBandung });    
+        $body.css({color: colorBasic });    
         $descriptionShopBandung.css({display: 'block'})
         $descriptionShopJogja.css({display: 'none'})
         $descriptionShopBali.css({display: 'none'})
         $buttonIndicatorBandungBottom.addClass('active-buttonIndicator')
         $buttonIndicatorJogjaBottom.removeClass('active-buttonIndicator')
         $buttonIndicatorBaliBottom.removeClass('active-buttonIndicator')
-    }else if(scrollTop >= 900 && scrollTop <= 999){
-        $body.css({backgroundColor: backgroundBandung });    
+    }else if(scrollTop <= 999 && scrollTop >= 800){
+        $body.css({
+            backgroundColor: backgroundBandung,
+        });    
+        $s1.css({color: colorBandung });    
     }
 }) 
 
@@ -96,6 +136,13 @@ const arrayAccordion = [
         },
         {
             name : "product",
+            idButton : "#btnAccordionProductBandung4",
+            idContent : "#collapseProductBandungFour",
+            firstImage : "assets/images/navigation/ArrowUp.svg",
+            secondImage : "assets/images/navigation/ArrowDown.svg" 
+        },
+        {
+            name : "product",
             idButton : "#btnAccordionProductJogja1",
             idContent : "#collapseProductJogjaOne",
             firstImage : "assets/images/navigation/ArrowUp.svg",
@@ -112,6 +159,13 @@ const arrayAccordion = [
             name : "product",
             idButton : "#btnAccordionProductJogja3",
             idContent : "#collapseProductJogjaThree",
+            firstImage : "assets/images/navigation/ArrowUp.svg",
+            secondImage : "assets/images/navigation/ArrowDown.svg" 
+        },
+        {
+            name : "product",
+            idButton : "#btnAccordionProductJogja4",
+            idContent : "#collapseProductJogjaFour",
             firstImage : "assets/images/navigation/ArrowUp.svg",
             secondImage : "assets/images/navigation/ArrowDown.svg" 
         },

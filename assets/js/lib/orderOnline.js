@@ -38,7 +38,9 @@ try {
     ooe('init', 'pendar', 'Jogja-paket-1-kotak', null, 'oo-embed-form-Jogja-paket-1-kotak-250', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
     ooe('init', 'pendar', 'Jogja-paket-2-kotak', null, 'oo-embed-form-Jogja-paket-2-kotak-4235', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
     ooe('init', 'pendar', 'Jogja-paket-4-kotak', null, 'oo-embed-form-Jogja-paket-4-kotak-7006', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":false,"triggerGtm":false});
-
+    ooe('init', 'pendar', 'Bali-paket-1-kotak-2', null, 'oo-embed-form-Bali-paket-1-kotak-2-2328', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+    ooe('init', 'pendar', 'bandung-paket-1-kotak-2', '6002f613a9bf8072e87eca24', 'oo-embed-form-bandung-paket-1-kotak-2-8215', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});
+    ooe('init', 'pendar', 'Jogja-paket-1-kotak-2', '6002f6368dcbdb66522a94e5', 'oo-embed-form-Jogja-paket-1-kotak-2-4335', {"mode":"page","action":"Klik untuk pemesanan","title":"Form Pemesanan","triggerPixel":true,"triggerGtm":false});    
     if (!window.jQuery) {
         !function(w, d, e, v, id, t, s) {
         if (d.getElementById(id)) return;
