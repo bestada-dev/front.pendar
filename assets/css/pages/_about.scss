@@ -97,6 +97,9 @@
     #accordionAbout4{
         display: none
     }
+    .title{
+        font-size :100px ;
+    }
 }
 /* Super Extra Large Max */
 @media only screen  and (max-width: $screenSuperExtraLargeMax){
@@ -321,36 +324,43 @@
 @media only screen and (max-width: $screenExtraSmall) {
     #a1 {
         .title {
-            font-size : 40px ;
+            font-size : 38px ;
             line-height: 46px;
         }
         .h1-light{
-            font-size: 25px;
+            font-size: 18px;
         }
+
     } 
     #a2{
         padding-top : 20vh ;
+        .product-about-size{
+            height: 250px !important;
+            margin-top: 50px;
+        }
         #productAbout1{
-            @include size(420px,auto);
+            @include size(320px,auto);
             position: relative;
             left: -20%;
+            z-index: -2;
             bottom: 0;
             margin-bottom : 10vh ;
         }
         .mascot-about{
-            @include sizeSquare(100px)
+            @include sizeSquare(50px) ;
+            z-index:-1 ;
         }
         #mascotAbout1{
-            top : 100%;
+            top : 120%;
             left: 80% ;
         }
         #mascotAbout2{
-            top : 100%;
+            top : 110%;
             left: 5% ;
             @include size(auto,100px)
         }
         #mascotAbout3{
-            top : 70%;
+            top : 90%;
             left: 10% ;
         }
         #container-child-product{
@@ -368,21 +378,44 @@
                 left: 35% ;
             }
         }
+        .title {
+            font-size: 20px;
+        }
+        .h2-light {
+            font-size: 14px;
+        }
     }    
     #a3{
+        padding-top: 30vh ;
         .title{
-            font-size :40px ;
+            font-size :30px ;
             line-height: 38px;
         }
         .subtitle{
-            font-size :20px ;
+            font-size :15px ;
             left: 1vh ;
             margin-top:1vh ;
         }
     }
     #a4{
+        .accordion-about-wrapper {
+            margin-top:0vh ;
+        }
         .subtitle-bold{
-            font-size :25px ;
+            font-size :20px ;
+        }
+        .title{
+            font-size :40px ;
+        }
+        .button-faq{
+            width: 100%;
+            overflow-x: auto;
+            .row{
+                width: 180%;
+            }
+            .body-large{
+                font-size:11px
+            }
         }
     }
 }

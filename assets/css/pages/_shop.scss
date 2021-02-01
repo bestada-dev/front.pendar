@@ -177,7 +177,11 @@
             @include size(auto,100%);
             margin-bottom : 5vh
         }
-
+        .card {
+            .subtitle-light {
+                font-size: 8px;
+            }
+        }
     } 
 }
 
@@ -264,6 +268,9 @@
                 display:none ;
             }
         }
+        .text-right{
+            text-align: left !important;
+        }
     } 
     #s2{
         .img-shop-what-inside{
@@ -294,11 +301,16 @@
                 margin-bottom : 2vh
             }
             .subtitle-light{
-                font-size: 10px
+                font-size: 8px
             }
             h2, .h2-light{
                 font-size: 11px   
             }
         }
+    }
+    #s4{
+        .title {
+            font-size: 90px;
+        }        
     }
 }

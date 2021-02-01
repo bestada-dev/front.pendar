@@ -947,6 +947,10 @@
     // .content{
     //     overflow-x : hidden;
     // }
+    .container {
+        padding-right : 20px ;
+        padding-left : 20px ;
+    }
     .img-product{
         position: fixed;
         // height: 100% ;
@@ -978,9 +982,9 @@
             font-size: 1rem;
         }
         .title{
-            margin-top: 10vh;
-            font-size: 80px ;
-            line-height: 100px;
+            margin-top: 0vh; 
+            font-size: 50px;
+            line-height: 80px;
         }        
     } 
     #i2{
@@ -997,14 +1001,14 @@
              font-size: 25px;
             }
             &:nth-child(even){
-             font-size: 60px;
+             font-size: 40px;
             }
         } 
      }
     #i4{
         padding-top: 20vh ;
         .mascot{
-            @include sizeSquare(150px)
+            @include sizeSquare(100px)
         }
         .mascot1{
             top : auto;
@@ -1042,7 +1046,7 @@
                 line-height: 3vh; 
                 position: absolute;
                 .subtitle-light{
-                    line-height: 2vh;
+                    line-height: 3vh;
                 }
             }    
             .textPlace-wrap-benefit{
@@ -1079,7 +1083,7 @@
     }
     #i5{
         .title{
-            font-size: 60px ;
+            font-size: 40px ;
             span{
                 position: relative ;
                 font-size: 32px;
@@ -1100,7 +1104,7 @@
     }
     .before-footer{
         .title{
-            font-size: 40px;
+            font-size: 35px;
         }
     }
     #modalSelectOrder{
@@ -1111,5 +1115,7 @@
             @include sizeSquare(10vh)
         }
     }
-
+    .wavetext{
+        font-size: 25px
+    }
 }

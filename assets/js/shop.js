@@ -103,6 +103,9 @@ $window.scroll(function() {
         $buttonIndicatorBandungBottom.addClass('active-buttonIndicator')
         $buttonIndicatorJogjaBottom.removeClass('active-buttonIndicator')
         $buttonIndicatorBaliBottom.removeClass('active-buttonIndicator')
+        $buttonIndicatorBandungTop.addClass('active-buttonIndicator')
+        $buttonIndicatorJogjaTop.removeClass('active-buttonIndicator')
+        $buttonIndicatorBaliTop.removeClass('active-buttonIndicator')
     }else if(scrollTop <= 999 && scrollTop >= 800){
         $body.css({
             backgroundColor: backgroundBandung,

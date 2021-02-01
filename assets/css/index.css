@@ -328,7 +328,7 @@ h2 {
 /* Extra Small */
 @media only screen and (max-width: 576px) {
   h1 {
-    font-size: 35px;
+    font-size: 25px;
   }
   .h1-light {
     font-size: 30px;
@@ -355,7 +355,7 @@ h2 {
     font-size: 16px;
   }
   .body-large {
-    font-size: 20px;
+    font-size: 15px;
   }
   .body-large-bold {
     font-size: 20px;
@@ -1492,6 +1492,10 @@ h2 {
 }
 
 @media only screen and (max-width: 480px) {
+  .container {
+    padding-right: 20px;
+    padding-left: 20px;
+  }
   .img-product {
     position: fixed;
     z-index: 100;
@@ -1526,9 +1530,9 @@ h2 {
     font-size: 1rem;
   }
   #i1 .title {
-    margin-top: 10vh;
-    font-size: 80px;
-    line-height: 100px;
+    margin-top: 0vh;
+    font-size: 50px;
+    line-height: 80px;
   }
   #i2 h1 {
     font-size: 45px;
@@ -1542,14 +1546,14 @@ h2 {
     font-size: 25px;
   }
   #i3 .title:nth-child(even) {
-    font-size: 60px;
+    font-size: 40px;
   }
   #i4 {
     padding-top: 20vh;
   }
   #i4 .mascot {
-    height: 150px;
-    width: 150px;
+    height: 100px;
+    width: 100px;
   }
   #i4 .mascot1 {
     top: auto;
@@ -1589,7 +1593,7 @@ h2 {
     position: absolute;
   }
   #i4 .textPlace .textPlace-wrap .subtitle-light {
-    line-height: 2vh;
+    line-height: 3vh;
   }
   #i4 .textPlace .textPlace-wrap-benefit {
     top: 20%;
@@ -1620,7 +1624,7 @@ h2 {
     opacity: 0;
   }
   #i5 .title {
-    font-size: 60px;
+    font-size: 40px;
   }
   #i5 .title span {
     position: relative;
@@ -1640,7 +1644,7 @@ h2 {
     font-size: 40px;
   }
   .before-footer .title {
-    font-size: 40px;
+    font-size: 35px;
   }
   #modalSelectOrder h1 {
     font-size: 30px;
@@ -1648,6 +1652,9 @@ h2 {
   #modalSelectOrder img {
     height: 10vh;
     width: 10vh;
+  }
+  .wavetext {
+    font-size: 25px;
   }
 }
 
@@ -1853,6 +1860,9 @@ h2 {
     width: 100%;
     margin-bottom: 5vh;
   }
+  #s3 .card .subtitle-light {
+    font-size: 8px;
+  }
 }
 
 /* Small */
@@ -1940,6 +1950,9 @@ h2 {
   #s1 #shop-top-accordion img {
     display: none;
   }
+  #s1 .text-right {
+    text-align: left !important;
+  }
   #s2 .img-shop-what-inside {
     height: 180px;
     width: 180px;
@@ -1967,10 +1980,13 @@ h2 {
     margin-bottom: 2vh;
   }
   #s3 .card .subtitle-light {
-    font-size: 10px;
+    font-size: 8px;
   }
   #s3 .card h2, #s3 .card .h2-light {
     font-size: 11px;
+  }
+  #s4 .title {
+    font-size: 90px;
   }
 }
 
@@ -2097,6 +2113,10 @@ h2 {
 
 #a4 #accordionAbout4 {
   display: none;
+}
+
+#a4 .title {
+  font-size: 100px;
 }
 
 /* Super Extra Large Max */
@@ -2298,39 +2318,45 @@ h2 {
 /* Extra Small */
 @media only screen and (max-width: 576px) {
   #a1 .title {
-    font-size: 40px;
+    font-size: 38px;
     line-height: 46px;
   }
   #a1 .h1-light {
-    font-size: 25px;
+    font-size: 18px;
   }
   #a2 {
     padding-top: 20vh;
   }
+  #a2 .product-about-size {
+    height: 250px !important;
+    margin-top: 50px;
+  }
   #a2 #productAbout1 {
-    height: 420px;
+    height: 320px;
     width: auto;
     position: relative;
     left: -20%;
+    z-index: -2;
     bottom: 0;
     margin-bottom: 10vh;
   }
   #a2 .mascot-about {
-    height: 100px;
-    width: 100px;
+    height: 50px;
+    width: 50px;
+    z-index: -1;
   }
   #a2 #mascotAbout1 {
-    top: 100%;
+    top: 120%;
     left: 80%;
   }
   #a2 #mascotAbout2 {
-    top: 100%;
+    top: 110%;
     left: 5%;
     height: auto;
     width: 100px;
   }
   #a2 #mascotAbout3 {
-    top: 70%;
+    top: 90%;
     left: 10%;
   }
   #a2 #container-child-product {
@@ -2348,17 +2374,42 @@ h2 {
     top: 270%;
     left: 35%;
   }
+  #a2 .title {
+    font-size: 20px;
+  }
+  #a2 .h2-light {
+    font-size: 14px;
+  }
+  #a3 {
+    padding-top: 30vh;
+  }
   #a3 .title {
-    font-size: 40px;
+    font-size: 30px;
     line-height: 38px;
   }
   #a3 .subtitle {
-    font-size: 20px;
+    font-size: 15px;
     left: 1vh;
     margin-top: 1vh;
   }
+  #a4 .accordion-about-wrapper {
+    margin-top: 0vh;
+  }
   #a4 .subtitle-bold {
-    font-size: 25px;
+    font-size: 20px;
+  }
+  #a4 .title {
+    font-size: 40px;
+  }
+  #a4 .button-faq {
+    width: 100%;
+    overflow-x: auto;
+  }
+  #a4 .button-faq .row {
+    width: 180%;
+  }
+  #a4 .button-faq .body-large {
+    font-size: 11px;
   }
 }
 

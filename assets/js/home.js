@@ -67,8 +67,6 @@ const animationTimeLineScroll = animationScrollHome => {
     .to('#destinationBandung2',2,rotateAnimationHide )
     .to('#destinationBandung3',2,rotateAnimationHide )
     .to('.wrap-text-bandung',1,hideText )
-    // .to('body',1,changeBackground(backgroundBasic) )
-    // // .to('body',1,changeText(colorBasic) )
     .to('body',1,changeBackground(backgroundBandung) )
     .to('#titleBandung',0.2,changeTextOutline(colorBandung) )
     .to('#titleJogja',0.2,changeText(colorBandung) )
@@ -93,11 +91,10 @@ const animationTimeLineScroll = animationScrollHome => {
     .to('#destinationJogja2',2,rotateAnimationHide )
     .to('#destinationJogja3',2,rotateAnimationHide )
     .to('.wrap-text-jogja',1,hideText )
-    // .to('body',1,changeBackground(backgroundJogja))
+    .to('body',1,changeBackground(backgroundJogja))
     .to('#titleBandung',0.2,changeTextOutline(colorJogja) )
     .to('#titleJogja',0.2,changeTextOutline(colorJogja) )
     .to('#titleBali',0.2,changeText(colorJogja) )
-    // .to('body',1,changeBackground(backgroundJogja))
     .to('.wrap-text-bali',1,showText)
     .to('#mascotBali1',1,rotateAnimationHide )
     .to('#mascotBali1',2,rotateAnimationShow )
@@ -138,9 +135,6 @@ var scene = new ScrollMagic.Scene({
 $window.scroll(function() {
     let scrollTop = $window.scrollTop() > 50 ? $window.scrollTop()-50 : 0 ;
     let scrollTopMobile = $window.scrollTop() ;
-    // console.log(scrollTop,'scroll')
-    console.log($(window).width(),'widht')
-    console.log(scrollTopMobile,'scrollTopMobile')
 
     if($(window).width() >= extraLarge){
           if (scrollTop >= 0 && scrollTop <= scrollTopSmall) {
@@ -317,26 +311,29 @@ $window.scroll(function() {
 
 // title button
 $titleBandung.click(function() {
-    $window.scrollTop(2900) ;
-    $body.css({
-        backgroundColor: backgroundBasic,
-        color : colorBasic 
-    });    
-
+    // $window.scrollTop(2900) ;
+    // $body.css({
+    //     backgroundColor: backgroundBasic,
+    //     color : colorBasic 
+    // });    
+    animationScrollHome.time(0).play() ;
 });
 $titleJogja.click(function() {
-    $window.scrollTop(11700) ;
-    $body.css({
-        backgroundColor: backgroundBasic,
-        color : colorBasic 
-    });    
+    // $window.scrollTop(11700) ;
+    // $body.css({
+    //     backgroundColor: backgroundBasic,
+    //     color : colorBasic 
+    // });    
+    animationScrollHome.time(28).play() ;
+
 });
 $titleBali.click(function() {
-    $window.scrollTop(20000) ;
-    $body.css({
-        backgroundColor: backgroundJogja,
-        color : colorJogja 
-    });    
+    // $window.scrollTop(20000) ;
+    // $body.css({
+    //     backgroundColor: backgroundJogja,
+    //     color : colorJogja 
+    // });    
+    animationScrollHome.time(60).play() ;
 
 });
 
