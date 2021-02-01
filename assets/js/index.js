@@ -5,6 +5,7 @@ const $html = $("html");
 const $body = $("body");
 const $buttonBuy = $(".btn-buynow button");
 const $product360 = $('.img-product-home')
+const $btnBuyNow = $('.btn-buynow button')
 
 const $titleBandung = $('#titleBandung')
 const $titleJogja = $('#titleJogja')
@@ -62,7 +63,8 @@ const colorJogja = '#854A00'
 const backgroundBali = '#A37100'
 const colorBali = '#615428'
 
-
+// marquee
+const marquee = $("#marqueeSection")
 // loading
 var text = "Loading...";
 

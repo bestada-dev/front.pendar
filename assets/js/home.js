@@ -305,7 +305,16 @@ $window.scroll(function() {
         }
     }
     $product360.attr('src',  `assets/images/product360/${nameProduct(scrollTopMobile)}/${product360(scrollTop)}.png`);                                        
-
+    if($(window).width() < 480){
+        if(scrollTopMobile >= marquee.offset().top + marquee.outerHeight() - window.innerHeight){
+            // alert('halo')
+            $btnBuyNow.css({display: 'none'});               
+            $product360.css({display: 'none'});               
+        }else{
+            $product360.css({display: 'block'});       
+            $btnBuyNow.css({display: 'block'});                       
+        }
+    }
 });
 
 
