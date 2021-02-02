@@ -1721,6 +1721,10 @@ h2 {
   display: none;
 }
 
+#s1 .body-small {
+  font-size: 17px;
+}
+
 #s2 h1 {
   text-align: left;
 }
